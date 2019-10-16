@@ -1,4 +1,4 @@
 package com.udemy.resources;
 
-public class SettingsResource {
+public class ProjectResource {
 }

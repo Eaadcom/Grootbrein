@@ -1,4 +1,4 @@
 package com.udemy.resources;
 
-public class TripsResource {
+public class UserResource {
 }
