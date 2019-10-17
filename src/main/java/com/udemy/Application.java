@@ -1,6 +1,7 @@
 package com.udemy;
 
 import com.udemy.DAO.UserDAO;
+import com.udemy.resources.CarResource;
 import com.udemy.resources.UserResource;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Environment;
@@ -23,11 +24,8 @@ public class Application extends io.dropwizard.Application<ApplicationConfigurat
                 .build(getName());
         final String firebaseKey = configuration.getFirebaseKey();
 
-        environment.jersey().register(new FlagResource(flagDAO, nearbyFlagDAO, playerDAO, client, firebaseKey));
+        environment.jersey().register(new CarResource(flagDAO, nearbyFlagDAO, playerDAO, client, firebaseKey));
         environment.jersey().register(new PlayerResource(playerDAO, flagDAO));
     }
-
-
-
 
 }

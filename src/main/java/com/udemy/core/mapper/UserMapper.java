@@ -12,7 +12,7 @@ public class UserMapper implements ResultSetMapper<User> {
         public User map(int index, ResultSet resultSet, StatementContext statementContext) throws SQLException
         {
             return new User(resultSet.getLong("ID"), resultSet.getString("FIRSTNAME"),
-                    resultSet.getString("LASTNAME")resultSet.getString("EMAIL")
+                    resultSet.getString("LASTNAME"),resultSet.getString("EMAIL"),
                     resultSet.getString("ROLE"));
         }
 }
