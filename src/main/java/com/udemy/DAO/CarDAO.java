@@ -1,9 +1,7 @@
 package com.udemy.DAO;
 
-import com.udemy.core.Car;
+import com.udemy.api.Car;
 import com.udemy.core.mapper.CarMapper;
-import com.udemy.core.mapper.UserMapper;
-import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;
@@ -23,9 +21,6 @@ public interface CarDAO{
 
     @SqlUpdate("insert into car (userId,firstName,lastName,email,role) values (:userId,:firstName,:lastName,:email,:role)")
     int insertCar(@BindBean Car car);
-
-
-
 
 
 }

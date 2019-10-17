@@ -1,4 +1,4 @@
-package com.udemy.core;
+package com.udemy.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;

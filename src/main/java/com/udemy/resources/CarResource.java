@@ -1,34 +1,42 @@
 package com.udemy.resources;
 import com.udemy.DAO.CarDAO;
-import com.udemy.core.Car;
-import com.udemy.DAO.UserDAO;
+import com.udemy.api.Car;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("/person")
-@Consumes({MediaType.APPLICATION_JSON})
-@Produces({MediaType.APPLICATION_JSON})
+@Path("/hello")
+//@Consumes({MediaType.APPLICATION_JSON})
+//@Produces({MediaType.APPLICATION_JSON})
 public class CarResource {
 
     CarDAO dao;
 
-    public CarResource(CarDAO dao) {
-        this.dao = dao;
+    //public CarResource(CarDAO dao) {
+   //     this.dao = dao;
+   // }
+
+    public CarResource() {
     }
 
     @GET
-    public List<Car> getAll(){
-        return dao.getAll();
+    @Produces(MediaType.TEXT_PLAIN)
+    public String getGreeting(){
+        return "Hello World";
     }
 
+   // @GET
+   // public List<Car> getAll(){
+   //     return dao.getAll();
+   // }
+/*
     @GET
-    @Path("/{id}")
-    public Car get(@PathParam("id") Integer id){
-        return dao.findById(id);
-    }
+    @Path("/id")
+    public String get(@PathParam("id") Integer id){ return "hello";}
+    //{
+    //        return dao.findById(id);
 
     @POST
     public Car add(@Valid Car car) {
@@ -51,4 +59,6 @@ public class CarResource {
     public void delete(@PathParam("id") Integer id) {
         dao.deleteById(id);
     }
+
+ */
 }
