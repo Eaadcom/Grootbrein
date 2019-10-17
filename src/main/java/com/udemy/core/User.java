@@ -19,6 +19,8 @@ public class User {
     private String role;
 
     public User() {
+        // Jackson deserialization
+
     }
 
     public User(long userId, String firstName, String lastName, String email, String role) {

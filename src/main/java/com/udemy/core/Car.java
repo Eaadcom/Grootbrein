@@ -11,7 +11,7 @@ public class Car {
     private String licensePlate;
 
     public Car(){
-
+        // Jackson deserialization
     }
 
     public Car( long carId, String licensePlate, String description ){

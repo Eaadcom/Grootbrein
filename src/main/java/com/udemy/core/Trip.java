@@ -27,6 +27,8 @@ public class Trip {
     private int kilometers;
 
     public Trip() {
+        // Jackson deserialization
+
     }
 
     public Trip(long tripId, long userId, long projectId, Date date, String startCoord, String endCoord, int kilometers) {
