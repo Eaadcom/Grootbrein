@@ -1,7 +1,7 @@
 package com.udemy.DAO;
 
-import com.udemy.api.Trip;
-import com.udemy.api.User;
+import com.udemy.core.Trip;
+import com.udemy.core.User;
 import com.udemy.core.mapper.UserMapper;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;

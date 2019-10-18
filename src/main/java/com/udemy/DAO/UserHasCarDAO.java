@@ -1,6 +1,6 @@
 package com.udemy.DAO;
 
-import com.udemy.api.Car;
+import com.udemy.core.Car;
 import com.udemy.core.mapper.CarMapper;
 import org.skife.jdbi.v2.sqlobject.BindBean;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;

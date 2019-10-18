@@ -1,11 +1,8 @@
 package com.udemy.resources;
 import com.udemy.DAO.CarDAO;
-import com.udemy.api.Car;
 
-import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.List;
 
 @Path("/hello")
 //@Consumes({MediaType.APPLICATION_JSON})

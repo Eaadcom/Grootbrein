@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="">
+    <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="nieuwe aanpassing">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/HelloResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/CarDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCarDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/CarMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/ProjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/TripMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserHasCarMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserHasProjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,46 +38,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/ProjectDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="32" selection-start-line="7" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,27 +62,62 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="386">
+              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#0#22#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Trip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasCar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -97,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasCarResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="187">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#165#166#0" expanded="true" />
@@ -108,31 +136,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasProjectResource.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCarDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1853">
+              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -160,35 +167,37 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/Trip.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/ProjectMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/MyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/ProjectDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/CarDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/CarMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/TripMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/auth/Authenticator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/auth/SimplePrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/auth/Roles.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/auth/SimpleAuthenticator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasCar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasProjectResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasCarResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/ApplicationConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/DAO/CarDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/TripMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/ProjectMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/CarMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java" />
       </list>
     </option>
   </component>
@@ -199,10 +208,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="780" />
+    <option name="width" value="1150" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectId" id="1SEYhygGu91XSACc3aYfiv6aCVc" />
   <component name="ProjectView">
@@ -210,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,16 +282,14 @@
             <path>
               <item name="Grootbrein" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grootbrein" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,6 +300,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -359,7 +365,10 @@
       <workItem from="1571225511207" duration="1691000" />
       <workItem from="1571238905777" duration="606000" />
       <workItem from="1571304924581" duration="16054000" />
-      <workItem from="1571330221255" duration="381000" />
+      <workItem from="1571330221255" duration="1398000" />
+      <workItem from="1571340985140" duration="6152000" />
+      <workItem from="1571347539735" duration="92000" />
+      <workItem from="1571387768133" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="core klassen, en klassen namen aangepast">
       <created>1571231630997</created>
@@ -382,11 +391,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571324331983</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nieuwe aanpassing">
+      <created>1571330856638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571330856638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="beetje uitproberen">
+      <created>1571347163860</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571347163861</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20857000" />
+    <option name="totallyTimeSpent" value="29116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,9 +421,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="-7" width="782" height="838" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.54293627" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -409,15 +433,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.17988668" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.05240793" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19121814" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.09773371" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.08923513" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.0878187" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.10056657" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -473,20 +497,24 @@
     <MESSAGE value="core klassen, en klassen namen aangepast" />
     <MESSAGE value="backend (moet nog nadenken over de koppeltabbelen of we een dao voor die gaan maken)" />
     <MESSAGE value="backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="backend" />
+    <MESSAGE value="nieuwe aanpassing" />
+    <MESSAGE value="beetje uitproberen" />
+    <option name="LAST_COMMIT_MESSAGE" value="beetje uitproberen" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserHasProjectMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/JSONservice.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/Authenticator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/DashboardService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/Roles.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCar.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/HelloResource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/SimplePrincipal.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/SimpleAuthenticator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/bla" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/ProjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="238">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -500,216 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/CarMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/TripMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/JSONservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/Authenticator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/DashboardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/Roles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Trip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCar.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/ApplicationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/HelloResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/SimplePrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/auth/SimpleAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/ProjectDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="32" selection-start-line="7" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -718,22 +540,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/TripDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasCarResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasProjectDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="290">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DropBookmarks.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/metrics/metrics-jvm/3.1.1/metrics-jvm-3.1.1.jar!/com/codahale/metrics/jvm/BufferPoolMetricSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-core/0.8.2/dropwizard-core-0.8.2.jar!/io/dropwizard/setup/Bootstrap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-core/0.8.2/dropwizard-core-0.8.2.jar!/io/dropwizard/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -751,6 +600,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/ApplicationConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/ProjectDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserHasProjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/TripMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="21" selection-start-line="11" selection-start-column="4" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/ProjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/mapper/CarMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/DAO/UserHasCarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -761,14 +687,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasCarResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/UserHasProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/core/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#22#1" expanded="true" />
           </folding>
         </state>
       </provider>
