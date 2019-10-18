@@ -9,7 +9,7 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import java.util.List;
 
-@RegisterMapper(CarMapper.class)
+//@RegisterMapper(CarMapper.class)
 
 public interface CarDAO{
 
@@ -21,6 +21,5 @@ public interface CarDAO{
 
     @SqlUpdate("insert into car (userId,firstName,lastName,email,role) values (:userId,:firstName,:lastName,:email,:role)")
     int insertCar(@BindBean Car car);
-
 
 }
