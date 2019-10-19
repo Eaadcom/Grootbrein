@@ -2,14 +2,11 @@ package com.udemy.DAO;
 
 import com.udemy.core.Trip;
 import com.udemy.core.User;
-import com.udemy.core.mapper.UserMapper;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;
-import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
-@RegisterMapper(UserMapper.class)
 
 public interface UserDAO {
     //@SqlUpdate("create table employee (id int primary key, name varchar(100))")
