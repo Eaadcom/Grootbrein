@@ -1,4 +1,4 @@
-package com.udemy.core;
+package com.udemy.api;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
@@ -40,6 +40,5 @@ public class Trip {
         this.endCoord = endCoord;
         this.kilometers = kilometers;
     }
-
 
 }

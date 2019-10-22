@@ -1,8 +1,8 @@
 package com.udemy.DAO;
 
 
-import com.udemy.core.Car;
-import com.udemy.core.Trip;
+import com.udemy.api.Car;
+import com.udemy.api.Trip;
 import com.udemy.core.mapper.TripMapper;
 import org.skife.jdbi.v2.sqlobject.BindBean;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;

@@ -11,6 +11,7 @@ import io.dropwizard.Application;
 
 import org.apache.http.client.HttpClient;
 import org.glassfish.jersey.client.JerseyClientBuilder;
+import org.jdbi.v3.core.Jdbi;
 import org.skife.jdbi.v2.DBI;
 
 import javax.ws.rs.client.Client;
@@ -31,25 +32,13 @@ public class MyApplication extends Application<ApplicationConfiguration> {
     public void initialize(final Bootstrap<ApplicationConfiguration> bootstrap) {
         // TODO: application initialization
     }
+
     @Override
     public void run(ApplicationConfiguration configuration, Environment environment) throws Exception {
-       // final DBIFactory factory = new DBIFactory();
-      //  final DBI jdbi = factory.build(environment, configuration.getDataSourceFactory(), "h2");
+        final JdbiFactory factory = new JdbiFactory();
+        final Jdbi jdbi = factory.build(environment, config.getDataSourceFactory(), "postgresql");
+        environment.jersey().register(new UserResource(jdbi));
 
-       // final UserDAO userDAO = jdbi.onDemand(UserDAO.class);
-
-
-        //final UserResource personResource = new UserResource(userDAO);
-
-
-        environment.jersey().register(new CarResource());
-
-
-        //final Client client = new JerseyClientBuilder(environment).using(configuration.getJerseyClientConfiguration())
-        //       .build(getName());
-        //environment.jersey().register(new CarResource(client));
     }
-
-
 
 }
