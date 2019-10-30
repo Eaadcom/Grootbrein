@@ -246,8 +246,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.DropBookmarks" />
-      <item itemvalue="Application.DropBookmarksApplication" />
       <item itemvalue="Application.DropBookmarks1" />
+      <item itemvalue="Application.DropBookmarksApplication" />
     </list>
     <recent_temporary>
       <list>
