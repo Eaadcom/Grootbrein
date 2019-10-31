@@ -30,7 +30,7 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
     public void run(final DropBookmarksConfiguration configuration,
                     final Environment environment) {
         // TODO: implement application
-        //environment.jersey().register(new HelloResource());
+        environment.jersey().register(new HelloResource());
 
         //Here we added REST Resource
 

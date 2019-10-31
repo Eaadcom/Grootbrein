@@ -12,7 +12,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@Path("/hellouser")
+@Path("/users")
 public class UserResource {
 
     UserDAO userDAO = new UserDAO();
@@ -74,10 +74,9 @@ public class UserResource {
     }
 
 
-    @GET
-    @Path("/adduser/{id}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public void addNewUser(@PathParam("id") int id) {
+   // @POST
+    //@Consumes(MediaType.APPLICATION_JSON)
+    public Person addNewUser(int userId, String firstName) {
 
         Connection connect = null;
         System.out.println("ik ben in add new user");
@@ -88,10 +87,11 @@ public class UserResource {
 
 
 
+            Person person = new Person(userId,firstName);
             // create the mysql insert preparedstatement
             PreparedStatement preparedStmt = connect.prepareStatement(userDAO.addUserQuery());
-            preparedStmt.setInt(1, id);
-            preparedStmt.setString(2, "Testing222");
+            preparedStmt.setInt(1, userId);
+            preparedStmt.setString(2, firstName);
 
             //            preparedStmt.setInt(1, person.getId());
             //            preparedStmt.setString(2, person.getName());
@@ -103,16 +103,18 @@ public class UserResource {
 
             //return Response.status(Response.Status.OK).build();
 
+            return person;
         } catch (SQLException ex) {
             throw new RuntimeException("Error connecting to the database", ex);
         } catch (Exception e) {
             System.out.println("ik hier 2");
             e.printStackTrace();
-            //return null;
+            return null;
         }
 
     }
 
+    /*
     @GET
     @Path("/delete/{id}")
     @Produces(MediaType.TEXT_PLAIN)
@@ -141,6 +143,8 @@ public class UserResource {
         }
 
     }
+    *
+     */
 }
 
 
