@@ -2,7 +2,7 @@ package com.udemy.db;
 
 public class UserDAO {
     public String addUserQuery() {
-        return " insert into user (user_id, email)" + " values (?, ?)";
+        return " insert into user (userId, firstName)" + " values (?, ?)";
     }
 
     public String removeUserWithIdQuery() {

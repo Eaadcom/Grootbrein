@@ -23,8 +23,8 @@ public class UserResource {
     //vervolgens daar worden weergegeven
     @Path("/{id}")
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getPersonById(@PathParam("id") int id) throws SQLException {
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getPersonById(@PathParam("id") int id) throws SQLException {
         Connection connect = null;
         System.out.println("ik ben in add new user");
         try {
@@ -59,18 +59,25 @@ public class UserResource {
                 System.out.println("Name:" + Name);
             }
 
-            return Name;
+            Person person = new Person(id,Name);
+            return Response.status(Response.Status.OK)
+                    .entity(person)
+                    .build();
         } catch (SQLException ex) {
             throw new RuntimeException("Error connecting to the database", ex);
         } catch (Exception e) {
             System.out.println("ik hier 2");
             e.printStackTrace();
+            return null;
         }
-        return Name;
+
     }
 
 
-    public void addNewUser(Person person) {
+    @GET
+    @Path("/adduser/{id}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public void addNewUser(@PathParam("id") int id) {
 
         Connection connect = null;
         System.out.println("ik ben in add new user");
@@ -79,28 +86,37 @@ public class UserResource {
 
             connect = DbConnection.getConnection();
 
+
+
             // create the mysql insert preparedstatement
             PreparedStatement preparedStmt = connect.prepareStatement(userDAO.addUserQuery());
-            preparedStmt.setInt(1, person.getId());
-            preparedStmt.setString(2, person.getName());
+            preparedStmt.setInt(1, id);
+            preparedStmt.setString(2, "Testing222");
+
+            //            preparedStmt.setInt(1, person.getId());
+            //            preparedStmt.setString(2, person.getName());
 
             System.out.print(preparedStmt);
 
             // execute the preparedstatement
             preparedStmt.execute();
+
+            //return Response.status(Response.Status.OK).build();
+
         } catch (SQLException ex) {
             throw new RuntimeException("Error connecting to the database", ex);
         } catch (Exception e) {
             System.out.println("ik hier 2");
             e.printStackTrace();
+            //return null;
         }
 
     }
 
-    // @DELETE
-    //@Path("/delete/{id}")
-    //@PathParam("id") int id
-    public void removeUserWithId() {
+    @GET
+    @Path("/delete/{id}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public void removeUserWithId(@PathParam("id") int id) {
 
         Connection conn = null;
         System.out.println("ik ben in remove user");
