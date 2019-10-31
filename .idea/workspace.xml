@@ -311,8 +311,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571130344108</updated>
       <workItem from="1571130346709" duration="554000" />
-      <workItem from="1571131013787" duration="52000" />
-      <workItem from="1572462857132" duration="1285000" />
+
+      <workItem from="1571131013787" duration="686000" />
+      <workItem from="1571132708201" duration="357000" />
+      <workItem from="1571144160631" duration="599000" />
+      <workItem from="1571219465424" duration="130000" />
+      <workItem from="1571225511207" duration="1691000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -414,27 +418,8 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
           </value>
         </entry>
       </map>
