@@ -21,8 +21,8 @@ public class DbConnection {
             DriverManager.registerDriver(new Driver());
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + arr[0]+"?user="+arr[1]+"&password="+ arr[2] + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
             //conn = DriverManager.getConnection("jdbc:mysql://ssh.strato.de:3850/DB3919273", "U3919273", "wachtwoord123");
-
-            System.out.println(conn);
+            //DriverManager.registerDriver(new Driver());
+            System.out.println("iam innnnn" + conn);
 
             return conn;
         }

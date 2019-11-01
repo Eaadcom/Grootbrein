@@ -5,71 +5,34 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Person {
 
     @JsonProperty
-    private int userId;
+    private int id;
     @JsonProperty
-    private String firstName;
+    private String name;
 
-    /*
-    @JsonProperty
-    private String lastName;
-    @JsonProperty
-    private String email;
-    @JsonProperty
-    private String role;
-*/
-    public Person(int userId, String firstName) {
+    public Person() {
         // Jackson deserialization
-        this.userId = userId;
-        this.firstName = firstName;
     }
 
-    public Person(int id, String firstName, String lastName, String email, String role) {
-        this.userId = id;
-        this.firstName = firstName;
-        //this.lastName = lastName;
-       // this.email = email;
-       // this.role = role;
+    public Person(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
+    @JsonProperty
     public int getId() {
-        return userId;
+        return id;
+    }
+
+    @JsonProperty
+    public String getName() {
+        return name;
     }
 
     public void setId(int id) {
-        this.userId = id;
+        this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-/*
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-    *
- */
 }

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="klassen toegevoegd">
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/HTTPServiceResource.java" afterDir="false" />
+    <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/udemy/DbConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQLValues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SQLValues.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/DbConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/core/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/core/DbConnection.class" afterDir="false" />
     </list>
@@ -20,19 +17,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -48,7 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Development" />
+        <entry key="$PROJECT_DIR$" value="Melissa3" />
       </map>
     </option>
   </component>
@@ -96,6 +84,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
+      <module name="Grootbrein" />
       <option name="PROGRAM_PARAMETERS" value="server config.yml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,7 +136,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="" />
+      <changelist id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="" />
       <created>1571130344108</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -158,7 +147,6 @@
       <workItem from="1571144160631" duration="599000" />
       <workItem from="1571219465424" duration="130000" />
       <workItem from="1571225511207" duration="1691000" />
-      <workItem from="1572597665052" duration="10913000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -167,14 +155,7 @@
       <option name="project" value="LOCAL" />
       <updated>1572461670995</updated>
     </task>
-    <task id="LOCAL-00002" summary="klassen toegevoegd">
-      <created>1572598949088</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572598949088</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -201,24 +182,9 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proberen" />
-    <MESSAGE value="klassen toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="klassen toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="proberen" />
   </component>
 </project>
