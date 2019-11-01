@@ -13,13 +13,13 @@ import java.io.IOException;
 public class DbConnection {
 
     public static Connection getConnection() {
-        ReadFile();
+        String[] arr = ReadFile();
 
         Connection conn = null;
         try {
             //Class.forName("com.mysql.jdbc.Driver");
             DriverManager.registerDriver(new Driver());
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/grootbrein", "root", "root");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + arr[0]+"?user="+arr[1]+"&password="+ arr[2] + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
             //conn = DriverManager.getConnection("jdbc:mysql://ssh.strato.de:3850/DB3919273", "U3919273", "wachtwoord123");
             //DriverManager.registerDriver(new Driver());
             System.out.println("iam innnnn" + conn);
@@ -32,24 +32,20 @@ public class DbConnection {
     }
     public static String[] ReadFile() {
         BufferedReader reader;
-        String[] ret = new String[2];
+        String[] ret = new String[3];
         try {
             reader = new BufferedReader(new FileReader("SQLValues.txt"));
             String line = reader.readLine();
             int i = 0;
             while (line != null) {
-                System.out.println(line);
                 ret[i] = line;
-                line = reader.readLine();
                 i++;
+                line = reader.readLine();
             }
             reader.close();
         }catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(ret[0]);
-        System.out.println(ret[1]);
-        System.out.println(ret[2]);
         return ret;
     }
 }

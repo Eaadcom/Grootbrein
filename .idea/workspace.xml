@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/udemy/DbConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQLValues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SQLValues.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/core/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/core/DbConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/core/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/core/DbConnection.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +58,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.udemy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein2" />
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein2\src" />
@@ -74,8 +81,10 @@
   </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
-      <module name="Grootbrein" />
+      <module name="DropBookmarks" />
       <option name="PROGRAM_PARAMETERS" value="server" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,15 +157,6 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
