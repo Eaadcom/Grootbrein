@@ -70,11 +70,10 @@ public class UserResource {
             e.printStackTrace();
             return null;
         }
-
     }
 
 
-   // @POST
+    //@POST
     //@Consumes(MediaType.APPLICATION_JSON)
     public Person addNewUser(int userId, String firstName) {
 

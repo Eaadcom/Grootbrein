@@ -7,32 +7,63 @@ public class Person {
     @JsonProperty
     private int id;
     @JsonProperty
-    private String name;
+    private String firstName;
+    @JsonProperty
+    private String lastName;
+    @JsonProperty
+    private String email;
+    @JsonProperty
+    private String role;
 
     public Person() {
         // Jackson deserialization
     }
 
-    public Person(int id, String name) {
+    public Person(int id, String firstName, String lastName, String email, String role) {
         this.id = id;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.role = role;
     }
 
-    @JsonProperty
     public int getId() {
         return id;
-    }
-
-    @JsonProperty
-    public String getName() {
-        return name;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
