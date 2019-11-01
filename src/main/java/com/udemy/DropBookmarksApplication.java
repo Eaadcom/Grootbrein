@@ -14,6 +14,7 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
 
     public static void main(final String[] args) throws Exception {
         new DropBookmarksApplication().run(args);
+
     }
 
     @Override
