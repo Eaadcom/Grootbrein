@@ -5,11 +5,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.db.DataSourceFactory;
 import org.hibernate.validator.constraints.*;
 
+import io.dropwizard.Configuration;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 public class DropBookmarksConfiguration extends Configuration {
     // TODO: implement service configuration
+
     /*
     @Valid
     @NotNull
@@ -24,6 +29,5 @@ public class DropBookmarksConfiguration extends Configuration {
     public void setJerseyClientConfiguration(JerseyClientConfiguration jerseyClient) {
         this.jerseyClient = jerseyClient;
     }
-    *
      */
 }
