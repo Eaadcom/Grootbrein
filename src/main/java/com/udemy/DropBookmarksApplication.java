@@ -36,12 +36,6 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         // TODO: implement application
         environment.jersey().register(new HelloResource());
 
-        //environment.jersey().register(new UserResource());
-        //Here we added REST Resource
-
-
-        //final Client client = new JerseyClientBuilder(environment).using(config.getJerseyClientConfiguration())
-        //        .build(getName());
         environment.jersey().register(new UserResource());
 
 

@@ -33,31 +33,15 @@ public class UserResource {
         Connection connect = null;
         System.out.println("ik ben in add new user");
         try {
-            System.out.println("ik ben in de try");
-
             connect = DbConnection.getConnection();
-
             System.out.print(connect);
-            //Statement statement = connect.createStatement();
 
             String query = userDAO.getUserNameFromId();
             PreparedStatement preparedStmt = connect.prepareStatement(query);
             preparedStmt.setInt(1, id);
 
-
-            System.out.println("hier gaat het goed 1");
-            // create the mysql insert preparedstatement
-            //PreparedStatement preparedStmt = connect.prepareStatement(query);
-            //preparedStmt.setInt(1, 2);
-            //System.out.println("hier gaat het goed2");
-
-            //System.out.print(preparedStmt);
-
             // execute the preparedstatement
             ResultSet rs = preparedStmt.executeQuery();
-            // preparedStmt.execute();
-            System.out.println("hier gaat het goed 4");
-
 
             while (rs.next()) {
                 Name = rs.getString("firstName");
@@ -71,7 +55,6 @@ public class UserResource {
         } catch (SQLException ex) {
             throw new RuntimeException("Error connecting to the database", ex);
         } catch (Exception e) {
-            System.out.println("ik hier 2");
             e.printStackTrace();
             return null;
         }
@@ -85,10 +68,7 @@ public class UserResource {
         Connection connect = null;
         System.out.println("ik ben in add new user");
         try {
-            System.out.println("ik ben in de try");
-
             connect = DbConnection.getConnection();
-
 
 
             Person person = new Person(userId,firstName);
@@ -125,10 +105,7 @@ public class UserResource {
     public void removeUserWithId(@PathParam("id") int id) {
 
         Connection conn = null;
-        System.out.println("ik ben in remove user");
         try {
-            System.out.println("ik ben in de try");
-
             conn = DbConnection.getConnection();
 
             // create the mysql insert preparedstatement

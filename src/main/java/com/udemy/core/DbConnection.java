@@ -12,13 +12,11 @@ public class DbConnection {
     public static Connection getConnection() {
         Connection conn = null;
         try {
-
-            //Class.forName("com.mysql.jdbc.Driver");
             DriverManager.registerDriver(new Driver());
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/trip_db", "newuser", "password");
             //conn = DriverManager.getConnection("jdbc:mysql://ssh.strato.de:3850/DB3919273", "U3919273", "wachtwoord123");
-            //DriverManager.registerDriver(new Driver());
-            System.out.println("iam innnnn" + conn);
+
+            System.out.println(conn);
 
             return conn;
         }
