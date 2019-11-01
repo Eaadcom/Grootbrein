@@ -1,8 +1,18 @@
 package com.udemy;
 
+import com.udemy.core.DbConnection;
+import com.udemy.resources.UserResource;
 import io.dropwizard.Application;
+import io.dropwizard.client.HttpClientBuilder;
+import io.dropwizard.client.JerseyClientBuilder;
+import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.apache.http.client.HttpClient;
+import org.glassfish.jersey.client.JerseyClient;
+import org.skife.jdbi.v2.DBI;
+
+import javax.ws.rs.client.Client;
 
 public class DropBookmarksApplication extends Application<DropBookmarksConfiguration> {
 
@@ -21,10 +31,16 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
     }
 
     @Override
-    public void run(final DropBookmarksConfiguration configuration,
+    public void run(final DropBookmarksConfiguration config,
                     final Environment environment) {
         // TODO: implement application
         environment.jersey().register(new HelloResource());
+
+        environment.jersey().register(new UserResource());
+
+
+
+
     }
 
 }
