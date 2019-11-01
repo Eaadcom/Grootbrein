@@ -3,8 +3,10 @@ package com.udemy.resources;
 import com.udemy.api.Person;
 import com.udemy.core.DbConnection;
 import com.udemy.db.UserDAO;
+import org.apache.http.client.HttpClient;
 
 import javax.ws.rs.*;
+import javax.ws.rs.client.Client;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
@@ -18,6 +20,9 @@ public class UserResource {
     UserDAO userDAO = new UserDAO();
     String Name = "no name";
 
+    Client client;
+    public UserResource(){
+        };
 
     //de result hiervan moet dan bij de frontend komen zodat de gegevens van de user opgehaald worden hier en
     //vervolgens daar worden weergegeven

@@ -1,10 +1,14 @@
 package com.udemy;
 
+import com.udemy.core.DbConnection;
 import com.udemy.resources.UserResource;
 import io.dropwizard.Application;
+import io.dropwizard.client.HttpClientBuilder;
+import io.dropwizard.client.JerseyClientBuilder;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.apache.http.client.HttpClient;
 import org.glassfish.jersey.client.JerseyClient;
 import org.skife.jdbi.v2.DBI;
 
@@ -27,20 +31,20 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
     }
 
     @Override
-    public void run(final DropBookmarksConfiguration configuration,
+    public void run(final DropBookmarksConfiguration config,
                     final Environment environment) {
         // TODO: implement application
         environment.jersey().register(new HelloResource());
 
+        //environment.jersey().register(new UserResource());
         //Here we added REST Resource
 
 
-               //Now we added REST Client Resource named RESTClientController
-        //JerseyClientBuilder builder = new JerseyClientBuilder(environment);
-      //  Client client = builder.using(configuration.getJerseyClientConfiguration()).build("MyClient");
-        //final Client client = new JerseyClientBuilder(environment).using(configuration.getJerseyClientConfiguration()).build(getName());
-      //  environment.jersey().register(new ClientResource(client));
+        //final Client client = new JerseyClientBuilder(environment).using(config.getJerseyClientConfiguration())
+        //        .build(getName());
         environment.jersey().register(new UserResource());
+
+
 
 
     }

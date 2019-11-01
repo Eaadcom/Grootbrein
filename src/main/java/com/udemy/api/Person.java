@@ -5,34 +5,38 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Person {
 
     @JsonProperty
-    private int id;
+    private int userId;
     @JsonProperty
     private String firstName;
+
+    /*
     @JsonProperty
     private String lastName;
     @JsonProperty
     private String email;
     @JsonProperty
     private String role;
-
-    public Person() {
+*/
+    public Person(int userId, String firstName) {
         // Jackson deserialization
+        this.userId = userId;
+        this.firstName = firstName;
     }
 
     public Person(int id, String firstName, String lastName, String email, String role) {
-        this.id = id;
+        this.userId = id;
         this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.role = role;
+        //this.lastName = lastName;
+       // this.email = email;
+       // this.role = role;
     }
 
     public int getId() {
-        return id;
+        return userId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.userId = id;
     }
 
     public String getFirstName() {
@@ -42,7 +46,7 @@ public class Person {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
+/*
     public String getLastName() {
         return lastName;
     }
@@ -66,4 +70,6 @@ public class Person {
     public void setRole(String role) {
         this.role = role;
     }
+    *
+ */
 }
