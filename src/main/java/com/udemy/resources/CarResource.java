@@ -1,11 +1,9 @@
 package com.udemy.resources;
 
-import com.udemy.api.Mapper.PersonMapper;
-import com.udemy.api.Mapper.UserHasCarMapper;
-import com.udemy.api.Person;
-import com.udemy.api.Project;
+import com.udemy.api.Car;
+import com.udemy.api.Mapper.CarMapper;
 import com.udemy.api.UserHasCar;
-import com.udemy.db.UserHasCarDAO;
+import com.udemy.db.CarDAO;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
@@ -17,34 +15,34 @@ import java.util.List;
 @Path("/cars")
 @Consumes({MediaType.APPLICATION_JSON})
 @Produces({MediaType.APPLICATION_JSON})
-@RegisterMapper(UserHasCarMapper.class)
+@RegisterMapper(CarMapper.class)
 public class CarResource {
-    UserHasCarDAO userHasCarDAO;
+    CarDAO carDAO;
 
     public CarResource() {
     }
 
-    public CarResource(UserHasCarDAO userHasCarDAO) {
-        this.userHasCarDAO = userHasCarDAO;
+    public CarResource(CarDAO carDAO) {
+        this.carDAO = carDAO;
     }
 
     //werkt
     @GET
-    public List<UserHasCar> getAll(){
-        return userHasCarDAO.getAll();
+    public List<Car> getAll(){
+        return carDAO.getAll();
     }
 
     //werkt
     @GET
     @Path("/{userId}")
     public List<UserHasCar> getProjectById(@PathParam("userId") int userId){
-        return userHasCarDAO.getCarsOfUser(userId);
+        return carDAO.getCarsOfUser(userId);
     }
 
     //werkt
     @POST
-    public UserHasCar add(@Valid UserHasCar car) {
-        userHasCarDAO.insert(car);
+    public Car add(@Valid Car car) {
+        carDAO.insert(car);
         return car;
     }
 }

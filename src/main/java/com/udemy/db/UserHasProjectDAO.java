@@ -11,12 +11,6 @@ import java.util.List;
 @RegisterMapper(UserHasProjectMapper.class)
 public interface UserHasProjectDAO {
 
-    //@SqlQuery("select *  from (select projectId from userhasproject where userId = :userId")
-    //List<UserHasProject> getProjectsOfUser(@Bind("userId") int userId);
-
-//"select project.name, userhasproject.userId from project, userhasproject where userhasproject.userId = :userId " +
-//            "and userhasproject.projectId = project.projectId"
-
-
+//insert voor de employer
 
 }

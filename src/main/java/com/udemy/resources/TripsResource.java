@@ -30,6 +30,11 @@ public class TripsResource {
         return tripDAO.getAll();
     }
 
+    //@GET
+   // @Path("/{user_id}")
+   // public Trip getTripsByUserId(@PathParam("user_id") String user_id) {
+   //     return tripDAO.getTripsByUserId();}
+
 
     //werkt trip posten
     @POST

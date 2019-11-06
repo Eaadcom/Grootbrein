@@ -9,20 +9,8 @@ import java.util.List;
 @RegisterMapper(PersonMapper.class)
 public interface UserDAO {
 
-    @SqlUpdate("CREATE TRIGGER after_user_deleted_id " +
-            "  AFTER DELETE ON user " +
-            "  FOR EACH ROW " +
-            "BEGIN " +
-            "  DELETE FROM userhasproject where userId = OLD.userId; " +
-            "END")
-    void createTrigger();
-
     @SqlQuery("select * from user")
     List<Person> getAll();
-
-
-    @SqlUpdate("create table something (id int primary key, name varchar(100))")
-    void createSomethingTable();
 
     @SqlUpdate("delete from user where userId = :userId")
     int deleteById(@Bind("userId") int userId);

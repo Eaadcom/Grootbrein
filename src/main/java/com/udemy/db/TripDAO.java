@@ -1,8 +1,6 @@
 package com.udemy.db;
 
 import com.udemy.api.Mapper.TripMapper;
-import com.udemy.api.Person;
-import com.udemy.api.Project;
 import com.udemy.api.Trip;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;
@@ -19,6 +17,9 @@ public interface TripDAO {
     @SqlQuery("select * from trip")
     List<Trip> getAll();
 
+    @SqlQuery("select * from trip where user_id = :user_id")
+    List<Trip> getTripsByUserId(@Bind("user_id") int user_id);
+
     //werkt
     @SqlUpdate("insert into trip values (:tripId, :userId, :projectId, :timeStamp, :startCoord, :endCoord, :km)")
     int insert(@BindBean Trip trip);
@@ -28,3 +29,4 @@ public interface TripDAO {
     @SqlUpdate("delete from trip where tripId = :tripId")
     int deleteTripById(@Bind("tripId") int tripId);
 }
+

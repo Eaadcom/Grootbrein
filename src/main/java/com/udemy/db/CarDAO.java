@@ -1,13 +1,28 @@
 package com.udemy.db;
 
-import com.udemy.api.Car;
-import com.udemy.api.Trip;
+import com.udemy.api.*;
+import com.udemy.api.Mapper.CarMapper;
+import com.udemy.api.Mapper.UserHasCarMapper;
+import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;
+import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;
+import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
+import java.util.List;
+
+@RegisterMapper(CarMapper.class)
 public interface CarDAO {
 
-    // tabel heb ik verwijderd
+    @SqlQuery("select *  from car where user_id = :user_id")
+    List<UserHasCar> getCarsOfUser(@Bind("userId") int user_id);
 
+    //werkt
+    @SqlQuery("select * from car")
+    List<Car> getAll();
+
+    //toevoegen werkt
+    @SqlUpdate("insert into car(license_plate, user_id) values (:license_plate, :user_id)")
+    int insert(@BindBean Car car);
 
 }

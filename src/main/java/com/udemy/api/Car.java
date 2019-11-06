@@ -2,30 +2,45 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.sql.Timestamp;
+
 public class Car {
+   // @JsonProperty
+   // private int license_id;
     @JsonProperty
-    private int carId;
+    private String license_plate;
     @JsonProperty
-    private String licensePlate;
+    private String user_id;
+   // @JsonProperty
+   // private Timestamp reg_date;
 
-    public Car(int carId, String licensePlate) {
-        this.carId = carId;
-        this.licensePlate = licensePlate;
+    public Car() {
     }
 
-    public int getCarId() {
-        return carId;
+    public Car(String license_plate, String user_id) {
+        //.license_id = license_id;
+        this.license_plate = license_plate;
+        this.user_id = user_id;
+        //this.reg_date = reg_date;
     }
 
-    public void setCarId(int carId) {
-        this.carId = carId;
+
+
+    public String getLicense_plate() {
+        return license_plate;
     }
 
-    public String getLicensePlate() {
-        return licensePlate;
+    public void setLicense_plate(String license_plate) {
+        this.license_plate = license_plate;
     }
 
-    public void setLicensePlate(String licensePlate) {
-        this.licensePlate = licensePlate;
+    public String getUser_id() {
+        return user_id;
     }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+
 }

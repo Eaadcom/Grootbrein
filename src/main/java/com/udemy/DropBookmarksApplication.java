@@ -39,13 +39,13 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         final ProjectDAO projectDao = db.onDemand(ProjectDAO.class);
         final TripDAO tripDAO = db.onDemand(TripDAO.class);
         final UserHasProjectDAO userhasprojDAO = db.onDemand(UserHasProjectDAO.class);
-        final UserHasCarDAO userHasCarDAO = db.onDemand(UserHasCarDAO.class);
+        final CarDAO carDAO = db.onDemand(CarDAO.class);
 
 
         final UserResource personResource = new UserResource(personDAO, userhasprojDAO);
         final ProjectResource projectResource = new ProjectResource(projectDao);
         final TripsResource tripsResource = new TripsResource(tripDAO);
-        final CarResource carResource = new CarResource(userHasCarDAO);
+        final CarResource carResource = new CarResource(carDAO);
 
 
         environment.jersey().register(personResource);

@@ -1,26 +1,15 @@
 package com.udemy.resources;
 
 import com.udemy.api.Mapper.PersonMapper;
-import com.udemy.api.Mapper.UserHasProjectMapper;
 import com.udemy.api.Person;
-import com.udemy.api.Project;
-import com.udemy.api.UserHasProject;
 import com.udemy.db.ProjectDAO;
 import com.udemy.db.UserDAO;
 import com.udemy.db.UserHasProjectDAO;
-import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
-import javax.annotation.RegEx;
 import javax.validation.Valid;
 import javax.ws.rs.*;
-import javax.ws.rs.client.Client;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
 @Path("/users")
@@ -37,11 +26,6 @@ public class UserResource {
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
         this.userDao = userDao;
         this.userHasProjectDao= userHasProjectDao;
-    }
-
-    public void creaTriggers()
-    {
-        userDao.createTrigger();
     }
 
     @GET
@@ -92,8 +76,6 @@ public class UserResource {
         userDao.updateEmail(updatePerson);
         return updatePerson;
     }
-
-
 
 }
 

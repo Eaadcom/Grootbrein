@@ -13,10 +13,8 @@ import java.util.List;
 @RegisterMapper(ProjectMapper.class)
 public interface ProjectDAO {
 
-
     @SqlQuery("select * from project")
     List<Project> getAll();
-
 
     @SqlQuery("SELECT *\n" +
             "    FROM   project p\n" +
@@ -24,5 +22,12 @@ public interface ProjectDAO {
             "    JOIN   user u ON u.userId = up.userId\n" +
             "    WHERE  u.userId = :userId ")
     List<Project> getProjectsByUserId(@Bind("userId") int userId);
+
+    @SqlQuery("SELECT project_name\n" +
+            "    FROM   project p\n" +
+            "    JOIN   userhasproject up ON p.projectId = up.projectId\n" +
+            "    JOIN   user u ON u.userId = up.userId\n" +
+            "    WHERE  u.userId = :userId ")
+    List<String> getProjectNamesByUserId(@Bind("userId") int userId);
 
 }
