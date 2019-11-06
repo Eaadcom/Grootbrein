@@ -1,6 +1,8 @@
 package com.udemy;
 
+import com.udemy.models.GoogleJSONModel;
 import com.udemy.resources.UserResource;
+import com.udemy.services.GoogleService;
 import io.dropwizard.Application;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
