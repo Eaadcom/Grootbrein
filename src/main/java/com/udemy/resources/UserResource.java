@@ -49,7 +49,17 @@ public class UserResource {
         return userDao.getAll();
     }
 
-
+    @GET
+    @Path("/{email}/{password}")
+    public Person getPersonLogin(@PathParam("email") String email, @PathParam("password") String password){
+        System.out.println(userDao.findByEmail(email));
+        if (userDao.findByEmail(email) != null) {
+            if (userDao.findByEmail(email).getPassword().equals(password)) {
+                return userDao.findByEmail(email);
+            }
+        }
+        return null;
+    }
 
     //werkt
     @GET
@@ -75,7 +85,7 @@ public class UserResource {
     @PUT
     @Path("/{userId}")
     public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getuserId(),person.getfirstName(), person.getlastName(), person.getemail());
+        Person updatePerson = new Person(person.getuserId(),person.getfirstName(), person.getlastName(), person.getemail(),person.getPassword());
         userDao.updateEmail(updatePerson);
         return updatePerson;
     }

@@ -12,15 +12,19 @@ public class Person {
     private String lastName;
     @JsonProperty
     private String email;
+    @JsonProperty
+    private String password;
+
 
     public Person() {
     }
 
-    public Person(int id, String firstName, String lastName, String email) {
+    public Person(int id, String firstName, String lastName, String email, String password) {
         this.userId = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.password = password;
     }
 
     public int getuserId() {
@@ -53,6 +57,14 @@ public class Person {
 
     public void setemail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     //wordt niet gebruikt momenteel
