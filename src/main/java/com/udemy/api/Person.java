@@ -5,11 +5,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Person {
 
     @JsonProperty
-    private int userId;
+    private String user_id;
     @JsonProperty
-    private String firstName;
+    private String first_name;
     @JsonProperty
-    private String lastName;
+    private String last_name;
     @JsonProperty
     private String email;
     @JsonProperty
@@ -19,43 +19,43 @@ public class Person {
     public Person() {
     }
 
-    public Person(int id, String firstName, String lastName, String email, String password) {
-        this.userId = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Person(String user_id, String first_name, String last_name, String email, String password) {
+        this.user_id = user_id;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.email = email;
         this.password = password;
     }
 
-    public int getuserId() {
-        return userId;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setuserId(int id) {
-        this.userId = id;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public String getfirstName() {
-        return firstName;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setfirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getlastName() {
-        return lastName;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setlastName(String lastName) {
-        this.lastName = lastName;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
-    public String getemail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setemail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -75,8 +75,8 @@ public class Person {
 
         Person that = (Person) o;
 
-        if (getuserId()!=(that.getuserId())) return false;
-        if (!getfirstName().equals(that.getfirstName())) return false;
+        if (getUser_id()!=(that.getUser_id())) return false;
+        if (!getFirst_name().equals(that.getFirst_name())) return false;
 
         return true;
     }

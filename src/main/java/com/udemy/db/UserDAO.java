@@ -33,8 +33,8 @@ public interface UserDAO {
     @SqlQuery("select * from user where email = :email")
     Person findByEmail(@Bind("email") String email);
 
-
-    @SqlUpdate("insert into user (userId, firstName, lastName, email) values (:userId, :firstName, :lastName, :email, :password)")
+    @SqlUpdate("insert into user (user_id, first_name, last_name, email, password) values " +
+            "(:user_id, :first_name, :last_name, :email, :password)")
     int insert(@BindBean Person user);
 
     @SqlUpdate("update user set email = :email where userId = :userId")

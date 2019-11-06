@@ -57,6 +57,9 @@ public class UserResource {
             if (userDao.findByEmail(email).getPassword().equals(password)) {
                 return userDao.findByEmail(email);
             }
+            else {
+                return null;
+            }
         }
         return null;
     }
@@ -85,7 +88,7 @@ public class UserResource {
     @PUT
     @Path("/{userId}")
     public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getuserId(),person.getfirstName(), person.getlastName(), person.getemail(),person.getPassword());
+        Person updatePerson = new Person(person.getUser_id(),person.getFirst_name(), person.getLast_name(), person.getEmail(),person.getPassword());
         userDao.updateEmail(updatePerson);
         return updatePerson;
     }
