@@ -35,22 +35,23 @@ public class UserResource {
         return userDao.getAll();
     }
 
+    /*
     @GET
     @Path("/{email}/{password}")
     public Response getPersonLogin(@PathParam("email") String email, @PathParam("password") String password){
         System.out.println(userDao.findByEmail(email));
         if (userDao.findByEmail(email) != null) {
             if (userDao.findByEmail(email).getPassword().equals(password)) {
+                System.out.println(userDao.findByEmail(email));
                 return Response.ok(userDao.findByEmail(email)).build();
             }
             else {
-                return Response.
-                        status(409).build();
+                return Response.status(409).build();
             }
         }
         return null;
     }
-
+*/
     //werkt
     @GET
     @Path("/{user_id}")

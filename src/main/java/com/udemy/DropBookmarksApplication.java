@@ -1,10 +1,7 @@
 package com.udemy;
 
 import com.udemy.db.*;
-import com.udemy.resources.CarResource;
-import com.udemy.resources.ProjectResource;
-import com.udemy.resources.TripsResource;
-import com.udemy.resources.UserResource;
+import com.udemy.resources.*;
 import io.dropwizard.Application;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Bootstrap;
@@ -46,12 +43,13 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         final ProjectResource projectResource = new ProjectResource(projectDao);
         final TripsResource tripsResource = new TripsResource(tripDAO);
         final CarResource carResource = new CarResource(carDAO);
-
+        final LoginResource loginResource = new LoginResource(personDAO);
 
         environment.jersey().register(personResource);
         environment.jersey().register(projectResource);
         environment.jersey().register(tripsResource);
         environment.jersey().register(carResource);
+        environment.jersey().register(loginResource);
     }
 
 }
