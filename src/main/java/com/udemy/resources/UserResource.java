@@ -66,9 +66,13 @@ public class UserResource {
     }
 
     @POST
-    public Person add(@Valid Person user) {
-        userDao.insert(user);
-        return user;
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Path("/new")
+    public String add(String string) {
+        System.out.println(string);
+        return string;
+//        userDao.insert(user);
+//        return user;
     }
 
     //email updaten van gebruiker werkt
