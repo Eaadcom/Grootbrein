@@ -1,6 +1,5 @@
 package com.udemy;
 
-import com.udemy.checks.DatabaseHealthCheck;
 import com.udemy.db.*;
 import com.udemy.resources.*;
 import io.dropwizard.Application;
@@ -45,20 +44,15 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         final TripsResource tripsResource = new TripsResource(tripDAO);
         final CarResource carResource = new CarResource(carDAO);
         final LoginResource loginResource = new LoginResource(personDAO);
+        final UserHasProjectResource userHasProjectResource = new UserHasProjectResource(userhasprojDAO);
+
 
         environment.jersey().register(personResource);
         environment.jersey().register(projectResource);
         environment.jersey().register(tripsResource);
         environment.jersey().register(carResource);
         environment.jersey().register(loginResource);
-
-        /**
-         * @author Salah Abdulkader
-         * Health Checks
-         */
-        environment.healthChecks().register("checks",
-                new DatabaseHealthCheck(db, config.getDataSourceFactory().getValidationQuery()));
-
+        environment.jersey().register(userHasProjectResource);
     }
 
 }

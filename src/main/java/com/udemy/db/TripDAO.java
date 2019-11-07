@@ -18,7 +18,7 @@ public interface TripDAO {
     List<Trip> getAll();
 
     @SqlQuery("select * from trip where user_id = :user_id")
-    List<Trip> getTripsByUserId(@Bind("user_id") int user_id);
+    List<Trip> getTripsByUserId(@Bind("user_id") String user_id);
 
     //werkt
     @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance) values (:user_id, :start_cords, :end_cords, :distance)")
@@ -27,6 +27,6 @@ public interface TripDAO {
     //delete trip binnen 20 sec ofzo en dan na de timer verdwijnt het knopje ofzo
     //werkt
     @SqlUpdate("delete from trip where trip_id = :trip_id")
-    int deleteTripById(@Bind("trip_id") int trip_id);
+    int deleteTripById(@Bind("trip_id") String trip_id);
 }
 

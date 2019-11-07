@@ -13,6 +13,6 @@ public class ProjectMapper implements ResultSetMapper<Project> {
     @Override
     public Project map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {
         return new Project(resultSet.getInt("project_id"),
-                resultSet.getString("user_id"), resultSet.getString("project_name"));
+                resultSet.getString("project_name"));
     }
 }
