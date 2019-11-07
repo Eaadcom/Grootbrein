@@ -36,6 +36,14 @@ public class Trip {
         this.license_plate = license_plate;
     }
 
+    public Trip(String user_id, String start_cords, String end_cords, int distance, String license_plate) {
+        this.user_id = user_id;
+        this.start_cords = start_cords;
+        this.end_cords = end_cords;
+        this.distance = distance;
+        this.license_plate = license_plate;
+    }
+
     public int getTrip_id() {
         return trip_id;
     }

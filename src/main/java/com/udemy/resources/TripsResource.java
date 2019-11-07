@@ -17,7 +17,6 @@ import java.util.List;
 @Produces({MediaType.APPLICATION_JSON})
 @RegisterMapper(TripMapper.class)
 public class TripsResource {
-
     TripDAO tripDAO;
 
     public TripsResource(TripDAO tripDAO) {

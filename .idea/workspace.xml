@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserHasProjectResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/ProjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/UserHasProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/UserHasProjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/db/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/db/ProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/ProjectDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/LoginResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/LoginResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -131,26 +119,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="368">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="307">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
                 <element signature="e#973#974#0" expanded="true" />
                 <element signature="e#1016#1017#0" expanded="true" />
                 <element signature="e#1054#1055#0" expanded="true" />
@@ -227,7 +216,6 @@
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasCarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/CarMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/TripMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/PersonMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/db/UserDAO.java" />
@@ -250,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" />
       </list>
     </option>
   </component>
@@ -423,7 +412,7 @@
       <workItem from="1571144160631" duration="599000" />
       <workItem from="1571219465424" duration="130000" />
       <workItem from="1571225511207" duration="1691000" />
-      <workItem from="1573118976389" duration="16552000" />
+      <workItem from="1573118976389" duration="17355000" />
     </task>
     <task id="LOCAL-00001" summary="login checken bij userResource">
       <created>1573047575167</created>
@@ -474,17 +463,24 @@
       <option name="project" value="LOCAL" />
       <updated>1573132149340</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="toevoegingen">
+      <created>1573142813417</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573142813417</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38018000" />
+    <option name="totallyTimeSpent" value="38821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.26040268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.26040268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -493,7 +489,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16005665" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.09773371" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,7 +596,8 @@
     <MESSAGE value="werkend nu met edwards database" />
     <MESSAGE value="variabel namen aangepast" />
     <MESSAGE value="login model mapper en resource aangemaakt." />
-    <option name="LAST_COMMIT_MESSAGE" value="login model mapper en resource aangemaakt." />
+    <MESSAGE value="toevoegingen" />
+    <option name="LAST_COMMIT_MESSAGE" value="toevoegingen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/DashboardResource.java" />
@@ -927,12 +924,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="358">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
             <element signature="e#973#974#0" expanded="true" />
             <element signature="e#1016#1017#0" expanded="true" />
             <element signature="e#1054#1055#0" expanded="true" />
@@ -960,27 +979,6 @@
             <element signature="e#1918#1919#0" expanded="true" />
             <element signature="e#1976#1977#0" expanded="true" />
             <element signature="e#2026#2027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
           </folding>
         </state>
       </provider>
