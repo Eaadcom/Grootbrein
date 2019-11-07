@@ -34,7 +34,7 @@ public class CarResource {
     //werkt
     @GET
     @Path("/{user_id}")
-    public List<Car> getProjectById(@PathParam("user_id") int user_id){
+    public List<Car> getCarsById(@PathParam("user_id") int user_id){
         return carDAO.getCarsOfUser(user_id);
     }
 

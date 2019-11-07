@@ -5,11 +5,13 @@ import com.udemy.api.Person;
 import com.udemy.db.ProjectDAO;
 import com.udemy.db.UserDAO;
 import com.udemy.db.UserHasProjectDAO;
+import org.eclipse.jetty.http.HttpTester;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/users")
@@ -35,14 +37,15 @@ public class UserResource {
 
     @GET
     @Path("/{email}/{password}")
-    public Person getPersonLogin(@PathParam("email") String email, @PathParam("password") String password){
+    public Response getPersonLogin(@PathParam("email") String email, @PathParam("password") String password){
         System.out.println(userDao.findByEmail(email));
         if (userDao.findByEmail(email) != null) {
             if (userDao.findByEmail(email).getPassword().equals(password)) {
-                return userDao.findByEmail(email);
+                return Response.ok(userDao.findByEmail(email)).build();
             }
             else {
-                return null;
+                return Response.
+                        status(409).build();
             }
         }
         return null;
