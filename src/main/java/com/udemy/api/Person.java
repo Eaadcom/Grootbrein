@@ -12,8 +12,14 @@ public class Person {
     private String lastName;
     @JsonProperty
     private String email;
+    @JsonProperty
+    private String password;
 
-    public Person() {
+    public Person(String email, String password, String firstName, String lastName) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public Person(int id, String firstName, String lastName, String email) {

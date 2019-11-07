@@ -1,51 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="alle klassen toegevoegd aan Development in mijn nieuwe branch omdat mijn branch bij jullie error gaf&#10;Meer functies toegevoegd om gegevens op te halen versturen en te verwijderen van database">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/CarMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/PersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/ProjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/TripMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/UserHasCarMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/UserHasProjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/UserHasProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/CarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/ProjectDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/TripDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasCarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java" afterDir="false" />
+    <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="klassen toegevoegd">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/DashboardDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/LoginDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ManualInputDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/RegisterDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/SettingsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TripsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/DashboardResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/LoginResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/CarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/ManualInputResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/RegisterResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/SettingsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/TripsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -110,7 +83,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
-      <module name="Grootbrein" />
+      <module name="DropBookmarks" />
       <option name="PROGRAM_PARAMETERS" value="server config.yml" />
       <method v="2">
         <option name="Make" enabled="true" />
