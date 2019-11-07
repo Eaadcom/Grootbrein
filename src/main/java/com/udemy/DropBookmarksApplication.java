@@ -44,12 +44,15 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         final TripsResource tripsResource = new TripsResource(tripDAO);
         final CarResource carResource = new CarResource(carDAO);
         final LoginResource loginResource = new LoginResource(personDAO);
+        final UserHasProjectResource userHasProjectResource = new UserHasProjectResource(userhasprojDAO);
+
 
         environment.jersey().register(personResource);
         environment.jersey().register(projectResource);
         environment.jersey().register(tripsResource);
         environment.jersey().register(carResource);
         environment.jersey().register(loginResource);
+        environment.jersey().register(userHasProjectResource);
     }
 
 }

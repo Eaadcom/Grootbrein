@@ -30,10 +30,10 @@ public class TripsResource {
         return tripDAO.getAll();
     }
 
-    //@GET
-   // @Path("/{user_id}")
-   // public Trip getTripsByUserId(@PathParam("user_id") String user_id) {
-   //     return tripDAO.getTripsByUserId();}
+    @GET
+    @Path("/{user_id}")
+    public List<Trip> getTripsByUserId(@PathParam("user_id") String user_id) {
+        return tripDAO.getTripsByUserId(user_id);}
 
 
     //werkt trip posten
@@ -46,7 +46,7 @@ public class TripsResource {
     //werkt
     @DELETE
     @Path("/{trip_id}")
-    public void deleteById(@PathParam("trip_id") int trip_id) {
+    public void deleteById(@PathParam("trip_id") String trip_id) {
         tripDAO.deleteTripById(trip_id);
     }
 }

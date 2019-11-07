@@ -14,10 +14,6 @@ import java.util.List;
 @Consumes({MediaType.APPLICATION_JSON})
 @Produces({MediaType.APPLICATION_JSON})
 public class ProjectResource {
-    //werkt
-
-
-
     ProjectDAO projectDAO;
 
     public ProjectResource(ProjectDAO projectDAO) {

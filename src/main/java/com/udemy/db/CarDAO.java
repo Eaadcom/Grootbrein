@@ -10,11 +10,12 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import java.util.List;
 
+
 @RegisterMapper(CarMapper.class)
 public interface CarDAO {
 
-    @SqlQuery("select *  from car where user_id = :user_id")
-    List<Car> getCarsOfUser(@Bind("user_id") int user_id);
+    @SqlQuery("select license_plate  from car where user_id = :user_id")
+    List<String> getCarsOfUser(@Bind("user_id") String user_id);
 
     //werkt
     @SqlQuery("select * from car")

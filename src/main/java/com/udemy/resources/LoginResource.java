@@ -24,7 +24,6 @@ public class LoginResource {
     }
 
     @POST
-    //@Path()
     public Response getPersonLogin(@Valid Login login){
         System.out.println(userDao.findByEmail(login.getEmail()));
         if (userDao.findByEmail(login.getEmail()) != null) {
