@@ -5,34 +5,70 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Person {
 
     @JsonProperty
-    private int id;
+    private int userId;
     @JsonProperty
-    private String name;
+    private String firstName;
+    @JsonProperty
+    private String lastName;
+    @JsonProperty
+    private String email;
 
     public Person() {
-        // Jackson deserialization
     }
 
-    public Person(int id, String name) {
-        this.id = id;
-        this.name = name;
+    public Person(int id, String firstName, String lastName, String email) {
+        this.userId = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 
-    @JsonProperty
-    public int getId() {
-        return id;
+    public int getuserId() {
+        return userId;
     }
 
-    @JsonProperty
-    public String getName() {
-        return name;
+    public void setuserId(int id) {
+        this.userId = id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getfirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setfirstName(String firstName) {
+        this.firstName = firstName;
     }
+
+    public String getlastName() {
+        return lastName;
+    }
+
+    public void setlastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getemail() {
+        return email;
+    }
+
+    public void setemail(String email) {
+        this.email = email;
+    }
+
+    //wordt niet gebruikt momenteel
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+
+        Person that = (Person) o;
+
+        if (getuserId()!=(that.getuserId())) return false;
+        if (!getfirstName().equals(that.getfirstName())) return false;
+
+        return true;
+    }
+
+
+
 }

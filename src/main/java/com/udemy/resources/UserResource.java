@@ -1,150 +1,85 @@
 package com.udemy.resources;
 
+import com.udemy.api.Mapper.PersonMapper;
+import com.udemy.api.Mapper.UserHasProjectMapper;
 import com.udemy.api.Person;
-import com.udemy.core.DbConnection;
+import com.udemy.api.Project;
+import com.udemy.api.UserHasProject;
+import com.udemy.db.ProjectDAO;
 import com.udemy.db.UserDAO;
+import com.udemy.db.UserHasProjectDAO;
+import org.skife.jdbi.v2.DBI;
+import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
+import javax.annotation.RegEx;
+import javax.validation.Valid;
 import javax.ws.rs.*;
+import javax.ws.rs.client.Client;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 @Path("/users")
+@Consumes({MediaType.APPLICATION_JSON})
+@Produces({MediaType.APPLICATION_JSON})
+@RegisterMapper(PersonMapper.class)
 public class UserResource {
 
-    UserDAO userDAO = new UserDAO();
-    String Name = "no name";
+    UserDAO userDao;
+    UserHasProjectDAO userHasProjectDao;
+    ProjectDAO projectDao;
 
 
-    //de result hiervan moet dan bij de frontend komen zodat de gegevens van de user opgehaald worden hier en
-    //vervolgens daar worden weergegeven
+    public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
+        this.userDao = userDao;
+        this.userHasProjectDao= userHasProjectDao;
+    }
+
+    public void creaTriggers()
+    {
+        userDao.createTrigger();
+    }
+
+    @GET
+    public List<Person> getAll(){
+        return userDao.getAll();
+    }
+
+
+
+    //werkt
+    @GET
     @Path("/{id}")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getPersonById(@PathParam("id") int id) throws SQLException {
-        Connection connect = null;
-        System.out.println("ik ben in add new user");
-        try {
-            System.out.println("ik ben in de try");
+    public Person get(@PathParam("id") Integer id){
+        return userDao.findById(id);
+    }
 
-            connect = DbConnection.getConnection();
+    //werkt
+    @DELETE
+    @Path("/{id}")
+    public void deleteById(@PathParam("id") Integer id) {
+        userDao.deleteById(id);
+    }
 
-            System.out.print(connect);
-            //Statement statement = connect.createStatement();
+    @POST
+    public Person add(@Valid Person user) {
+        userDao.insert(user);
+        return user;
+    }
 
-            String query = userDAO.getUserNameFromId();
-            PreparedStatement preparedStmt = connect.prepareStatement(query);
-            preparedStmt.setInt(1, id);
-
-
-            System.out.println("hier gaat het goed 1");
-            // create the mysql insert preparedstatement
-            //PreparedStatement preparedStmt = connect.prepareStatement(query);
-            //preparedStmt.setInt(1, 2);
-            //System.out.println("hier gaat het goed2");
-
-            //System.out.print(preparedStmt);
-
-            // execute the preparedstatement
-            ResultSet rs = preparedStmt.executeQuery();
-            // preparedStmt.execute();
-            System.out.println("hier gaat het goed 4");
-
-
-            while (rs.next()) {
-                Name = rs.getString("firstName");
-                System.out.println("Name:" + Name);
-            }
-
-            Person person = new Person(id,Name);
-            return Response.status(Response.Status.OK)
-                    .entity(person)
-                    .build();
-        } catch (SQLException ex) {
-            throw new RuntimeException("Error connecting to the database", ex);
-        } catch (Exception e) {
-            System.out.println("ik hier 2");
-            e.printStackTrace();
-            return null;
-        }
-
+    //email updaten van gebruiker werkt
+    @PUT
+    @Path("/{userId}")
+    public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
+        Person updatePerson = new Person(person.getuserId(),person.getfirstName(), person.getlastName(), person.getemail());
+        userDao.updateEmail(updatePerson);
+        return updatePerson;
     }
 
 
-   // @POST
-    //@Consumes(MediaType.APPLICATION_JSON)
-    public Person addNewUser(int userId, String firstName) {
 
-        Connection connect = null;
-        System.out.println("ik ben in add new user");
-        try {
-            System.out.println("ik ben in de try");
-
-            connect = DbConnection.getConnection();
-
-
-
-            Person person = new Person(userId,firstName);
-            // create the mysql insert preparedstatement
-            PreparedStatement preparedStmt = connect.prepareStatement(userDAO.addUserQuery());
-            preparedStmt.setInt(1, userId);
-            preparedStmt.setString(2, firstName);
-
-            //            preparedStmt.setInt(1, person.getId());
-            //            preparedStmt.setString(2, person.getName());
-
-            System.out.print(preparedStmt);
-
-            // execute the preparedstatement
-            preparedStmt.execute();
-
-            //return Response.status(Response.Status.OK).build();
-
-            return person;
-        } catch (SQLException ex) {
-            throw new RuntimeException("Error connecting to the database", ex);
-        } catch (Exception e) {
-            System.out.println("ik hier 2");
-            e.printStackTrace();
-            return null;
-        }
-
-    }
-
-    /*
-    @GET
-    @Path("/delete/{id}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public void removeUserWithId(@PathParam("id") int id) {
-
-        Connection conn = null;
-        System.out.println("ik ben in remove user");
-        try {
-            System.out.println("ik ben in de try");
-
-            conn = DbConnection.getConnection();
-
-            // create the mysql insert preparedstatement
-            PreparedStatement preparedStmt = conn.prepareStatement(userDAO.removeUserWithIdQuery());
-            preparedStmt.setInt(1, 2);
-
-            System.out.print(preparedStmt);
-
-            // execute the preparedstatement
-            preparedStmt.execute();
-        } catch (SQLException ex) {
-            throw new RuntimeException("Error connecting to the database", ex);
-        } catch (Exception e) {
-            System.out.println("ik hier 2");
-            e.printStackTrace();
-        }
-
-    }
-    *
-     */
 }
-
-
