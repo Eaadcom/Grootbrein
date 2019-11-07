@@ -3,13 +3,13 @@ database:
   driverClass: com.mysql.cj.jdbc.Driver
 
   # the username
-  user: newuser
+  user: dropwizard
 
   # the password
-  password: password
+  password: qwerty123
 
   # the JDBC URL
-  url: jdbc:mysql://localhost:3306/trip_db
+  url: jdbc:mysql://86.83.103.74:3306/digitalefactuur
 
   # any properties specific to your JDBC driver:
   properties:
