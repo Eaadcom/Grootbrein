@@ -1,5 +1,6 @@
 package com.udemy;
 
+import com.udemy.checks.DatabaseHealthCheck;
 import com.udemy.db.*;
 import com.udemy.resources.*;
 import io.dropwizard.Application;
@@ -53,6 +54,14 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         environment.jersey().register(carResource);
         environment.jersey().register(loginResource);
         environment.jersey().register(userHasProjectResource);
+        /**
+         * @author Salah Abdulkader
+         * Health Checks
+         */
+        environment.healthChecks().register("checks",
+                new DatabaseHealthCheck(db, config.getDataSourceFactory().getValidationQuery()));
+
+
     }
 
 }
