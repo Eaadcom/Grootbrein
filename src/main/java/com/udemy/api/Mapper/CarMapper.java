@@ -14,8 +14,8 @@ public class CarMapper implements ResultSetMapper<Car> {
 
     @Override
     public Car map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {
-        return new Car(resultSet.getString("license_plate"),
-                resultSet.getString("user_id"));
+        return new Car(resultSet.getInt("license_id"),resultSet.getString("license_plate"),
+                resultSet.getString("user_id"),resultSet.getTimestamp("reg_date"));
     }
 
 }

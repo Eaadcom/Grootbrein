@@ -2,7 +2,6 @@ package com.udemy.db;
 
 import com.udemy.api.*;
 import com.udemy.api.Mapper.CarMapper;
-import com.udemy.api.Mapper.UserHasCarMapper;
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.BindBean;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
@@ -15,7 +14,7 @@ import java.util.List;
 public interface CarDAO {
 
     @SqlQuery("select *  from car where user_id = :user_id")
-    List<UserHasCar> getCarsOfUser(@Bind("userId") int user_id);
+    List<Car> getCarsOfUser(@Bind("user_id") int user_id);
 
     //werkt
     @SqlQuery("select * from car")

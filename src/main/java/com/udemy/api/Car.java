@@ -5,26 +5,24 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.sql.Timestamp;
 
 public class Car {
-   // @JsonProperty
-   // private int license_id;
+    @JsonProperty
+    private int license_id;
     @JsonProperty
     private String license_plate;
     @JsonProperty
     private String user_id;
-   // @JsonProperty
-   // private Timestamp reg_date;
+    @JsonProperty
+    private Timestamp reg_date;
 
     public Car() {
     }
 
-    public Car(String license_plate, String user_id) {
-        //.license_id = license_id;
+    public Car(int license_id, String license_plate, String user_id, Timestamp reg_date) {
+        this.license_id = license_id;
         this.license_plate = license_plate;
         this.user_id = user_id;
-        //this.reg_date = reg_date;
+        this.reg_date = reg_date;
     }
-
-
 
     public String getLicense_plate() {
         return license_plate;
@@ -42,5 +40,19 @@ public class Car {
         this.user_id = user_id;
     }
 
+    public int getLicense_id() {
+        return license_id;
+    }
 
+    public void setLicense_id(int license_id) {
+        this.license_id = license_id;
+    }
+
+    public Timestamp getReg_date() {
+        return reg_date;
+    }
+
+    public void setReg_date(Timestamp reg_date) {
+        this.reg_date = reg_date;
+    }
 }

@@ -45,8 +45,8 @@ public class TripsResource {
 
     //werkt
     @DELETE
-    @Path("/{tripId}")
-    public void deleteById(@PathParam("tripId") int tripId) {
-        tripDAO.deleteTripById(tripId);
+    @Path("/{trip_id}")
+    public void deleteById(@PathParam("trip_id") int trip_id) {
+        tripDAO.deleteTripById(trip_id);
     }
 }

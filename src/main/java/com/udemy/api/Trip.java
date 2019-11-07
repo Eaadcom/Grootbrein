@@ -8,87 +8,87 @@ import java.sql.Timestamp;
 
 public class Trip {
     @JsonProperty
-    private int tripId;
+    private int trip_id;
     @JsonProperty
-    private int userId;
+    private String user_id;
     @JsonProperty
-    private int projectId;
+    private Timestamp reg_date;
     @JsonProperty
-     private String timeStamp;
+     private String start_cords;
     @JsonProperty
-     private String startCoord;
-     @JsonProperty
-     private String endCoord;
+     private String end_cords;
     @JsonProperty
-    private int km;
+     private int distance;
+    @JsonProperty
+    private String license_plate;
 
     public Trip() {
     }
 
-    public Trip(int tripId, int userId, int projectId, String timeStamp, String startCoord, String endCoord, int km) {
-        this.tripId = tripId;
-        this.userId = userId;
-        this.projectId = projectId;
-        this.timeStamp = timeStamp;
-        this.startCoord = startCoord;
-        this.endCoord = endCoord;
-        this.km = km;
+
+    public Trip(int trip_id, String user_id, Timestamp reg_date, String start_cords, String end_cords, int distance, String license_plate) {
+        this.trip_id = trip_id;
+        this.user_id = user_id;
+        this.reg_date = reg_date;
+        this.start_cords = start_cords;
+        this.end_cords = end_cords;
+        this.distance = distance;
+        this.license_plate = license_plate;
     }
 
-
-    public int getTripId() {
-        return tripId;
+    public int getTrip_id() {
+        return trip_id;
     }
 
-    public void setTripId(int tripId) {
-        this.tripId = tripId;
+    public void setTrip_id(int trip_id) {
+        this.trip_id = trip_id;
     }
 
-    public int getUserId() {
-        return userId;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public int getProjectId() {
-        return projectId;
+    public Timestamp getReg_date() {
+        return reg_date;
     }
 
-    public void setProjectId(int projectId) {
-        this.projectId = projectId;
+    public void setReg_date(Timestamp reg_date) {
+        this.reg_date = reg_date;
     }
 
-    public int getKm() {
-        return km;
+    public String getStart_cords() {
+        return start_cords;
     }
 
-    public void setKm(int km) {
-        this.km = km;
+    public void setStart_cords(String start_cords) {
+        this.start_cords = start_cords;
     }
 
-    public String getTimeStamp() {
-        return timeStamp;
+    public String getEnd_cords() {
+        return end_cords;
     }
 
-    public void setTimeStamp(String timestamp) {
-        this.timeStamp = timestamp;
+    public void setEnd_cords(String end_cords) {
+        this.end_cords = end_cords;
     }
 
-    public String getStartCoord() {
-        return startCoord;
+    public int getDistance() {
+        return distance;
     }
 
-    public void setStartCoord(String startCoord) {
-        this.startCoord = startCoord;
+    public void setDistance(int distance) {
+        this.distance = distance;
     }
 
-    public String getEndCoord() {
-        return endCoord;
+    public String getLicense_plate() {
+        return license_plate;
     }
 
-    public void setEndCoord(String endCoord) {
-        this.endCoord = endCoord;
+    public void setLicense_plate(String license_plate) {
+        this.license_plate = license_plate;
     }
 }

@@ -2,7 +2,6 @@ package com.udemy.resources;
 
 import com.udemy.api.Car;
 import com.udemy.api.Mapper.CarMapper;
-import com.udemy.api.UserHasCar;
 import com.udemy.db.CarDAO;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
@@ -34,9 +33,9 @@ public class CarResource {
 
     //werkt
     @GET
-    @Path("/{userId}")
-    public List<UserHasCar> getProjectById(@PathParam("userId") int userId){
-        return carDAO.getCarsOfUser(userId);
+    @Path("/{user_id}")
+    public List<Car> getProjectById(@PathParam("user_id") int user_id){
+        return carDAO.getCarsOfUser(user_id);
     }
 
     //werkt

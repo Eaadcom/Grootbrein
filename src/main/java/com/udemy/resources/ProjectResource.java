@@ -31,15 +31,15 @@ public class ProjectResource {
 
     //werkt
     @GET
-    @Path("/{userId}")
-    public List<Project> getProjectsByUserId(@PathParam("userId") Integer userId){
-        return projectDAO.getProjectsByUserId(userId);
+    @Path("/{user_id}")
+    public List<Project> getProjectsByUserId(@PathParam("user_id") String user_id){
+        return projectDAO.getProjectsByUserId(user_id);
     }
 
     //werkt
     @GET
-    @Path("/projectnames/{userId}")
-    public List<String> getProjectNamesByUserId(@PathParam("userId") Integer userId){
-        return projectDAO.getProjectNamesByUserId(userId);
+    @Path("/projectnames/{user_id}")
+    public List<String> getProjectNamesByUserId(@PathParam("user_id") String user_id){
+        return projectDAO.getProjectNamesByUserId(user_id);
     }
 }

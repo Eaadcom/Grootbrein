@@ -50,16 +50,16 @@ public class UserResource {
 
     //werkt
     @GET
-    @Path("/{id}")
-    public Person get(@PathParam("id") Integer id){
-        return userDao.findById(id);
+    @Path("/{user_id}")
+    public Person get(@PathParam("user_id") String user_id){
+        return userDao.findById(user_id);
     }
 
     //werkt
     @DELETE
-    @Path("/{id}")
-    public void deleteById(@PathParam("id") Integer id) {
-        userDao.deleteById(id);
+    @Path("/{user_id}")
+    public void deleteById(@PathParam("user_id") String user_id) {
+        userDao.deleteById(user_id);
     }
 
     @POST
@@ -72,7 +72,8 @@ public class UserResource {
     @PUT
     @Path("/{userId}")
     public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getUser_id(),person.getFirst_name(), person.getLast_name(), person.getEmail(),person.getPassword());
+        Person updatePerson = new Person(person.getUser_id(),person.getFirst_name(),person.getLast_name(),
+                person.getEmail(),person.getPassword());
         userDao.updateEmail(updatePerson);
         return updatePerson;
     }

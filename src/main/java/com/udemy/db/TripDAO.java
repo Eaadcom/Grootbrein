@@ -21,12 +21,12 @@ public interface TripDAO {
     List<Trip> getTripsByUserId(@Bind("user_id") int user_id);
 
     //werkt
-    @SqlUpdate("insert into trip values (:tripId, :userId, :projectId, :timeStamp, :startCoord, :endCoord, :km)")
+    @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance) values (:user_id, :start_cords, :end_cords, :distance)")
     int insert(@BindBean Trip trip);
 
     //delete trip binnen 20 sec ofzo en dan na de timer verdwijnt het knopje ofzo
     //werkt
-    @SqlUpdate("delete from trip where tripId = :tripId")
-    int deleteTripById(@Bind("tripId") int tripId);
+    @SqlUpdate("delete from trip where trip_id = :trip_id")
+    int deleteTripById(@Bind("trip_id") int trip_id);
 }
 

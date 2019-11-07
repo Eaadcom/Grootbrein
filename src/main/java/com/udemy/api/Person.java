@@ -2,6 +2,8 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.sql.Timestamp;
+
 public class Person {
 
     @JsonProperty
@@ -14,9 +16,19 @@ public class Person {
     private String email;
     @JsonProperty
     private String password;
-
+    @JsonProperty
+    private Timestamp reg_date;
 
     public Person() {
+    }
+
+    public Person(String user_id, String first_name, String last_name, String email, String password, Timestamp reg_date) {
+        this.user_id = user_id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+        this.password = password;
+        this.reg_date = reg_date;
     }
 
     public Person(String user_id, String first_name, String last_name, String email, String password) {
@@ -65,6 +77,14 @@ public class Person {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Timestamp getReg_date() {
+        return reg_date;
+    }
+
+    public void setReg_date(Timestamp reg_date) {
+        this.reg_date = reg_date;
     }
 
     //wordt niet gebruikt momenteel

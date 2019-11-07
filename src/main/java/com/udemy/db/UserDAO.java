@@ -12,11 +12,11 @@ public interface UserDAO {
     @SqlQuery("select * from user")
     List<Person> getAll();
 
-    @SqlUpdate("delete from user where userId = :userId")
-    int deleteById(@Bind("userId") int userId);
+    @SqlUpdate("delete from user where user_id = :user_id")
+    int deleteById(@Bind("user_id") String user_id);
 
-    @SqlQuery("select * from user where userId = :userId")
-    Person findById(@Bind("userId") int userId);
+    @SqlQuery("select * from user where user_id = :user_id")
+    Person findById(@Bind("user_id") String user_id);
 
     @SqlQuery("select * from user where email = :email")
     Person findByEmail(@Bind("email") String email);
@@ -25,7 +25,7 @@ public interface UserDAO {
             "(:user_id, :first_name, :last_name, :email, :password)")
     int insert(@BindBean Person user);
 
-    @SqlUpdate("update user set email = :email where userId = :userId")
+    @SqlUpdate("update user set email = :email where user_id = :user_id")
     int updateEmail(@BindBean Person user);
 
 }
