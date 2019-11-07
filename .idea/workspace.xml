@@ -56,6 +56,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -74,12 +75,6 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
-  </component>
   <component name="ProjectId" id="1SEYhygGu91XSACc3aYfiv6aCVc" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -91,6 +86,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.udemy.resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
@@ -175,6 +173,10 @@
       <workItem from="1572993774954" duration="4428000" />
       <workItem from="1573029782561" duration="2497000" />
       <workItem from="1573115045260" duration="1925000" />
+      <workItem from="1573132877792" duration="10347000" />
+      <workItem from="1573156920726" duration="2342000" />
+      <workItem from="1573162526120" duration="120000" />
+      <workItem from="1573165975887" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>

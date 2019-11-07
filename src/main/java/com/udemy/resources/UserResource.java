@@ -8,20 +8,24 @@ import com.udemy.api.UserHasProject;
 import com.udemy.db.ProjectDAO;
 import com.udemy.db.UserDAO;
 import com.udemy.db.UserHasProjectDAO;
+import com.udemy.services.AuthenticationService;
+import io.dropwizard.auth.Auth;
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
+import sun.net.www.http.HttpClient;
 
+import javax.annotation.Priority;
 import javax.annotation.RegEx;
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
+
+import static javax.ws.rs.core.Response.serverError;
 
 @Path("/users")
 @Consumes({MediaType.APPLICATION_JSON})
@@ -32,6 +36,7 @@ public class UserResource {
     UserDAO userDao;
     UserHasProjectDAO userHasProjectDao;
     ProjectDAO projectDao;
+    AuthenticationService authenticationService = new AuthenticationService();
 
 
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
@@ -65,10 +70,14 @@ public class UserResource {
         userDao.deleteById(id);
     }
 
+
     @POST
-    public Person add(@Valid Person user) {
-        userDao.insert(user);
-        return user;
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public Response add(String string, @HeaderParam("AuthKey") String AuthKey) {
+        if (authenticationService.authenticate(AuthKey) == false){
+            return Response.status(403).build();
+        }
+        return Response.status(200).build();
     }
 
     //email updaten van gebruiker werkt
@@ -79,7 +88,4 @@ public class UserResource {
         userDao.updateEmail(updatePerson);
         return updatePerson;
     }
-
-
-
 }
