@@ -2,6 +2,10 @@ package com.udemy.models;
 
 import java.util.List;
 
+/**.
+ * @author Edward Deen
+ * @version 08-11-2019
+ */
 public class GoogleJSONModel {
     public List<String> destination_addresses;
     public List<String> origin_addresses;
