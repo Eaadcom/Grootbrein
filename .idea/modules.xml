@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DropBookmarks.iml" filepath="$PROJECT_DIR$/DropBookmarks.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Grootbrein.iml" filepath="$PROJECT_DIR$/.idea/Grootbrein.iml" />
     </modules>
   </component>
