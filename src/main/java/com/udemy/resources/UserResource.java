@@ -79,11 +79,11 @@ public class UserResource {
 
 
     @POST
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response add(String string, @HeaderParam("AuthKey") String AuthKey) {
+    public Response add(@Valid Person person, @HeaderParam("AuthKey") String AuthKey) {
         if (authenticationService.authenticate(AuthKey) == false){
             return Response.status(403).build();
         }
+        userDao.insert(person);
         return Response.status(200).build();
     }
 
