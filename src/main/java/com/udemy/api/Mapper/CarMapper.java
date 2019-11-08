@@ -10,6 +10,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 
+/**
+ * Maps car resultset and creates new Car
+ * @author Melissa Basgol
+ */
+
 public class CarMapper implements ResultSetMapper<Car> {
 
     @Override

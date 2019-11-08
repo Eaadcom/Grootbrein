@@ -2,6 +2,11 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Loginn model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class Login {
     @JsonProperty
     private String email;

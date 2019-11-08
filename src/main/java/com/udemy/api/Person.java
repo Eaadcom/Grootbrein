@@ -4,6 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 
+/**
+ * Person model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class Person {
 
     @JsonProperty

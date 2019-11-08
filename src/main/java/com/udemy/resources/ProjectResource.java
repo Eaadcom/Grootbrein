@@ -1,7 +1,6 @@
 package com.udemy.resources;
 
 
-import com.udemy.api.Person;
 import com.udemy.api.Project;
 import com.udemy.db.ProjectDAO;
 

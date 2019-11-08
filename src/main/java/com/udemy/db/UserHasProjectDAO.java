@@ -11,6 +11,11 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import java.util.List;
 
+/**
+ * Has the queries to interact with the table "userhasproject" from the database
+ * @author Melissa Basgol
+ */
+
 @RegisterMapper(UserHasProjectMapper.class)
 public interface UserHasProjectDAO {
 

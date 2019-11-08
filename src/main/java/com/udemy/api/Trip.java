@@ -6,6 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.sql.Date;
 import java.sql.Timestamp;
 
+/**
+ * Trip model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class Trip {
     @JsonProperty
     private int trip_id;

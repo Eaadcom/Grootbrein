@@ -41,10 +41,10 @@ public class UserResource {
         this.userHasProjectDao= userHasProjectDao;
     }
 
-    @GET
-    public List<Person> getAll(){
-        return userDao.getAll();
-    }
+    //@GET
+    //public List<Person> getAll(){
+    //    return userDao.getAll();
+    //}
 
     /*
     @GET

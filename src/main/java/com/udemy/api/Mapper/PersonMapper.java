@@ -7,6 +7,11 @@ import org.skife.jdbi.v2.tweak.ResultSetMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Maps person resultset and creates new person
+ * @author Melissa Basgol
+ */
+
 public class PersonMapper implements ResultSetMapper<Person> {
 
     @Override

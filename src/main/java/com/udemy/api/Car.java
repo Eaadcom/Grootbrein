@@ -4,6 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Timestamp;
 
+/**
+ * Car model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class Car {
     @JsonProperty
     private int license_id;

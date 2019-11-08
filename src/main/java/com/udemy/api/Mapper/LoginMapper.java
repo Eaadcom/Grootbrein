@@ -8,6 +8,11 @@ import org.skife.jdbi.v2.tweak.ResultSetMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Maps login variables resultset and creates new login
+ * @author Melissa Basgol
+ */
+
 public class LoginMapper implements ResultSetMapper<Login> {
 
     @Override

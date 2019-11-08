@@ -3,6 +3,11 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * UserHasProject model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class UserHasProject {
     @JsonProperty
     private String user_id;
