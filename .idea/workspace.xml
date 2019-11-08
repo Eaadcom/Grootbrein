@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="database check">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="klassen toegevoegd">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,17 +15,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Grootbrein" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -33,7 +39,6 @@
         <entry key="$PROJECT_DIR$" value="Development" />
       </map>
     </option>
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -53,6 +58,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.udemy.resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
@@ -71,8 +79,10 @@
   </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
-      <module name="Grootbrein" />
+      <module name="DropBookmarks" />
       <option name="PROGRAM_PARAMETERS" value="server config.yml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,65 +137,27 @@
       <workItem from="1571144160631" duration="599000" />
       <workItem from="1571219465424" duration="130000" />
       <workItem from="1571225511207" duration="1691000" />
-      <workItem from="1573118976389" duration="17355000" />
+      <workItem from="1572617934174" duration="913000" />
+      <workItem from="1572620645430" duration="486000" />
+      <workItem from="1572642247943" duration="8586000" />
+      <workItem from="1572802533182" duration="805000" />
+      <workItem from="1572913571773" duration="334000" />
+      <workItem from="1572993774954" duration="4428000" />
+      <workItem from="1573029782561" duration="2497000" />
+      <workItem from="1573115045260" duration="1925000" />
+      <workItem from="1573132877792" duration="10347000" />
+      <workItem from="1573156920726" duration="2342000" />
+      <workItem from="1573162526120" duration="120000" />
+      <workItem from="1573165975887" duration="762000" />
     </task>
-    <task id="LOCAL-00001" summary="login checken bij userResource">
-      <created>1573047575167</created>
+    <task id="LOCAL-00001" summary="proberen">
+      <created>1572461670995</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1573047575167</updated>
+      <updated>1572461670995</updated>
     </task>
-    <task id="LOCAL-00002" summary="werkend nu met edwards database">
-      <created>1573049593333</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1573049593333</updated>
-    </task>
-    <task id="LOCAL-00003" summary="werkend nu met edwards database">
-      <created>1573055257777</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1573055257777</updated>
-    </task>
-    <task id="LOCAL-00004" summary="variabel namen aangepast">
-      <created>1573121388147</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1573121388147</updated>
-    </task>
-    <task id="LOCAL-00005" summary="variabel namen aangepast">
-      <created>1573122865383</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1573122865383</updated>
-    </task>
-    <task id="LOCAL-00006" summary="login model mapper en resource aangemaakt.">
-      <created>1573124363091</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573124363091</updated>
-    </task>
-    <task id="LOCAL-00007" summary="login model mapper en resource aangemaakt.">
-      <created>1573132149340</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1573132149340</updated>
-    </task>
-    <task id="LOCAL-00008" summary="toevoegingen">
-      <created>1573142813417</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1573142813417</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,14 +191,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="alle klassen toegevoegd aan Development in mijn nieuwe branch omdat mijn branch bij jullie error gaf&#10;Meer functies toegevoegd om gegevens op te halen versturen en te verwijderen van database" />
-    <MESSAGE value="login checken bij userResource" />
-    <MESSAGE value="werkend tot nu toe" />
-    <MESSAGE value="werkend nu met edwards database" />
-    <MESSAGE value="variabel namen aangepast" />
-    <MESSAGE value="login model mapper en resource aangemaakt." />
-    <MESSAGE value="toevoegingen" />
-    <MESSAGE value="database check" />
-    <option name="LAST_COMMIT_MESSAGE" value="database check" />
+    <MESSAGE value="proberen" />
+    <option name="LAST_COMMIT_MESSAGE" value="proberen" />
   </component>
 </project>
