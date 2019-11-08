@@ -16,6 +16,11 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+/**
+ * Receives the requests from the paths and calls the dao that is needed.
+ * @author Melissa Basgol
+ */
+
 @Path("/trip")
 @Consumes({MediaType.APPLICATION_JSON})
 @Produces({MediaType.APPLICATION_JSON})
@@ -29,19 +34,24 @@ public class TripsResource {
         this.tripDAO = tripDAO;
     }
 
-    //werkt alle trips ophalen
     @GET
     public List<Trip> getAll(){
         return tripDAO.getAll();
     }
 
+    /**
+     * Calls the dao to get the trips of a user with the user_id
+     * @author Melissa Basgol
+     */
     @GET
     @Path("/{user_id}")
     public List<Trip> getTripsByUserId(@PathParam("user_id") String user_id) {
         return tripDAO.getTripsByUserId(user_id);}
 
-
-    //werkt trip posten
+    /**
+     * Calls the dao to add a trip to the table "trip"
+     * @author Melissa Basgol
+     */
     @POST
     public Trip add(@Valid Trip trip) {
         GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStart_cords(), trip.getEnd_cords());
@@ -50,10 +60,10 @@ public class TripsResource {
         return trip;
     }
 
-    //werkt
+    /*
     @DELETE
     @Path("/{trip_id}")
     public void deleteById(@PathParam("trip_id") String trip_id) {
-        tripDAO.deleteTripById(trip_id);
-    }
+        tripDAO.deleteTripById(trip_id); }*/
+
 }

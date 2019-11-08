@@ -24,7 +24,7 @@ public interface UserDAO {
     Person findById(@Bind("user_id") String user_id);
 
     /**
-     * Gets a user with
+     * Gets a user with the email of the user.
      * @author Melissa Basgol
      */
     @SqlQuery("select * from user where email = :email")

@@ -11,6 +11,10 @@ import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+/**
+ * Receives the requests from the paths and calls the dao that is needed.
+ * @author Melissa Basgol
+ */
 
 @Path("/userhasproject")
 @Consumes({MediaType.APPLICATION_JSON})
@@ -29,14 +33,16 @@ public class UserHasProjectResource {
         return userHasProjectDAO.getAll();
     }
 
-
+    /**
+     * Calls the dao to add userhasproject to the table "user_has_project"
+     * @author Melissa Basgol
+     */
     @POST
     public UserHasProject addUserToProject(@Valid UserHasProject userHasProject) {
         userHasProjectDAO.insert(userHasProject);
         return userHasProject;
     }
 
-    //werkt
     @DELETE
     @Path("/{project_id}/{user_id}")
     public void deleteUserFromProject(@PathParam("user_id") String user_id, @PathParam("project_id") String project_id) {

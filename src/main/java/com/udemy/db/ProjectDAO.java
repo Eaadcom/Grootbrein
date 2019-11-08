@@ -22,9 +22,13 @@ import java.util.List;
 public interface ProjectDAO {
 
 
-    @SqlQuery("select * from project")
-    List<Project> getAll();
+    //@SqlQuery("select * from project")
+    //List<Project> getAll();
 
+    /**
+     * Gets the projects of a user
+     * @author Melissa Basgol
+     */
     @SqlQuery("SELECT *\n" +
             "    FROM   project p\n" +
             "    JOIN   user_has_project up ON p.project_id = up.project_id\n" +
@@ -39,7 +43,10 @@ public interface ProjectDAO {
             "    WHERE  u.user_id = :user_id ")
     List<String> getProjectNamesByUserId(@Bind("user_id") String user_id);
 
-    //insert new project
+    /**
+     * Inserts project into the table "project"
+     * @author Melissa Basgol
+     */
     @SqlUpdate("insert into project (project_id, project_name) values (:project_id, :project_name)")
     int insert(@BindBean Project project);
 

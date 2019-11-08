@@ -19,11 +19,18 @@ import java.util.List;
 @RegisterMapper(UserHasProjectMapper.class)
 public interface UserHasProjectDAO {
 
-//insert voor de employer
 
+    /**
+     * Returns a list with the projects of a user
+     * @author Melissa Basgol
+     */
     @SqlQuery("select * from user_has_project")
     List<UserHasProject> getAll();
 
+    /**
+     * Inserts into table "user_has_project"
+     * @author Melissa Basgol
+     */
     @SqlUpdate("insert into user_has_project (user_id, project_id) values " +
             "(:user_id, :project_id)")
     int insert(@BindBean UserHasProject userHasProject);

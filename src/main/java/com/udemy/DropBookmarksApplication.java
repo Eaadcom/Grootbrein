@@ -43,10 +43,10 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         bootstrap.addBundle(new MultiPartBundle());
     }
 
+
     @Override
     public void run(final DropBookmarksConfiguration config,
                     final Environment environment) throws ClassNotFoundException {
-        environment.jersey().register(new HelloResource());
 
         final DBIFactory factory = new DBIFactory();
         final DBI db = factory.build(environment,config.getDataSourceFactory(),"mysql");
