@@ -12,11 +12,10 @@ import javax.ws.rs.client.ClientBuilder;
  * @author Edward Deen
  * @version 05-11-2019
  */
-
 public class GoogleService {
 
     /**
-     * This is the public class that can be called from outside the class to retrieve a GoogleJSONModel model
+     * This is the public method that can be called from outside the class to retrieve a GoogleJSONModel model
      * containing the JSON data from the google maps API.
      *
      * @author Edward Deen

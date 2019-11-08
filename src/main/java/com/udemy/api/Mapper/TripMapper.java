@@ -9,6 +9,11 @@ import org.skife.jdbi.v2.tweak.ResultSetMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Maps trip resultset and creates new trip
+ * @author Melissa Basgol
+ */
+
 public class TripMapper implements ResultSetMapper<Trip> {
     @Override
     public Trip map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {

@@ -8,6 +8,11 @@ import org.skife.jdbi.v2.tweak.ResultSetMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Maps project resultset and creates new project
+ * @author Melissa Basgol
+ */
+
 public class ProjectMapper implements ResultSetMapper<Project> {
 
     @Override

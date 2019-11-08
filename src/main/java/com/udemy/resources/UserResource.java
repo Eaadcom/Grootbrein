@@ -23,6 +23,10 @@ import java.sql.*;
 import java.util.List;
 
 import static javax.ws.rs.core.Response.serverError;
+/**
+ * Receives the requests from the paths and calls the dao that is needed.
+ * @author Melissa Basgol
+ */
 
 @Path("/users")
 @Consumes({MediaType.APPLICATION_JSON})
@@ -42,42 +46,21 @@ public class UserResource {
     }
 
     @GET
-    public List<Person> getAll(){
-        return userDao.getAll();
-    }
-
-    /*
-    @GET
-    @Path("/{email}/{password}")
-    public Response getPersonLogin(@PathParam("email") String email, @PathParam("password") String password){
-        System.out.println(userDao.findByEmail(email));
-        if (userDao.findByEmail(email) != null) {
-            if (userDao.findByEmail(email).getPassword().equals(password)) {
-                System.out.println(userDao.findByEmail(email));
-                return Response.ok(userDao.findByEmail(email)).build();
-            }
-            else {
-                return Response.status(409).build();
-            }
-        }
-        return null;
-    }
-*/
-    //werkt
-    @GET
     @Path("/{user_id}")
     public Person get(@PathParam("user_id") String user_id){
         return userDao.findById(user_id);
     }
 
-    //werkt
     @DELETE
     @Path("/{user_id}")
     public void deleteById(@PathParam("user_id") String user_id) {
         userDao.deleteById(user_id);
     }
 
-
+    /**
+     * Calls the dao to add a new user
+     * @author Melissa Basgol
+     */
     @POST
     public Response add(Person user) {
         //if (authenticationService.authenticate(AuthKey) == false){
@@ -89,7 +72,6 @@ public class UserResource {
         return Response.status(200).build();
     }
 
-    //email updaten van gebruiker werkt
     @PUT
     @Path("/{userId}")
     public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {

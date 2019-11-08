@@ -8,6 +8,11 @@ import org.hibernate.validator.constraints.*;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
+/**
+ * Does the configuration of the database
+ * @author Melissa Basgol
+ */
+
 public class DropBookmarksConfiguration extends Configuration {
     @Valid
     @NotNull

@@ -2,6 +2,11 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Project model with json property variables
+ * @author Melissa Basgol
+ */
+
 public class Project {
     @JsonProperty
     private int project_id;
@@ -23,8 +28,6 @@ public class Project {
     public void setProject_id(int project_id) {
         this.project_id = project_id;
     }
-
-
 
     public String getProject_name() {
         return project_name;
