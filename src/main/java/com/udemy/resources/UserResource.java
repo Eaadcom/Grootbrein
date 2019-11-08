@@ -80,11 +80,11 @@ public class UserResource {
 
     @POST
     public Response add(Person user, @HeaderParam("AuthKey") String AuthKey) {
-        if (authenticationService.authenticate(AuthKey) == false){
-            userDao.insert(user);
-            return Response.status(200).build();
+        //if (authenticationService.authenticate(AuthKey) == false){
+         //   userDao.insert(user);
+         //   return Response.status(200).build();
             //return Response.status(403).build();
-        }
+        //}
         userDao.insert(user);
         return Response.status(200).build();
     }
