@@ -19,11 +19,15 @@ public class Person {
     @JsonProperty
     private Timestamp reg_date;
 
-    public Person(String email, String password, String firstName, String lastName) {
+    public Person() {
+    }
+
+    public Person(String user_id, String first_name, String last_name, String email, String password) {
+        this.user_id = user_id;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.email = email;
         this.password = password;
-        this.first_name = firstName;
-        this.last_name = lastName;
     }
 
     public Person(String user_id, String first_name, String last_name, String email, String password, Timestamp reg_date) {
@@ -35,13 +39,6 @@ public class Person {
         this.reg_date = reg_date;
     }
 
-    public Person(String user_id, String first_name, String last_name, String email, String password) {
-        this.user_id = user_id;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.email = email;
-        this.password = password;
-    }
 
     public String getUser_id() {
         return user_id;

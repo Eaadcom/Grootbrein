@@ -29,6 +29,7 @@ public class ProjectResource {
     @GET
     @Path("/{user_id}")
     public List<Project> getProjectsByUserId(@PathParam("user_id") String user_id){
+        System.out.println(projectDAO.getProjectsByUserId(user_id));
         return projectDAO.getProjectsByUserId(user_id);
     }
 
