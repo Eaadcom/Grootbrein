@@ -77,7 +77,6 @@ public class UserResource {
         userDao.deleteById(user_id);
     }
 
-
     @POST
     public Response add(Person user) {
         //if (authenticationService.authenticate(AuthKey) == false){

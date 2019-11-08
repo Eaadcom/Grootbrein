@@ -7,6 +7,7 @@ import com.udemy.db.ProjectDAO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 
@@ -38,5 +39,16 @@ public class ProjectResource {
     @Path("/projectnames/{user_id}")
     public List<String> getProjectNamesByUserId(@PathParam("user_id") String user_id){
         return projectDAO.getProjectNamesByUserId(user_id);
+    }
+
+    @POST
+    public Response add(Project project) {
+        //if (authenticationService.authenticate(AuthKey) == false){
+        //   userDao.insert(user);
+        //   return Response.status(200).build();
+        //return Response.status(403).build();
+        //}
+        projectDAO.insert(project);
+        return Response.status(200).build();
     }
 }
