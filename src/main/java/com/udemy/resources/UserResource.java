@@ -79,7 +79,7 @@ public class UserResource {
 
 
     @POST
-    public Response add(Person user, @HeaderParam("AuthKey") String AuthKey) {
+    public Response add(Person user) {
         //if (authenticationService.authenticate(AuthKey) == false){
          //   userDao.insert(user);
          //   return Response.status(200).build();
