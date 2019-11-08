@@ -43,12 +43,11 @@ public class TripsResource {
 
     //werkt trip posten
     @POST
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public void add(String string) {
-        Trip trip = jsoNservice.mapTripModel(string);
+    public Trip add(@Valid Trip trip) {
         GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStart_cords(), trip.getEnd_cords());
         trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
         tripDAO.insert(trip);
+        return trip;
     }
 
     //werkt
