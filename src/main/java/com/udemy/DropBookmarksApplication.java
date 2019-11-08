@@ -4,7 +4,10 @@ import com.udemy.checks.DatabaseHealthCheck;
 import com.udemy.db.*;
 import com.udemy.resources.*;
 import io.dropwizard.Application;
+import io.dropwizard.db.DataSourceFactory;
+import io.dropwizard.forms.MultiPartBundle;
 import io.dropwizard.jdbi.DBIFactory;
+import io.dropwizard.migrations.MigrationsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import org.skife.jdbi.v2.DBI;
@@ -21,9 +24,23 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
         return "DropBookmarks";
     }
 
+    /**
+     * Initialize Bundles
+     *
+     * @author Salah Abdulkader
+     * @since 008-11-2019
+     * @param bootstrap
+     */
+
     @Override
-    public void initialize(final Bootstrap<DropBookmarksConfiguration> bootstrap) {
-        // TODO: application initialization
+    public void initialize(Bootstrap<DropBookmarksConfiguration> bootstrap) {
+        bootstrap.addBundle(new MigrationsBundle<DropBookmarksConfiguration>(){
+            @Override
+            public DataSourceFactory getDataSourceFactory(final DropBookmarksConfiguration config) {
+                return config.getDataSourceFactory();
+            }
+        });
+        bootstrap.addBundle(new MultiPartBundle());
     }
 
     @Override
