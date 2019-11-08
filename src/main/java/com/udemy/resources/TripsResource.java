@@ -5,6 +5,10 @@ import com.udemy.api.Mapper.TripMapper;
 import com.udemy.api.Person;
 import com.udemy.api.Trip;
 import com.udemy.db.TripDAO;
+import com.udemy.models.GoogleJSONModel;
+import com.udemy.models.TripModel;
+import com.udemy.services.GoogleService;
+import com.udemy.services.JSONservice;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
@@ -18,6 +22,8 @@ import java.util.List;
 @RegisterMapper(TripMapper.class)
 public class TripsResource {
     TripDAO tripDAO;
+    JSONservice jsoNservice = new JSONservice();
+    GoogleService googleService = new GoogleService();
 
     public TripsResource(TripDAO tripDAO) {
         this.tripDAO = tripDAO;
@@ -37,9 +43,12 @@ public class TripsResource {
 
     //werkt trip posten
     @POST
-    public Trip add(@Valid Trip trip) {
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public void add(String string) {
+        Trip trip = jsoNservice.mapTripModel(string);
+        GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStart_cords(), trip.getEnd_cords());
+        trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
         tripDAO.insert(trip);
-        return trip;
     }
 
     //werkt
