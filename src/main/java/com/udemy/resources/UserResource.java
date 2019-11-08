@@ -6,7 +6,7 @@ import com.udemy.db.ProjectDAO;
 import com.udemy.db.UserDAO;
 import com.udemy.db.UserHasProjectDAO;
 import com.udemy.services.AuthenticationService;
-import io.dropwizard.auth.Auth;
+//import io.dropwizard.auth.Auth;
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 import sun.net.www.http.HttpClient;
