@@ -24,6 +24,11 @@ public class Car {
         this.reg_date = reg_date;
     }
 
+    public Car(int license_id, String license_plate) {
+        this.license_id = license_id;
+        this.license_plate = license_plate;
+    }
+
     public Car(String license_plate, String user_id) {
         this.license_plate = license_plate;
         this.user_id = user_id;

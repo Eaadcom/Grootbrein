@@ -8,6 +8,7 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 
@@ -34,8 +35,8 @@ public class CarResource {
     //werkt
     @GET
     @Path("/{user_id}")
-    public List<String> getCarsById(@PathParam("user_id") String user_id){
-        return carDAO.getCarsOfUser(user_id);
+    public Response getCarsById(@PathParam("user_id") String user_id){
+        return Response.ok(carDAO.getCarsOfUser(user_id)).build();
     }
 
     //werkt
