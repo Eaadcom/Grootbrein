@@ -24,8 +24,6 @@ public class Project {
         this.project_id = project_id;
     }
 
-
-
     public String getProject_name() {
         return project_name;
     }
