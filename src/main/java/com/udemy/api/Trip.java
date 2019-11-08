@@ -21,6 +21,8 @@ public class Trip {
      private int distance;
     @JsonProperty
     private String license_plate;
+   // @JsonProperty
+   // private String project_id;
 
     public Trip() {
     }

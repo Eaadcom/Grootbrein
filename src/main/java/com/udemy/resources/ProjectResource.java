@@ -6,7 +6,9 @@ import com.udemy.api.Project;
 import com.udemy.db.ProjectDAO;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 
@@ -28,8 +30,12 @@ public class ProjectResource {
     //werkt
     @GET
     @Path("/{user_id}")
-    public List<Project> getProjectsByUserId(@PathParam("user_id") String user_id){
-        return projectDAO.getProjectsByUserId(user_id);
+    public Response getProjectsByUserId(@PathParam("user_id") String user_id){
+        List<Project> projectList = projectDAO.getProjectsByUserId(user_id);
+        GenericEntity<List<Project>> entity =
+                new GenericEntity<List<Project>>(projectList) {};
+
+        return Response.ok(entity).build();
     }
 
     //werkt
