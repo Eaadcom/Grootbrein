@@ -1,6 +1,7 @@
 package com.udemy.checks;
 /**
  * @author Salah Abdulkader
+ * validation for the database to know if it's running and healthy
  */
 
 import com.codahale.metrics.health.HealthCheck;
