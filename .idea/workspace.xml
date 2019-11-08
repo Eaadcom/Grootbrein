@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="person fixen">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -10,6 +11,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> parent of c0d229f... workspace fix
 =======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -32,15 +37,21 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="68" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
             </state>
           </provider>
@@ -48,20 +59,27 @@
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/PersonMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
               <caret line="32" column="120" lean-forward="true" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="120" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Project.java">
@@ -69,37 +87,51 @@
             <state relative-caret-position="221">
               <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
               <caret line="101" selection-start-line="101" selection-end-line="101" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/api/Mapper/PersonMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,6 +139,9 @@
               <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
         </entry>
       </file>
@@ -115,7 +150,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <caret line="31" selection-start-line="31" selection-end-line="31" />
+=======
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+>>>>>>> parent of c0d229f... workspace fix
 =======
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
 >>>>>>> parent of c0d229f... workspace fix
@@ -128,7 +167,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <caret line="26" selection-start-line="26" selection-end-line="26" />
+=======
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+>>>>>>> parent of c0d229f... workspace fix
 =======
               <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
 >>>>>>> parent of c0d229f... workspace fix
@@ -149,7 +192,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="357">
+=======
+            <state relative-caret-position="355">
+>>>>>>> parent of c0d229f... workspace fix
 =======
             <state relative-caret-position="355">
 >>>>>>> parent of c0d229f... workspace fix
@@ -163,7 +210,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+=======
+              <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+>>>>>>> parent of c0d229f... workspace fix
 =======
               <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
 >>>>>>> parent of c0d229f... workspace fix
@@ -221,8 +272,11 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> parent of c0d229f... workspace fix
 =======
 >>>>>>> parent of c0d229f... workspace fix
       <pane id="ProjectPane">
@@ -259,7 +313,10 @@
               <item name="udemy" type="462c0819:PsiDirectoryNode" />
             </path>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
             <path>
               <item name="Grootbrein" type="b2602c69:ProjectViewProjectNode" />
               <item name="Grootbrein" type="462c0819:PsiDirectoryNode" />
@@ -315,12 +372,20 @@
               <item name="udemy" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
           </expand>
           <select />
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> parent of c0d229f... workspace fix
 =======
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -407,7 +472,11 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <changelist id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="" />
+=======
+      <changelist id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="" />
+>>>>>>> parent of c0d229f... workspace fix
 =======
       <changelist id="3a4f9c18-6f7d-43a8-878e-43cfa7c805ff" name="Default Changelist" comment="" />
 >>>>>>> parent of c0d229f... workspace fix
@@ -434,7 +503,10 @@
       <workItem from="1573162526120" duration="120000" />
       <workItem from="1573165975887" duration="762000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1573222705835" duration="241000" />
+=======
+>>>>>>> parent of c0d229f... workspace fix
 =======
 >>>>>>> parent of c0d229f... workspace fix
     </task>
@@ -459,6 +531,7 @@
       <option name="project" value="LOCAL" />
       <updated>1573221336821</updated>
     </task>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <task id="LOCAL-00004" summary="person fixen">
       <created>1573221954514</created>
@@ -509,6 +582,8 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.063739374" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
@@ -535,11 +610,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4532578" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.69405097" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
@@ -559,6 +638,8 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -569,6 +650,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
     </layout>
   </component>
@@ -679,6 +763,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/resources/ProjectResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -712,6 +797,8 @@
         <state relative-caret-position="306">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/UserHasProjectDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -744,6 +831,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
         </state>
       </provider>
@@ -755,6 +845,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/services/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -792,6 +883,8 @@
         <state relative-caret-position="221">
           <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
 =======
+=======
+>>>>>>> parent of c0d229f... workspace fix
     <entry file="file://$PROJECT_DIR$/src/main/java/com/udemy/db/CarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -817,6 +910,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-610">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+<<<<<<< HEAD
+>>>>>>> parent of c0d229f... workspace fix
+=======
 >>>>>>> parent of c0d229f... workspace fix
         </state>
       </provider>
