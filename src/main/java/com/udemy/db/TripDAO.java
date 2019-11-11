@@ -31,7 +31,7 @@ public interface TripDAO {
 
     /**
      * Inserts a trip into the table "trip"
-     * @author Melissa Basgol
+     * @author Melissa Basgol, Edward Deen
      */
     //werkt
     @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance, license_plate, project_id) values (:user_id, :start_cords, :end_cords, :distance, :license_plate, :project_id)")
