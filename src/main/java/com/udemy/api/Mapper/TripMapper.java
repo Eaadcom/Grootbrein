@@ -1,7 +1,5 @@
 package com.udemy.api.Mapper;
 
-import com.udemy.api.Person;
-import com.udemy.api.Project;
 import com.udemy.api.Trip;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.ResultSetMapper;
@@ -20,6 +18,7 @@ public class TripMapper implements ResultSetMapper<Trip> {
         return new Trip(resultSet.getInt("trip_id"), resultSet.getString("user_id"),
                 resultSet.getTimestamp("reg_date"),
                 resultSet.getString("start_cords"), resultSet.getString("end_cords"),
-                resultSet.getInt("distance"),resultSet.getString("license_plate"));
+                resultSet.getInt("distance"),resultSet.getString("license_plate"),
+                resultSet.getInt("project_id"));
     }
 }

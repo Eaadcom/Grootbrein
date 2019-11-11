@@ -3,7 +3,6 @@ package com.udemy.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
@@ -26,12 +25,14 @@ public class Trip {
      private int distance;
     @JsonProperty
     private String license_plate;
+    @JsonProperty
+    private int project_id;
 
     public Trip() {
     }
 
 
-    public Trip(int trip_id, String user_id, Timestamp reg_date, String start_cords, String end_cords, int distance, String license_plate) {
+    public Trip(int trip_id, String user_id, Timestamp reg_date, String start_cords, String end_cords, int distance, String license_plate, int project_id) {
         this.trip_id = trip_id;
         this.user_id = user_id;
         this.reg_date = reg_date;
@@ -39,14 +40,16 @@ public class Trip {
         this.end_cords = end_cords;
         this.distance = distance;
         this.license_plate = license_plate;
+        this.project_id = project_id;
     }
 
-    public Trip(String user_id, String start_cords, String end_cords, int distance, String license_plate) {
+    public Trip(String user_id, String start_cords, String end_cords, int distance, String license_plate, int project_id) {
         this.user_id = user_id;
         this.start_cords = start_cords;
         this.end_cords = end_cords;
         this.distance = distance;
         this.license_plate = license_plate;
+        this.project_id = project_id;
     }
 
     public int getTrip_id() {
@@ -103,5 +106,13 @@ public class Trip {
 
     public void setLicense_plate(String license_plate) {
         this.license_plate = license_plate;
+    }
+
+    public int getProject_id() {
+        return project_id;
+    }
+
+    public void setProject_id(int project_id){
+        this.project_id = project_id;
     }
 }
