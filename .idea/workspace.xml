@@ -2,52 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_jwks_rsa_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Grootbrein.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grootbrein.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_1_jre.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Grootbrein.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Grootbrein.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/CarMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/LoginMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/LoginMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/PersonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/PersonMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/ProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/TripMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/TripMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/UserHasProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/UserHasProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Trip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/UserHasProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/UserHasProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/ProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/ProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/TripDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/DistanceModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/DistanceModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/DurationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/DurationModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/ElementsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/ElementsModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/GoogleJSONModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/GoogleJSONModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/RowsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/RowsModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/TripModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/TripModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/CarResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/CarResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/LoginResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/LoginResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/ProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/ProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/TripsResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/TripsResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserHasProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserHasProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/DashboardService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/GoogleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/services/GoogleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/ManualInputService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/RegisterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/SettingsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/TripsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,12 +48,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vraagteken" />
+        <entry key="$PROJECT_DIR$" value="deserialize_check_person" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -95,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kleinbrein" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DDN/Ipsen2-Back-End-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -194,6 +166,7 @@
       <workItem from="1573162526120" duration="120000" />
       <workItem from="1573165975887" duration="762000" />
       <workItem from="1573222705835" duration="241000" />
+      <workItem from="1573463187263" duration="9334000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -251,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573225571061</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tokentest">
+      <created>1573244740771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573244740771</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +269,8 @@
     <MESSAGE value="license plate ophalen er wordt een jsn array met de licenseplates teruggeveven" />
     <MESSAGE value="person fixen" />
     <MESSAGE value="werkende" />
-    <option name="LAST_COMMIT_MESSAGE" value="werkende" />
+    <MESSAGE value="tokentest" />
+    <option name="LAST_COMMIT_MESSAGE" value="tokentest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Grootbrein$DropBookmarks.ic" NAME="DropBookmarks Coverage Results" MODIFIED="1573244646367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
