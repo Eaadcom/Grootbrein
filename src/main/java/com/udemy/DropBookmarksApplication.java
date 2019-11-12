@@ -1,5 +1,6 @@
 package com.udemy;
 
+import com.udemy.Provider.TokenProvider;
 import com.udemy.checks.DatabaseHealthCheck;
 import com.udemy.db.*;
 import com.udemy.resources.*;
@@ -13,6 +14,9 @@ import io.dropwizard.setup.Environment;
 import org.skife.jdbi.v2.DBI;
 
 public class DropBookmarksApplication extends Application<DropBookmarksConfiguration> {
+
+    public static TokenProvider tokenProvider;
+
 
     public static void main(final String[] args) throws Exception {
         new DropBookmarksApplication().run(args);
@@ -78,6 +82,14 @@ public class DropBookmarksApplication extends Application<DropBookmarksConfigura
          */
         environment.healthChecks().register("checks",
                 new DatabaseHealthCheck(db, config.getDataSourceFactory().getValidationQuery()));
+
+        /**
+         * @author Salah Abulkader
+         * Initializables
+         */
+        tokenProvider = new TokenProvider();
+
+
 
 
     }

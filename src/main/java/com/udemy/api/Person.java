@@ -23,6 +23,8 @@ public class Person {
     private String password;
     @JsonProperty
     private Timestamp reg_date;
+    @JsonProperty
+    private String jwt;
 
     public Person() {
     }
@@ -91,6 +93,14 @@ public class Person {
 
     public void setReg_date(Timestamp reg_date) {
         this.reg_date = reg_date;
+    }
+
+    public String getJwt() {
+        return jwt;
+    }
+
+    public void setJwt(String jwt) {
+        this.jwt = jwt;
     }
 
     //wordt niet gebruikt momenteel

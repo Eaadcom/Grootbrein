@@ -1,53 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Grootbrein.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grootbrein.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+    <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Grootbrein.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/Grootbrein.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/DropBookmarksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/Provider/TokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/api/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/HelloResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/CarMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/CarMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/LoginMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/LoginMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/PersonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/PersonMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/ProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/TripMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/TripMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/UserHasProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Mapper/UserHasProjectMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/Trip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/api/UserHasProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/api/UserHasProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/ProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/ProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/TripDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/db/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/db/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/DistanceModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/DistanceModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/DurationModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/DurationModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/ElementsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/ElementsModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/GoogleJSONModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/GoogleJSONModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/RowsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/RowsModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/models/TripModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/models/TripModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/CarResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/CarResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/LoginResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/LoginResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/ProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/ProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/TripsResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/TripsResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserHasProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserHasProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/resources/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/DashboardService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/GoogleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udemy/services/GoogleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/ManualInputService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/RegisterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/SettingsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/services/TripsService.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +25,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -76,12 +52,12 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vraagteken" />
+        <entry key="$PROJECT_DIR$" value="tokenNew" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -150,6 +126,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DropBookmarksApplication" />
+        <item itemvalue="Application.DropBookmarksApplication" />
+        <item itemvalue="Application.DropBookmarksApplication" />
         <item itemvalue="Application.DropBookmarksApplication" />
         <item itemvalue="Application.DropBookmarksApplication" />
       </list>
