@@ -35,7 +35,6 @@ public class LoginResource {
      */
     @POST
     public Response getPersonLogin(@Valid Login login){
-        System.out.println(userDao.findByEmail(login.getEmail()));
         if (userDao.findByEmail(login.getEmail()) != null) {
             if (userDao.findByEmail(login.getEmail()).getPassword().equals(login.getPassword())) {
                 System.out.println(userDao.findByEmail(login.getEmail()));
@@ -46,7 +45,9 @@ public class LoginResource {
             }
         }
         else {
-        return null;}
+        return Response.status(404).build();
+
+        }
     }
 
 }

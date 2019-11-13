@@ -24,6 +24,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-auth</artifactId>
@@ -35,7 +36,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.18</version>
         </dependency>
-
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-migrations</artifactId>

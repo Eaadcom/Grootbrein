@@ -7,6 +7,7 @@ import com.ipsen2.db.UserDAO;
 import com.ipsen2.db.UserHasProjectDAO;
 import com.ipsen2.services.AuthenticationService;
 //import io.dropwizard.auth.Auth;
+
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
@@ -27,7 +28,6 @@ public class UserResource {
 
     UserDAO userDao;
     UserHasProjectDAO userHasProjectDao;
-    //AuthenticationService authenticationService = new AuthenticationService();
 
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
         this.userDao = userDao;
@@ -56,11 +56,6 @@ public class UserResource {
      */
     @POST
     public Response add(Person user) {
-        //if (authenticationService.authenticate(AuthKey) == false){
-         //   userDao.insert(user);
-         //   return Response.status(200).build();
-            //return Response.status(403).build();
-        //}
         userDao.insert(user);
         return Response.status(200).build();
     }

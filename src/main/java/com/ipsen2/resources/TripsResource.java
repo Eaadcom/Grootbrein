@@ -66,10 +66,9 @@ public class TripsResource {
         return trip;
     }
 
-    /*
     @DELETE
     @Path("/{trip_id}")
     public void deleteById(@PathParam("trip_id") String trip_id) {
-        tripDAO.deleteTripById(trip_id); }*/
+        tripDAO.deleteTripById(trip_id); }
 
 }

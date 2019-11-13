@@ -37,5 +37,4 @@ public interface UserHasProjectDAO {
     @SqlUpdate("delete from user_has_project where user_id = :user_id and project_id = :project_id")
     int deleteById(@Bind("user_id") String user_id, @Bind("project_id") String project_id);
 
-    //@Bind("user_id") String user_id, @Bind("project_id") String project_id
 }

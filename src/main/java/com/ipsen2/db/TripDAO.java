@@ -18,7 +18,6 @@ import java.util.List;
 @RegisterMapper(TripMapper.class)
 public interface TripDAO {
 
-    //werkt
     @SqlQuery("select * from trip")
     List<Trip> getAll();
 
@@ -33,11 +32,10 @@ public interface TripDAO {
      * Inserts a trip into the table "trip"
      * @author Melissa Basgol
      */
-    //werkt
     @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance) values (:user_id, :start_cords, :end_cords, :distance)")
     int insert(@BindBean Trip trip);
 
-    //@SqlUpdate("delete from trip where trip_id = :trip_id")
-    //int deleteTripById(@Bind("trip_id") String trip_id);
+    @SqlUpdate("delete from trip where trip_id = :trip_id")
+    int deleteTripById(@Bind("trip_id") String trip_id);
 }
 

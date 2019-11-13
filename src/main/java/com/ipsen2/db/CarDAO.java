@@ -25,7 +25,7 @@ public interface CarDAO {
     @SqlQuery("select * from car where user_id = :user_id")
     List<Car> getCarsOfUser(@Bind("user_id") String user_id);
 
-    //werkt
+
     @SqlQuery("select * from car")
     List<Car> getAll();
 
@@ -33,7 +33,7 @@ public interface CarDAO {
      * Inserts new car into the table "car"
      * @author Melissa Basgol
      */
-    //toevoegen werkt
+
     @SqlUpdate("insert into car(license_plate, user_id) values (:license_plate, :user_id)")
     int insert(@BindBean Car car);
 

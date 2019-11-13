@@ -93,21 +93,4 @@ public class Person {
         this.reg_date = reg_date;
     }
 
-    //wordt niet gebruikt momenteel
-    /*
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Person)) return false;
-
-        Person that = (Person) o;
-
-        if (getUser_id()!=(that.getUser_id())) return false;
-        if (!getFirst_name().equals(that.getFirst_name())) return false;
-
-        return true;
-    }
-    */
-
-
 }

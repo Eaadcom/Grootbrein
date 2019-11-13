@@ -8,6 +8,7 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -27,8 +28,12 @@ public class UserHasProjectResource {
     }
 
     @GET
-    public List<UserHasProject> getAll(){
-        return userHasProjectDAO.getAll();
+    public Response getAll(){
+        if (userHasProjectDAO.getAll() != null) {
+            return Response.ok(userHasProjectDAO.getAll()).build();
+        } else {
+            return Response.status(404).build();
+        }
     }
 
     /**

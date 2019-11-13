@@ -66,11 +66,6 @@ public class ProjectResource {
      */
     @POST
     public Response add(Project project) {
-        //if (authenticationService.authenticate(AuthKey) == false){
-        //   userDao.insert(user);
-        //   return Response.status(200).build();
-        //return Response.status(403).build();
-        //}
         projectDAO.insert(project);
         return Response.status(200).build();
     }

@@ -4,6 +4,8 @@ import com.ipsen2.api.Person;
 import org.skife.jdbi.v2.sqlobject.*;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
+import java.util.List;
+
 /**
  * Has the queries to interact with the table "user" from the database
  * @author Melissa Basgol
@@ -12,8 +14,8 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 @RegisterMapper(PersonMapper.class)
 public interface UserDAO {
 
-    //@SqlQuery("select * from user")
-    //List<Person> getAll();
+    @SqlQuery("select * from user")
+    List<Person> getAll();
 
     @SqlUpdate("delete from user where user_id = :user_id")
     int deleteById(@Bind("user_id") String user_id);
