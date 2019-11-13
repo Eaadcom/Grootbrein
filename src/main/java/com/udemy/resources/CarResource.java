@@ -40,7 +40,7 @@ public class CarResource {
      */
     @GET
     @Path("/{user_id}")
-    public List<String> getCarsById(@PathParam("user_id") String user_id) {
+    public List<Car> getCarsById(@PathParam("user_id") String user_id) {
         return carDAO.getCarsOfUser(user_id);
     }
 
