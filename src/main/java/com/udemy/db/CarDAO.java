@@ -22,8 +22,8 @@ public interface CarDAO {
      * Gets the license plates of a user
      * @author Melissa Basgol
      */
-    @SqlQuery("select license_plate from car where user_id = :user_id")
-    List<String> getCarsOfUser(@Bind("user_id") String user_id);
+    @SqlQuery("select * from car where user_id = :user_id")
+    List<Car> getCarsOfUser(@Bind("user_id") String user_id);
 
     //werkt
     @SqlQuery("select * from car")
