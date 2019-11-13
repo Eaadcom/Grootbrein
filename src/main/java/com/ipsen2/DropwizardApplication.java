@@ -1,12 +1,9 @@
 package com.ipsen2;
 
-import com.udemy.Provider.TokenProvider;
-import com.udemy.checks.DatabaseHealthCheck;
-import com.udemy.db.*;
-import com.udemy.resources.*;
 import com.ipsen2.checks.DatabaseHealthCheck;
 import com.ipsen2.db.*;
 import com.ipsen2.resources.*;
+import com.udemy.Provider.TokenProvider;
 import io.dropwizard.Application;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.forms.MultiPartBundle;

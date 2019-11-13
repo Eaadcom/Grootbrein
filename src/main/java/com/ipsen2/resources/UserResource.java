@@ -2,18 +2,16 @@ package com.ipsen2.resources;
 
 import com.ipsen2.api.Mapper.PersonMapper;
 import com.ipsen2.api.Person;
-import com.ipsen2.db.ProjectDAO;
 import com.ipsen2.db.UserDAO;
 import com.ipsen2.db.UserHasProjectDAO;
-import com.ipsen2.services.AuthenticationService;
-//import io.dropwizard.auth.Auth;
-
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+//import io.dropwizard.auth.Auth;
 
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -26,8 +24,8 @@ import javax.ws.rs.core.Response;
 @RegisterMapper(PersonMapper.class)
 public class UserResource {
 
-    UserDAO userDao;
-    UserHasProjectDAO userHasProjectDao;
+    public UserDAO userDao;
+    public UserHasProjectDAO userHasProjectDao;
 
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
         this.userDao = userDao;

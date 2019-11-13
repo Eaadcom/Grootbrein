@@ -1,6 +1,6 @@
 package com.ipsen2.services;
 
-import com.udemy.DropWizardApplication;
+import com.ipsen2.DropwizardApplication;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.container.ContainerRequestContext;
@@ -55,10 +55,10 @@ public class AuthenticationService implements ContainerRequestFilter {
             throw new WebApplicationException(cause, Response.Status.UNAUTHORIZED);
         }
 
-        System.err.println(DropBookmarksApplication.tokenProvider.verifyToken(token));
+        System.err.println(DropwizardApplication.tokenProvider.verifyToken(token));
 
         // Validate the token
-        if (!DropBookmarksApplication.tokenProvider.verifyToken(token)) {
+        if (!DropwizardApplication.tokenProvider.verifyToken(token)) {
             Exception cause = new IllegalArgumentException("Token not provided");
             throw new WebApplicationException(cause, Response.Status.UNAUTHORIZED);
         }
