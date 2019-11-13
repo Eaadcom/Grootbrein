@@ -10,6 +10,7 @@ import java.sql.Timestamp;
  */
 
 public class Person {
+    private static Person AuthUser;
 
     @JsonProperty
     private String user_id;
@@ -44,6 +45,10 @@ public class Person {
         this.email = email;
         this.password = password;
         this.reg_date = reg_date;
+    }
+
+    public static Person getAuthUser() {
+        return AuthUser;
     }
 
 
