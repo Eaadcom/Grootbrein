@@ -34,6 +34,16 @@ public class UserResource {
         this.userHasProjectDao= userHasProjectDao;
     }
 
+    //Get all users
+    @GET
+    public Response getAll(){
+        if (userDao.getAll() != null) {
+            return Response.ok(userDao.getAll()).build();
+        } else {
+            return Response.status(404).build();
+        }
+    }
+
     @GET
     @Path("/{user_id}")
     public Response get(@PathParam("user_id") String user_id){

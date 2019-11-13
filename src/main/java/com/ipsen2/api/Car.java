@@ -22,6 +22,8 @@ public class Car {
     public Car() {
     }
 
+    // Multiple constructors so that the client can post a car without all the properties
+
     public Car(int license_id, String license_plate, String user_id, Timestamp reg_date) {
         this.license_id = license_id;
         this.license_plate = license_plate;

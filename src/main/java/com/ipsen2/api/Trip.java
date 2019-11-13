@@ -40,6 +40,8 @@ public class Trip {
         this.license_plate = license_plate;
     }
 
+    // Constructor without reg_date
+    // Reg_date is auto incremented when adding trip to the database
     public Trip(String user_id, String start_cords, String end_cords, int distance, String license_plate) {
         this.user_id = user_id;
         this.start_cords = start_cords;

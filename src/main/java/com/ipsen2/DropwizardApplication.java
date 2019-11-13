@@ -79,7 +79,6 @@ public class DropwizardApplication extends Application<DropwizardConfiguration> 
         environment.healthChecks().register("checks",
                 new DatabaseHealthCheck(db, config.getDataSourceFactory().getValidationQuery()));
 
-
     }
 
 }
