@@ -112,19 +112,19 @@
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.ipsen2.DropwizardApplication" />
       <module name="Grootbrein" />
       <option name="PROGRAM_PARAMETERS" value="server config.yml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropBookmarksApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.udemy.DropBookmarksApplication" />
-      <module name="DropBookmarks" />
+    <configuration name="DropwizardApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ipsen2.DropwizardApplication" />
+      <module name="Grootbrein" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udemy.*" />
+          <option name="PATTERN" value="com.ipsen2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,7 +134,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.DropBookmarks" />
-      <item itemvalue="Application.DropBookmarksApplication" />
+      <item itemvalue="Application.DropwizardApplication" />
     </list>
     <recent_temporary>
       <list>
