@@ -19,8 +19,8 @@ import java.util.List;
 public interface ProjectDAO {
 
 
-    //@SqlQuery("select * from project")
-    //List<Project> getAll();
+    @SqlQuery("select * from project")
+    List<Project> getAll();
 
     /**
      * Gets the projects of a user
