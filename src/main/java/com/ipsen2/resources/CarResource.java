@@ -56,6 +56,16 @@ public class CarResource {
     }
 
     /**
+     * Deletes car
+     * @author Matthijs van Eijk
+     */
+    @DELETE
+    @Path("/{user_id}/{license_plate}")
+    public void deleteById(@PathParam("user_id") String user_id, @PathParam("license_plate") String license_plate) {
+        carDAO.deleteCarsOfUser(user_id, license_plate);
+    }
+
+    /**
      * Calls the dao to add a car to the table "car" in the database
      * @author Melissa Basgol
      */

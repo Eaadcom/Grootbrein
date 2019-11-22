@@ -25,6 +25,13 @@ public interface CarDAO {
     @SqlQuery("select * from car where user_id = :user_id")
     List<Car> getCarsOfUser(@Bind("user_id") String user_id);
 
+    /**
+     * Removes License where user is
+     * @author Matthijs
+     */
+    @SqlQuery("delete from car where user_id = :user_id and license_plate = :license_plate")
+    String deleteCarsOfUser(@Bind("user_id") String user_id,@Bind("license_plate") String license_plate);
+
 
     @SqlQuery("select * from car")
     List<Car> getAll();
