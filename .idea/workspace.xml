@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="klassen toegevoegd">
-      <change beforePath="$PROJECT_DIR$/.idea/Grootbrein.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Grootbrein.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/CarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/CarDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/CarResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/CarResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +311,12 @@
       <workItem from="1571219465424" duration="130000" />
       <workItem from="1571225511207" duration="1691000" />
       <workItem from="1572597665052" duration="10913000" />
-      <workItem from="1574411018747" duration="4321000" />
+      <workItem from="1574411018747" duration="4413000" />
+      <workItem from="1574682785698" duration="2566000" />
+      <workItem from="1574691198942" duration="624000" />
+      <workItem from="1574760696971" duration="1409000" />
+      <workItem from="1574767922503" duration="2212000" />
+      <workItem from="1574840594225" duration="3317000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
