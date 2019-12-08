@@ -25,17 +25,17 @@ public interface TripDAO {
      * Gets the trips of a user
      * @author Melissa Basgol
      */
-    @SqlQuery("select * from trip where user_id = :user_id")
-    List<Trip> getTripsByUserId(@Bind("user_id") String user_id);
+    @SqlQuery("select * from trip where user_id = :userId")
+    List<Trip> getTripsByUserId(@Bind("userId") String userId);
 
     /**
      * Inserts a trip into the table "trip"
      * @author Melissa Basgol
      */
-    @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance) values (:user_id, :start_cords, :end_cords, :distance)")
+    @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance) values (:userId, :startCords, :endCords, :distance)")
     int insert(@BindBean Trip trip);
 
-    @SqlUpdate("delete from trip where trip_id = :trip_id")
-    int deleteTripById(@Bind("trip_id") String trip_id);
+    @SqlUpdate("delete from trip where trip_id = :tripId")
+    int deleteTripById(@Bind("tripId") String tripId);
 }
 

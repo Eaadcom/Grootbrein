@@ -10,31 +10,31 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class UserHasProject {
     @JsonProperty
-    private String user_id;
+    private String userId;
     @JsonProperty
-    private String project_id;
+    private String projectId;
 
     public UserHasProject() {
     }
 
-    public UserHasProject(String user_id, String project_id) {
-        this.user_id = user_id;
-        this.project_id = project_id;
+    public UserHasProject(String userId, String projectId) {
+        this.userId = userId;
+        this.projectId = projectId;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getProject_id() {
-        return project_id;
+    public String getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(String project_id) {
-        this.project_id = project_id;
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 }

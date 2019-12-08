@@ -31,10 +31,10 @@ public interface UserHasProjectDAO {
      * @author Melissa Basgol
      */
     @SqlUpdate("insert into user_has_project (user_id, project_id) values " +
-            "(:user_id, :project_id)")
+            "(:userId, :projectId)")
     int insert(@BindBean UserHasProject userHasProject);
 
-    @SqlUpdate("delete from user_has_project where user_id = :user_id and project_id = :project_id")
-    int deleteById(@Bind("user_id") String user_id, @Bind("project_id") String project_id);
+    @SqlUpdate("delete from user_has_project where user_id = :userId and project_id = :projectId")
+    int deleteById(@Bind("userId") String userId, @Bind("projectId") String projectId);
 
 }

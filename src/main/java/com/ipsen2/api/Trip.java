@@ -10,84 +10,86 @@ import java.sql.Timestamp;
  * @author Melissa Basgol
  */
 
-public class Trip {
+public class Trip{
     @JsonProperty
-    private int trip_id;
+    private int tripId;
     @JsonProperty
-    private String user_id;
+    private String userId;
     @JsonProperty
-    private Timestamp reg_date;
+    private Timestamp regDate;
     @JsonProperty
-     private String start_cords;
+     private String startCords;
     @JsonProperty
-     private String end_cords;
+     private String endCords;
     @JsonProperty
      private int distance;
     @JsonProperty
-    private String license_plate;
+    private String licensePlate;
 
     public Trip() {
     }
 
 
-    public Trip(int trip_id, String user_id, Timestamp reg_date, String start_cords, String end_cords, int distance, String license_plate) {
-        this.trip_id = trip_id;
-        this.user_id = user_id;
-        this.reg_date = reg_date;
-        this.start_cords = start_cords;
-        this.end_cords = end_cords;
+    public Trip(int tripId, String userId, Timestamp regDate, String startCords, String endCords, int distance, String licensePlate) {
+        this.tripId = tripId;
+        this.userId = userId;
+        this.regDate = regDate;
+        this.startCords = startCords;
+        this.endCords = endCords;
         this.distance = distance;
-        this.license_plate = license_plate;
+        this.licensePlate = licensePlate;
     }
 
     // Constructor without reg_date
     // Reg_date is auto incremented when adding trip to the database
-    public Trip(String user_id, String start_cords, String end_cords, int distance, String license_plate) {
-        this.user_id = user_id;
-        this.start_cords = start_cords;
-        this.end_cords = end_cords;
+
+
+    public Trip(String userId, String startCords, String endCords, int distance, String licensePlate) {
+        this.userId = userId;
+        this.startCords = startCords;
+        this.endCords = endCords;
         this.distance = distance;
-        this.license_plate = license_plate;
+        this.licensePlate = licensePlate;
     }
 
-    public int getTrip_id() {
-        return trip_id;
+    public int getTripId() {
+        return tripId;
     }
 
-    public void setTrip_id(int trip_id) {
-        this.trip_id = trip_id;
+    public void setTripId(int tripId) {
+        this.tripId = tripId;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public Timestamp getReg_date() {
-        return reg_date;
+    public Timestamp getRegDate() {
+        return regDate;
     }
 
-    public void setReg_date(Timestamp reg_date) {
-        this.reg_date = reg_date;
+    public void setRegDate(Timestamp regDate) {
+        this.regDate = regDate;
     }
 
-    public String getStart_cords() {
-        return start_cords;
+    public String getStartCords() {
+        return startCords;
     }
 
-    public void setStart_cords(String start_cords) {
-        this.start_cords = start_cords;
+    public void setStartCords(String startCords) {
+        this.startCords = startCords;
     }
 
-    public String getEnd_cords() {
-        return end_cords;
+    public String getEndCords() {
+        return endCords;
     }
 
-    public void setEnd_cords(String end_cords) {
-        this.end_cords = end_cords;
+    public void setEndCords(String endCords) {
+        this.endCords = endCords;
     }
 
     public int getDistance() {
@@ -98,11 +100,11 @@ public class Trip {
         this.distance = distance;
     }
 
-    public String getLicense_plate() {
-        return license_plate;
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public void setLicense_plate(String license_plate) {
-        this.license_plate = license_plate;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
 }
