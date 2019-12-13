@@ -74,4 +74,13 @@ public class CarResource {
         carDAO.insert(car);
         return car;
     }
+
+    @PUT
+    @Path("/{user_id}/{license_plate}")
+    public Car update(@PathParam("user_id") String user_id, @PathParam("license_plate") String license_plate, @Valid Car car) {
+        Car updateCar = new Car(car.getLicense_id(),car.getLicense_plate(),car.getUser_id(),
+                car.getReg_date());
+        carDAO.updateFunction(updateCar);
+        return updateCar;
+    }
 }
