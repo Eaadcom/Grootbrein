@@ -21,19 +21,19 @@ public class Project {
         this.projectName = projectName;
     }
 
-    public int getProject_id() {
+    public int getProjectId() {
         return projectId;
     }
 
-    public void setProject_id(int project_id) {
-        this.projectId = project_id;
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
     }
 
-    public String getProject_name() {
+    public String getProjectName() {
         return projectName;
     }
 
-    public void setProject_name(String project_name) {
+    public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 }
