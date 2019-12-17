@@ -25,9 +25,14 @@ public interface TripDAO {
      * Gets the trips of a user
      * @author Melissa Basgol
      */
-    @SqlQuery("select * from trip where user_id = :userId")
+    @SqlQuery("SELECT *\n" +
+            "    FROM   trip t\n" +
+            "    JOIN   project p ON p.project_id = t.project_id\n" +
+            "    WHERE  t.user_id = :userId ")
     List<Trip> getTripsByUserId(@Bind("userId") String userId);
 
+
+    //"select * from trip where user_id = :userId"
     /**
      * Inserts a trip into the table "trip"
      * @author Melissa Basgol
