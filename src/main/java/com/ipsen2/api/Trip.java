@@ -16,7 +16,7 @@ public class Trip{
     @JsonProperty
     private String userId;
     @JsonProperty
-    private String projectId;
+    private int projectId;
     @JsonProperty
     private Timestamp regDate;
     @JsonProperty
@@ -32,7 +32,7 @@ public class Trip{
     }
 
 
-    public Trip(int tripId, String userId, String projectId, Timestamp regDate, String startCords, String endCords, int distance, String licensePlate) {
+    public Trip(int tripId, String userId, int projectId, Timestamp regDate, String startCords, String endCords, int distance, String licensePlate) {
         this.tripId = tripId;
         this.userId = userId;
         this.projectId = projectId;
@@ -47,7 +47,7 @@ public class Trip{
     // Reg_date is auto incremented when adding trip to the database
 
 
-    public Trip(String userId, String projectId, String startCords, String endCords, int distance, String licensePlate) {
+    public Trip(String userId, int projectId, String startCords, String endCords, int distance, String licensePlate) {
         this.projectId = projectId;
         this.userId = userId;
         this.startCords = startCords;
