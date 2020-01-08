@@ -47,9 +47,9 @@ public class UserHasProjectResource {
     }
 
     @DELETE
-    @Path("/{project_id}/{user_id}")
-    public void deleteUserFromProject(@PathParam("user_id") String user_id, @PathParam("project_id") String project_id) {
-        userHasProjectDAO.deleteById(user_id, project_id);
+    @Path("/{projectId}/{userId}")
+    public void deleteUserFromProject(@PathParam("userId") String userId, @PathParam("projectId") String projectId) {
+        userHasProjectDAO.deleteById(userId, projectId);
     }
 
 }

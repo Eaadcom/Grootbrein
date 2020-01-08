@@ -15,7 +15,8 @@ import java.sql.SQLException;
 public class TripMapper implements ResultSetMapper<Trip> {
     @Override
     public Trip map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {
-        return new Trip(resultSet.getInt("trip_id"), resultSet.getString("user_id"),
+        return new Trip(resultSet.getInt("trip_id"),resultSet.getString("user_id"),
+                resultSet.getInt("project_id"),
                 resultSet.getTimestamp("reg_date"),
                 resultSet.getString("start_cords"), resultSet.getString("end_cords"),
                 resultSet.getInt("distance"),resultSet.getString("license_plate"),

@@ -45,10 +45,10 @@ public class TripsResource {
      * @author Melissa Basgol
      */
     @GET
-    @Path("/{user_id}")
-    public Response getTripsByUserId(@PathParam("user_id") String user_id) {
-        if (tripDAO.getTripsByUserId(user_id) != null) {
-            return Response.ok(tripDAO.getTripsByUserId(user_id)).build();
+    @Path("/{userId}")
+    public Response getTripsByUserId(@PathParam("userId") String userId) {
+        if (tripDAO.getTripsByUserId(userId) != null) {
+            return Response.ok(tripDAO.getTripsByUserId(userId)).build();
         } else {
             return Response.status(404).build();
         }
@@ -60,15 +60,15 @@ public class TripsResource {
      */
     @POST
     public Trip add(@Valid Trip trip) {
-        GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStart_cords(), trip.getEnd_cords());
+        GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCords(), trip.getEndCords());
         trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
         tripDAO.insert(trip);
         return trip;
     }
 
     @DELETE
-    @Path("/{trip_id}")
-    public void deleteById(@PathParam("trip_id") String trip_id) {
-        tripDAO.deleteTripById(trip_id); }
+    @Path("/{tripId}")
+    public void deleteById(@PathParam("tripId") String tripId) {
+        tripDAO.deleteTripById(tripId); }
 
 }

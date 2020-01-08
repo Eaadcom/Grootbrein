@@ -45,10 +45,10 @@ public class CarResource {
      * @author Melissa Basgol
      */
     @GET
-    @Path("/{user_id}")
-    public Response getCarsById(@PathParam("user_id") String user_id){
-        if (carDAO.getCarsOfUser(user_id) != null) {
-                return Response.ok(carDAO.getCarsOfUser(user_id)).build();
+    @Path("/{userId}")
+    public Response getCarsById(@PathParam("userId") String userId){
+        if (carDAO.getCarsOfUser(userId) != null) {
+                return Response.ok(carDAO.getCarsOfUser(userId)).build();
             }
             else {
                 return Response.status(404).build();

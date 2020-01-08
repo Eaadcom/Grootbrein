@@ -39,10 +39,10 @@ public class ProjectResource {
      * @author Melissa Basgol
      */
     @GET
-    @Path("/{user_id}")
-    public Response getProjectsByUserId(@PathParam("user_id") String user_id){
-        if (projectDAO.getProjectsByUserId(user_id) != null) {
-            return Response.ok(projectDAO.getProjectsByUserId(user_id)).build();
+    @Path("/{userId}")
+    public Response getProjectsByUserId(@PathParam("userId") String userId){
+        if (projectDAO.getProjectsByUserId(userId) != null) {
+            return Response.ok(projectDAO.getProjectsByUserId(userId)).build();
         }
         else {
             return Response.status(404).build();
@@ -50,10 +50,10 @@ public class ProjectResource {
     }
 
     @GET
-    @Path("/projectnames/{user_id}")
-    public Response getProjectNamesByUserId(@PathParam("user_id") String user_id){
-        if (projectDAO.getProjectNamesByUserId(user_id) != null) {
-            return Response.ok(projectDAO.getProjectNamesByUserId(user_id)).build();
+    @Path("/projectnames/{userId}")
+    public Response getProjectNamesByUserId(@PathParam("userId") String userId){
+        if (projectDAO.getProjectNamesByUserId(userId) != null) {
+            return Response.ok(projectDAO.getProjectNamesByUserId(userId)).build();
         }
         else {
             return Response.status(404).build();

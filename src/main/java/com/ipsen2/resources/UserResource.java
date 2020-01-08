@@ -43,18 +43,18 @@ public class UserResource {
     }
 
     @GET
-    @Path("/{user_id}")
-    public Response get(@PathParam("user_id") String user_id){
-        if (userDao.findById(user_id) != null) {
-            return Response.ok(userDao.findById(user_id)).build();
+    @Path("/{userId}")
+    public Response get(@PathParam("userId") String userId){
+        if (userDao.findById(userId) != null) {
+            return Response.ok(userDao.findById(userId)).build();
         } else {
             return Response.status(404).build();
         }
     }
 
     @DELETE
-    @Path("/{user_id}")
-    public void deleteById(@PathParam("user_id") String user_id) {
+    @Path("/{userId}")
+    public void deleteById(@PathParam("userId") String user_id) {
         userDao.deleteById(user_id);
     }
 
@@ -71,7 +71,7 @@ public class UserResource {
     @PUT
     @Path("/{userId}")
     public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getUser_id(),person.getFirst_name(),person.getLast_name(),
+        Person updatePerson = new Person(person.getUserId(),person.getFirstName(),person.getLastName(),
                 person.getEmail(),person.getPassword());
         userDao.updateEmail(updatePerson);
         return updatePerson;
