@@ -40,6 +40,13 @@ public interface ProjectDAO {
             "    WHERE  u.user_id = :userId ")
     List<String> getProjectNamesByUserId(@Bind("userId") String userId);
 
+
+    @SqlQuery("SELECT *\n" +
+            "    FROM   project\n" +
+            "    WHERE  project_id = :projectId ")
+    Project getProjectById(@Bind("projectId") String projectId);
+
+
     /**
      * Inserts project into the table "project"
      * @author Melissa Basgol

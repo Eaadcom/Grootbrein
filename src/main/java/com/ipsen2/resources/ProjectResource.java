@@ -60,10 +60,10 @@ public class ProjectResource {
     }
 
     @GET
-    @Path("/projectname/{projectId}")
+    @Path("/project/{projectId}")
     public Response getProjectNameById(@PathParam("projectId") String projectId){
-        if (projectDAO.getProjectNamesByUserId(projectId) != null) {
-            return Response.ok(projectDAO.getProjectNamesByUserId(projectId)).build();
+        if (projectDAO.getProjectById(projectId) != null) {
+            return Response.ok(projectDAO.getProjectById(projectId)).build();
         }
         else {
             return Response.status(404).build();

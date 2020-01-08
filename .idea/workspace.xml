@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/TripMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/TripMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/CarResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/ProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/ProjectDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Mapper/TripMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Mapper/TripMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Trip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/UserHasProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/UserHasProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/CarDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/CarDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/ProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/ProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserHasProjectDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserHasProjectDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/CarResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/CarResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/ProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/ProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/TripsResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/TripsResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserHasProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserHasProjectResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576585952009</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="naamgeving merge gefixt">
+      <created>1578491850198</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1578491850198</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -384,13 +369,38 @@
     <MESSAGE value="naamgeving aangepast.&#10;Maven doet ie er automatisch bij anders lukt het niet for some reason" />
     <MESSAGE value="correctie" />
     <MESSAGE value="trip aangepast." />
-    <option name="LAST_COMMIT_MESSAGE" value="trip aangepast." />
+    <MESSAGE value="naamgeving merge gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="naamgeving merge gefixt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1578491402721">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1578491402721" />
+    <state x="314" y="32" key="CommitChangelistDialog2" timestamp="1578492107423">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="314" y="32" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1578492107423" />
+    <state width="691" height="130" key="GridCell.Tab.0.bottom" timestamp="1578492173646">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="691" height="130" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1578492173646" />
+    <state width="691" height="130" key="GridCell.Tab.0.center" timestamp="1578492173645">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="691" height="130" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1578492173645" />
+    <state width="691" height="130" key="GridCell.Tab.0.left" timestamp="1578492173644">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="691" height="130" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1578492173644" />
+    <state width="691" height="130" key="GridCell.Tab.0.right" timestamp="1578492173646">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="691" height="130" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1578492173646" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1578491893568">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1578491893568" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Grootbrein$DropBookmarks.ic" NAME="DropBookmarks Coverage Results" MODIFIED="1573244646367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
