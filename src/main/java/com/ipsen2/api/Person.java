@@ -23,7 +23,7 @@ public class Person {
     @JsonProperty
     private String password;
     @JsonProperty
-    private Timestamp reg_date;
+    private Timestamp regDate;
     @JsonProperty
     private String jwt;
 
@@ -53,8 +53,8 @@ public class Person {
     }
 
 
-    public String getUser_id() {
-        return user_id;
+    public String getUserId() {
+        return userId;
     }
 
     public void setUserId(String userId) {
@@ -110,16 +110,16 @@ public class Person {
     }
 
     //wordt niet gebruikt momenteel
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Person)) return false;
-
-        Person that = (Person) o;
-
-        if (getUser_id()!=(that.getUser_id())) return false;
-        if (!getFirst_name().equals(that.getFirst_name())) return false;
-
-        return true;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Person)) return false;
+//
+//        Person that = (Person) o;
+//
+//        if (getUser_id()!=(that.getUser_id())) return false;
+//        if (!getFirst_name().equals(that.getFirst_name())) return false;
+//
+//        return true;
+//    }
 }

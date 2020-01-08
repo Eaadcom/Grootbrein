@@ -9,7 +9,6 @@ import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -48,12 +47,14 @@ public class CarResource {
     @Path("/{userId}")
     public Response getCarsById(@PathParam("userId") String userId){
         if (carDAO.getCarsOfUser(userId) != null) {
-                return Response.ok(carDAO.getCarsOfUser(userId)).build();
-            }
-            else {
-                return Response.status(404).build();
-            }
+            return Response.ok(carDAO.getCarsOfUser(userId)).build();
+        }
+        else {
+            return Response.status(404).build();
+        }
     }
+
+
 
     /**
      * Calls the dao to add a car to the table "car" in the database

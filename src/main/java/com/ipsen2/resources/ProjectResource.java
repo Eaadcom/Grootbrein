@@ -7,7 +7,6 @@ import com.ipsen2.db.ProjectDAO;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -54,6 +53,17 @@ public class ProjectResource {
     public Response getProjectNamesByUserId(@PathParam("userId") String userId){
         if (projectDAO.getProjectNamesByUserId(userId) != null) {
             return Response.ok(projectDAO.getProjectNamesByUserId(userId)).build();
+        }
+        else {
+            return Response.status(404).build();
+        }
+    }
+
+    @GET
+    @Path("/projectname/{projectId}")
+    public Response getProjectNameById(@PathParam("projectId") String projectId){
+        if (projectDAO.getProjectNamesByUserId(projectId) != null) {
+            return Response.ok(projectDAO.getProjectNamesByUserId(projectId)).build();
         }
         else {
             return Response.status(404).build();

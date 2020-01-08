@@ -19,7 +19,6 @@ public class TripMapper implements ResultSetMapper<Trip> {
                 resultSet.getInt("project_id"),
                 resultSet.getTimestamp("reg_date"),
                 resultSet.getString("start_cords"), resultSet.getString("end_cords"),
-                resultSet.getInt("distance"),resultSet.getString("license_plate"),
-                resultSet.getInt("project_id"));
+                resultSet.getInt("distance"),resultSet.getString("license_plate"));
     }
 }

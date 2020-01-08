@@ -26,39 +26,34 @@ public class Trip{
     @JsonProperty
      private int distance;
     @JsonProperty
-    private String license_plate;
-    @JsonProperty
-    private int project_id;
+    private String licensePlate;
 
     public Trip() {
     }
 
-
-    public Trip(int trip_id, String user_id, Timestamp reg_date, String start_cords, String end_cords, int distance, String license_plate, int project_id) {
-        this.trip_id = trip_id;
-        this.user_id = user_id;
-        this.reg_date = reg_date;
-        this.start_cords = start_cords;
-        this.end_cords = end_cords;
+    public Trip(int tripId, String userId, int projectId, Timestamp regDate, String startCords, String endCords, int distance, String licensePlate) {
+        this.tripId = tripId;
+        this.userId = userId;
+        this.projectId = projectId;
+        this.regDate = regDate;
+        this.startCords = startCords;
+        this.endCords = endCords;
         this.distance = distance;
-        this.license_plate = license_plate;
-        this.project_id = project_id;
+        this.licensePlate = licensePlate;
     }
 
     // Constructor without reg_date
     // Reg_date is auto incremented when adding trip to the database
 
 
-    public Trip(String userId, int projectId, String startCords, String endCords, int distance, String licensePlate) {
-        this.projectId = projectId;
+    public Trip(int tripId, String userId, int projectId, String startCords, String endCords, String licensePlate) {
+        this.tripId = tripId;
         this.userId = userId;
+        this.projectId = projectId;
         this.startCords = startCords;
         this.endCords = endCords;
-        this.distance = distance;
-        this.license_plate = license_plate;
-        this.project_id = project_id;
+        this.licensePlate = licensePlate;
     }
-
 
     public int getTripId() {
         return tripId;
@@ -116,11 +111,11 @@ public class Trip{
         this.licensePlate = licensePlate;
     }
 
-    public int getProject_id() {
-        return project_id;
+    public int getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(int project_id){
-        this.project_id = project_id;
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
     }
 }
