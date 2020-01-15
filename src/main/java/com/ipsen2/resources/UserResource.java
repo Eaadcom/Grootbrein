@@ -4,10 +4,13 @@ import com.ipsen2.api.Mapper.PersonMapper;
 import com.ipsen2.api.Person;
 import com.ipsen2.db.UserDAO;
 import com.ipsen2.db.UserHasProjectDAO;
+import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -26,6 +29,7 @@ public class UserResource {
 
     public UserDAO userDao;
     public UserHasProjectDAO userHasProjectDao;
+    JWTService jwtService = new JWTService();
 
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
         this.userDao = userDao;
@@ -34,28 +38,41 @@ public class UserResource {
 
     //Get all users
     @GET
-    public Response getAll(){
-        if (userDao.getAll() != null) {
-            return Response.ok(userDao.getAll()).build();
+    public Response getAll(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            if (userDao.getAll() != null) {
+                return Response.ok(userDao.getAll()).build();
+            } else {
+                return Response.status(404).build();
+            }
         } else {
-            return Response.status(404).build();
+            return Response.status(401).build();
         }
     }
 
     @GET
     @Path("/{userId}")
-    public Response get(@PathParam("userId") String userId){
-        if (userDao.findById(userId) != null) {
-            return Response.ok(userDao.findById(userId)).build();
+    public Response get(@PathParam("userId") String userId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            if (userDao.findById(userId) != null) {
+                return Response.ok(userDao.findById(userId)).build();
+            } else {
+                return Response.status(404).build();
+            }
         } else {
-            return Response.status(404).build();
+            return Response.status(401).build();
         }
     }
 
     @DELETE
     @Path("/{userId}")
-    public void deleteById(@PathParam("userId") String user_id) {
-        userDao.deleteById(user_id);
+    public Response deleteById(@PathParam("userId") String user_id, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userDao.deleteById(user_id);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 
     /**
@@ -63,17 +80,25 @@ public class UserResource {
      * @author Melissa Basgol
      */
     @POST
-    public Response add(Person user) {
-        userDao.insert(user);
-        return Response.status(200).build();
+    public Response add(Person user, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userDao.insert(user);
+            return Response.status(200).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 
     @PUT
     @Path("/{userId}")
-    public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getUserId(),person.getFirstName(),person.getLastName(),
-                person.getEmail(),person.getPassword());
-        userDao.updateEmail(updatePerson);
-        return updatePerson;
+    public Response updateEmail(@PathParam("userId") Integer userId, @Valid Person person, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            Person updatePerson = new Person(person.getUserId(),person.getFirstName(),person.getLastName(),
+                    person.getEmail(),person.getPassword());
+            userDao.updateEmail(updatePerson);
+            return Response.ok(updatePerson).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 }

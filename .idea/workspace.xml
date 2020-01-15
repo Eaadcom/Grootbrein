@@ -27,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserHasProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserHasProjectResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,17 +83,12 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
-  </component>
   <component name="ProjectId" id="1SEYhygGu91XSACc3aYfiv6aCVc" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/iprwc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kleinbrein" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -104,6 +100,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
@@ -133,18 +141,6 @@
       <item itemvalue="Application.DropBookmarks" />
       <item itemvalue="Application.DropwizardApplication" />
     </list>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -188,6 +184,8 @@
       <workItem from="1576402533569" duration="892000" />
       <workItem from="1576504714205" duration="1128000" />
       <workItem from="1576584384379" duration="4324000" />
+      <workItem from="1578992499461" duration="13514000" />
+      <workItem from="1579082712123" duration="10251000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
