@@ -3,7 +3,6 @@ package com.ipsen2.resources;
 import com.ipsen2.api.Mapper.TripMapper;
 import com.ipsen2.api.Trip;
 import com.ipsen2.db.TripDAO;
-import com.ipsen2.models.GoogleJSONModel;
 import com.ipsen2.services.GoogleService;
 import com.ipsen2.services.JSONservice;
 import com.ipsen2.services.JWTService;
@@ -95,5 +94,3 @@ public class TripsResource {
         }
     }
 }
-
-
