@@ -79,4 +79,5 @@ public class ProjectResource {
         projectDAO.insert(project);
         return Response.status(200).build();
     }
+
 }

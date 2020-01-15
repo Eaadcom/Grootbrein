@@ -1,8 +1,6 @@
 package com.ipsen2.api;
 
-
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.sql.Timestamp;
 
 /**
@@ -44,7 +42,6 @@ public class Trip{
 
     // Constructor without reg_date
     // Reg_date is auto incremented when adding trip to the database
-
 
     public Trip(int tripId, String userId, int projectId, String startCords, String endCords, String licensePlate) {
         this.tripId = tripId;

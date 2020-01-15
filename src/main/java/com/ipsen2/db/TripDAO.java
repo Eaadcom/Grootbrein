@@ -38,7 +38,7 @@ public interface TripDAO {
      * @author Melissa Basgol, Edward Deen
      */
     //werkt
-    @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance, license_plate, project_id) values (:user_id, :start_cords, :end_cords, :distance, :license_plate, :project_id)")
+    @SqlUpdate("insert into trip (user_id, start_cords, end_cords, distance, license_plate, project_id) values (:userId, :startCords, :endCords, :distance, :licensePlate, :projectId)")
     int insert(@BindBean Trip trip);
 
     @SqlUpdate("delete from trip where trip_id = :tripId")
