@@ -3,6 +3,7 @@ package com.ipsen2.resources;
 import com.ipsen2.api.Mapper.TripMapper;
 import com.ipsen2.api.Trip;
 import com.ipsen2.db.TripDAO;
+import com.ipsen2.models.GoogleJSONModel;
 import com.ipsen2.services.GoogleService;
 import com.ipsen2.services.JSONservice;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
@@ -59,10 +60,10 @@ public class TripsResource {
      */
     @POST
     public Response add(@Valid Trip trip) {
-        //GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCords(), trip.getEndCords());
-        //trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
+        GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCords(), trip.getEndCords());
+        trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
         tripDAO.insert(trip);
-        return Response.status(200).build();
+        return Response.ok(trip).build();
     }
 
     @DELETE
