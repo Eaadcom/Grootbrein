@@ -59,10 +59,18 @@ public class CarResource {
     /**
      * Calls the dao to add a car to the table "car" in the database
      * @author Melissa Basgol
+     * @return
      */
     @POST
-    public Car add(@Valid Car car) {
+    public Response add(@Valid Car car) {
         carDAO.insert(car);
-        return car;
+        return Response.status(200).build();
     }
+
+    @DELETE
+    @Path("/{licenseId}")
+    public void deleteById(@PathParam("licenseId") int licenseId) {
+        carDAO.deleteById(licenseId);
+    }
+
 }

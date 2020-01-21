@@ -29,6 +29,9 @@ public interface CarDAO {
     @SqlQuery("select * from car")
     List<Car> getAll();
 
+    @SqlUpdate("delete from car where license_id = :licenseId")
+    int deleteById(@Bind("licenseId") int licenseId);
+
     /**
      * Inserts new car into the table "car"
      * @author Melissa Basgol
