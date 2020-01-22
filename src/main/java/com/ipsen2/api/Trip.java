@@ -18,9 +18,9 @@ public class Trip{
     @JsonProperty
     private Timestamp regDate;
     @JsonProperty
-     private String startCords;
+     private String startCoordinates;
     @JsonProperty
-     private String endCords;
+     private String endCoordinates;
     @JsonProperty
      private int distance;
     @JsonProperty
@@ -29,13 +29,13 @@ public class Trip{
     public Trip() {
     }
 
-    public Trip(int tripId, String userId, int projectId, Timestamp regDate, String startCords, String endCords, int distance, String licensePlate) {
+    public Trip(int tripId, String userId, int projectId, Timestamp regDate, String startCoordinates, String endCoordinates, int distance, String licensePlate) {
         this.tripId = tripId;
         this.userId = userId;
         this.projectId = projectId;
         this.regDate = regDate;
-        this.startCords = startCords;
-        this.endCords = endCords;
+        this.startCoordinates = startCoordinates;
+        this.endCoordinates = endCoordinates;
         this.distance = distance;
         this.licensePlate = licensePlate;
     }
@@ -43,12 +43,12 @@ public class Trip{
     // Constructor without reg_date
     // Reg_date is auto incremented when adding trip to the database
 
-    public Trip(int tripId, String userId, int projectId, String startCords, String endCords, String licensePlate) {
+    public Trip(int tripId, String userId, int projectId, String startCoordinates, String endCoordinates, String licensePlate) {
         this.tripId = tripId;
         this.userId = userId;
         this.projectId = projectId;
-        this.startCords = startCords;
-        this.endCords = endCords;
+        this.startCoordinates = startCoordinates;
+        this.endCoordinates = endCoordinates;
         this.licensePlate = licensePlate;
     }
 
@@ -76,20 +76,20 @@ public class Trip{
         this.regDate = regDate;
     }
 
-    public String getStartCords() {
-        return startCords;
+    public String getStartCoordinates() {
+        return startCoordinates;
     }
 
-    public void setStartCords(String startCords) {
-        this.startCords = startCords;
+    public void setStartCoordinates(String startCoordinates) {
+        this.startCoordinates = startCoordinates;
     }
 
-    public String getEndCords() {
-        return endCords;
+    public String getEndCoordinates() {
+        return endCoordinates;
     }
 
-    public void setEndCords(String endCords) {
-        this.endCords = endCords;
+    public void setEndCoordinates(String endCoordinates) {
+        this.endCoordinates = endCoordinates;
     }
 
     public int getDistance() {
