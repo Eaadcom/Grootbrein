@@ -60,4 +60,14 @@ public class LoginResource {
         return Response.status(405).build();
         }
     }
+
+    @POST
+    @Path("/levalidatelejwt")
+    public Response validateJWT(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            return Response.ok(true).build();
+        } else {
+            return Response.ok(false).build();
+        }
+    }
 }
