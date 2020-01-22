@@ -44,6 +44,10 @@ public class JWTService {
             verification = true;
         } catch (io.jsonwebtoken.security.SignatureException se){
             verification = false;
+            se.printStackTrace();
+        } catch (java.lang.IllegalArgumentException iae){
+            verification = false;
+            System.out.println("JWT string is null");
         }
 
         return verification;
