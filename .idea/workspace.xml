@@ -171,6 +171,11 @@
       <item itemvalue="Application.DropBookmarks" />
       <item itemvalue="Application.DropwizardApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DropwizardApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -467,30 +472,30 @@
     <state x="314" y="32" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1579085310362" />
     <state x="314" y="32" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1579098971476" />
     <state x="314" y="33" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1579697150315" />
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom" timestamp="1579618011728">
+    <state width="1398" height="293" key="GridCell.Tab.0.bottom" timestamp="1579704163066">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1579084809597" />
     <state width="1398" height="351" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1579095302506" />
-    <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579618011728" />
-    <state width="1398" height="206" key="GridCell.Tab.0.center" timestamp="1579618011728">
+    <state width="1398" height="293" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579704163066" />
+    <state width="1398" height="293" key="GridCell.Tab.0.center" timestamp="1579704163065">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
     <state width="1398" height="351" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1579095302505" />
-    <state width="1398" height="206" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579618011728" />
-    <state width="1398" height="206" key="GridCell.Tab.0.left" timestamp="1579618011727">
+    <state width="1398" height="293" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579704163065" />
+    <state width="1398" height="293" key="GridCell.Tab.0.left" timestamp="1579704163064">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1579084809595" />
     <state width="1398" height="351" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1579095302505" />
-    <state width="1398" height="206" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579618011727" />
-    <state width="1398" height="206" key="GridCell.Tab.0.right" timestamp="1579618011728">
+    <state width="1398" height="293" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579704163064" />
+    <state width="1398" height="293" key="GridCell.Tab.0.right" timestamp="1579704163065">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
     <state width="1398" height="351" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579095302505" />
-    <state width="1398" height="206" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579618011728" />
+    <state width="1398" height="293" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579704163065" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1579003828238">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -505,10 +510,10 @@
     </state>
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1579084055227" />
     <state x="399" y="281" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1579689166285" />
-    <state x="475" y="181" key="git4idea.branch.GitSmartOperationDialog" timestamp="1579697145708">
+    <state x="475" y="181" key="git4idea.branch.GitSmartOperationDialog" timestamp="1579704189772">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="475" y="181" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.877@0.23.1440.877" timestamp="1579697145708" />
+    <state x="475" y="181" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.877@0.23.1440.877" timestamp="1579704189772" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Grootbrein$DropBookmarks.ic" NAME="DropBookmarks Coverage Results" MODIFIED="1573244646367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
