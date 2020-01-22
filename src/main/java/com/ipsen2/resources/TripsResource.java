@@ -75,7 +75,7 @@ public class TripsResource {
     @POST
     public Response add(@Valid Trip trip, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
-            GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCords(), trip.getEndCords());
+            GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCoordinates(), trip.getEndCoordinates());
             trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
             tripDAO.insert(trip);
             return Response.ok(trip).build();

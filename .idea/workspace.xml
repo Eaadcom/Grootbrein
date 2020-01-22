@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/DropwizardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/DropwizardApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/Provider/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/Provider/TokenProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/TripsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/TripsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DropBookmarks.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Grootbrein.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/DropwizardApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/DropwizardApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Trip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Trip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/models/TripModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/models/TripModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/TripsResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/TripsResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/services/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/services/AuthenticationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DbConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/DropBookmarksApplication$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udemy/Provider/TokenProvider.class" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +42,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur:3306" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -61,6 +70,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -106,18 +116,6 @@
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -146,6 +144,23 @@
       <item itemvalue="Application.DropBookmarks" />
       <item itemvalue="Application.DropwizardApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DropwizardApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -401,30 +416,42 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1579003489988" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1579084809597">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1864" height="238" key="GridCell.Tab.0.bottom" timestamp="1579704051611">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
+    <state width="1864" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1579084809597" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center" timestamp="1579084809596">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1864" height="238" key="GridCell.Tab.0.center" timestamp="1579704051611">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
+    <state width="1864" height="238" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left" timestamp="1579084809595">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1864" height="238" key="GridCell.Tab.0.left" timestamp="1579704051611">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
+    <state width="1864" height="238" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1579084809595" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right" timestamp="1579084809596">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1864" height="238" key="GridCell.Tab.0.right" timestamp="1579704051611">
+      <screen x="0" y="0" width="1920" height="1030" />
     </state>
+    <state width="1864" height="238" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1579003828238">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="234" height="457" key="HiddenNamespacesPopup/0.23.1440.813@0.23.1440.813" timestamp="1579003828238" />
+    <state x="601" y="158" key="MultipleFileMergeDialog" timestamp="1579703825057">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="601" y="158" key="MultipleFileMergeDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1579703825057" />
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1579084055227">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog/0.23.1440.813@0.23.1440.813" timestamp="1579084055227" />
+    <state x="721" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579703851972">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="721" y="409" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1030@0.0.1920.1030" timestamp="1579703851972" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Grootbrein$DropBookmarks.ic" NAME="DropBookmarks Coverage Results" MODIFIED="1573244646367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
