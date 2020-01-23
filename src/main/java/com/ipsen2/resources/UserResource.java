@@ -80,13 +80,10 @@ public class UserResource {
      * @author Melissa Basgol
      */
     @POST
-    public Response add(Person user, @Context HttpHeaders headers) {
-        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
-            userDao.insert(user);
+    public Response add(@Valid Person user, @Context HttpHeaders headers) {
+            Person person = new Person(user.getUserId(), user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword(), user.getRole());
+            userDao.insert(person);
             return Response.status(200).build();
-        } else {
-            return Response.status(401).build();
-        }
     }
 
     @PUT
@@ -94,7 +91,7 @@ public class UserResource {
     public Response updateEmail(@PathParam("userId") Integer userId, @Valid Person person, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
             Person updatePerson = new Person(person.getUserId(),person.getFirstName(),person.getLastName(),
-                    person.getEmail(),person.getPassword());
+                    person.getEmail(),person.getPassword(), person.getRole());
             userDao.updateEmail(updatePerson);
             return Response.ok(updatePerson).build();
         } else {

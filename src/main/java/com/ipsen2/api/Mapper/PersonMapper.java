@@ -18,7 +18,6 @@ public class PersonMapper implements ResultSetMapper<Person> {
     public Person map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {
         return new Person(resultSet.getString("user_id"), resultSet.getString("first_name"),
                 resultSet.getString("last_name"),resultSet.getString("email"),
-                resultSet.getString("password"), resultSet.getTimestamp("reg_date"));
+                resultSet.getString("password"), resultSet.getTimestamp("reg_date"), resultSet.getString("role"));
     }
-
 }

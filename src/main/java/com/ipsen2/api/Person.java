@@ -26,8 +26,20 @@ public class Person {
     private Timestamp regDate;
     @JsonProperty
     private String jwt;
+    @JsonProperty
+    private String role;
 
-    public Person() {
+    public Person(){
+    }
+
+    public Person(String userId, String firstName, String lastName, String email, String password, Timestamp regDate, String role) {
+        this.userId = userId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.regDate = regDate;
+        this.role = role;
     }
 
 
@@ -40,25 +52,30 @@ public class Person {
         this.regDate = regDate;
     }
 
-    public Person(String userId, String firstName, String lastName, String email, String password) {
+    public Person(String userId, String firstName, String lastName, String email, String password, String role) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.role = role;
     }
 
-    public Person(String firstName, String lastName, String email, String password) {
+    public Person(String firstName, String lastName, String email, String password, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.role = role;
     }
 
     public static Person getAuthUser() {
         return AuthUser;
     }
 
+    public void setRole(String role){ this.role = role; }
+
+    public String getRole(){ return role; }
 
     public String getUserId() {
         return userId;

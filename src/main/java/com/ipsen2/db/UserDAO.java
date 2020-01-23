@@ -34,8 +34,8 @@ public interface UserDAO {
      * Inserts a user into the table "user"
      * @author Melissa Basgol
      */
-    @SqlUpdate("insert into user (user_id, first_name, last_name, email, password) values " +
-            "(:userId, :firstName, :lastName, :email, :password)")
+    @SqlUpdate("insert into user (user_id, first_name, last_name, email, password, role) values " +
+            "(:userId, :firstName, :lastName, :email, :password, :role)")
     int insert(@BindBean Person user);
 
     @SqlUpdate("update user set email = :email where userId = :userId")

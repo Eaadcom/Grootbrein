@@ -104,5 +104,4 @@ public class ProjectResource {
             return Response.status(401).build();
         }
     }
-
 }

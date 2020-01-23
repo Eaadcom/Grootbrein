@@ -99,11 +99,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.udemy.resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.udemy.resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +195,8 @@
       <workItem from="1579689182073" duration="2426000" />
       <workItem from="1579694250403" duration="1369000" />
       <workItem from="1579702099149" duration="1636000" />
-      <workItem from="1579768926655" duration="1689000" />
+      <workItem from="1579768926655" duration="6521000" />
+      <workItem from="1579781563649" duration="8446000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
