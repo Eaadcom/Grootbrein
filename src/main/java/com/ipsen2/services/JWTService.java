@@ -45,9 +45,14 @@ public class JWTService {
         } catch (io.jsonwebtoken.security.SignatureException se){
             verification = false;
             se.printStackTrace();
+            System.out.println("JWT string signature is invalid");
         } catch (java.lang.IllegalArgumentException iae){
             verification = false;
             System.out.println("JWT string is null");
+        } catch (io.jsonwebtoken.MalformedJwtException mje) {
+            System.out.println("JWT string is malformed");
+            System.out.println();
+            verification = false;
         }
 
         return verification;
