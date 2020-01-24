@@ -1,4 +1,4 @@
-package com.udemy.Provider;
+package com.ipsen2.Provider;
 
 /**
  * @author Salah Abdulkader
