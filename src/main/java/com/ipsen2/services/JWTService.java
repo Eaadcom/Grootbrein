@@ -34,7 +34,7 @@ public class JWTService {
     }
 
     public boolean verifyJWT(String jwt){
-        boolean verification;
+        boolean verification = false;
 
         try{
             Jws<Claims> result = Jwts.parser()
@@ -43,16 +43,13 @@ public class JWTService {
                     .parseClaimsJws(jwt);
             verification = true;
         } catch (io.jsonwebtoken.security.SignatureException se){
-            verification = false;
-            se.printStackTrace();
             System.out.println("JWT string signature is invalid");
         } catch (java.lang.IllegalArgumentException iae){
-            verification = false;
             System.out.println("JWT string is null");
         } catch (io.jsonwebtoken.MalformedJwtException mje) {
             System.out.println("JWT string is malformed");
-            System.out.println();
-            verification = false;
+        } catch (io.jsonwebtoken.ExpiredJwtException eje) {
+            System.out.println("JWT string is expired");
         }
 
         return verification;
