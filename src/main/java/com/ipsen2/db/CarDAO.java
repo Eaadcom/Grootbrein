@@ -34,7 +34,7 @@ public interface CarDAO {
      * @author Melissa Basgol
      */
 
-    @SqlUpdate("insert into car(license_plate, user_id) values (:licensePlate, :userId)")
+    @SqlUpdate("insert into car(license_plate, trade_name, user_id) values (:licensePlate, :tradeName, :userId)")
     int insert(@BindBean Car car);
 
 
