@@ -15,6 +15,8 @@ public class Car {
     @JsonProperty
     private String licensePlate;
     @JsonProperty
+    private String tradeName;
+    @JsonProperty
     private String userId;
     @JsonProperty
     private Timestamp regDate;
@@ -25,9 +27,10 @@ public class Car {
     // Multiple constructors so that the client can post a car without all the properties
 
 
-    public Car(int licenseId, String licensePlate, String userId, Timestamp regDate) {
+    public Car(int licenseId, String licensePlate, String tradeName, String userId, Timestamp regDate) {
         this.licenseId = licenseId;
         this.licensePlate = licensePlate;
+        this.tradeName = tradeName;
         this.userId = userId;
         this.regDate = regDate;
     }
@@ -37,8 +40,9 @@ public class Car {
         this.licensePlate = licensePlate;
     }
 
-    public Car(String licensePlate, String userId) {
+    public Car(String licensePlate, String tradeName, String userId) {
         this.licensePlate = licensePlate;
+        this.tradeName = tradeName;
         this.userId = userId;
     }
 
@@ -56,6 +60,14 @@ public class Car {
 
     public void setLicensePlate(String licensePlate) {
         this.licensePlate = licensePlate;
+    }
+
+    public String getTradeName() {
+        return tradeName;
+    }
+
+    public void setTradeName(String tradeName) {
+        this.tradeName = tradeName;
     }
 
     public String getUserId() {
