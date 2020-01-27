@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/CarMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/CarDAO.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,17 +38,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -118,6 +108,18 @@
       <recent name="com.udemy.resources" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -151,18 +153,6 @@
         <item itemvalue="Application.DropwizardApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -215,6 +205,7 @@
       <workItem from="1579768926655" duration="6521000" />
       <workItem from="1579781563649" duration="8495000" />
       <workItem from="1579862616152" duration="1594000" />
+      <workItem from="1580145522561" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
