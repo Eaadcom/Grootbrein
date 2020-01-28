@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class UserHasProjectMapper implements ResultSetMapper<UserHasProject> {
     @Override
     public UserHasProject map(int i, ResultSet resultSet, StatementContext statementContext) throws SQLException {
-        return new UserHasProject(resultSet.getString("user_id"), resultSet.getString("project_id"));
+        return new UserHasProject(resultSet.getString("user_id"), resultSet.getInt("project_id"));
     }
 }
 
