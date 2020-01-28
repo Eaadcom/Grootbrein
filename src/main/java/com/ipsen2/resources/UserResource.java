@@ -64,6 +64,17 @@ public class UserResource {
         }
     }
 
+    @GET
+    @Path("/project/{projectId}")
+    public Response getUsersOfProject(@PathParam("projectId") String projectId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            return Response.ok(userDao.getAllUsersOfProject(projectId)).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+
     @DELETE
     @Path("/{userId}")
     public Response deleteById(@PathParam("userId") String user_id, @Context HttpHeaders headers) {

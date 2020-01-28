@@ -17,6 +17,12 @@ public interface UserDAO {
     @SqlQuery("select * from user")
     List<Person> getAll();
 
+    @SqlQuery("SELECT *\n" +
+            "    FROM   user u\n" +
+            "    JOIN   user_has_project up ON up.user_id = u.user_id\n" +
+            "    WHERE  up.project_id = :projectId ")
+    List<Person> getAllUsersOfProject(@Bind("projectId") String projectId);
+
     @SqlUpdate("delete from user where user_id = :userId")
     int deleteById(@Bind("userId") String userId);
 

@@ -40,6 +40,11 @@ public class Car {
         this.licensePlate = licensePlate;
     }
 
+    public Car(String licensePlate, String userId) {
+        this.licensePlate = licensePlate;
+        this.userId = userId;
+    }
+
     public Car(String licensePlate, String tradeName, String userId) {
         this.licensePlate = licensePlate;
         this.tradeName = tradeName;
