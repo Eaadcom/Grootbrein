@@ -7,6 +7,7 @@ import com.ipsen2.models.GoogleJSONModel;
 import com.ipsen2.services.GoogleService;
 import com.ipsen2.services.JSONservice;
 import com.ipsen2.services.JWTService;
+import com.ipsen2.services.PostalcodeCoordinateService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
@@ -30,6 +31,7 @@ public class TripsResource {
     JSONservice jsoNservice = new JSONservice();
     GoogleService googleService = new GoogleService();
     JWTService jwtService = new JWTService();
+    PostalcodeCoordinateService postalcodeCoordinateService = new PostalcodeCoordinateService();
 
     public TripsResource(TripDAO tripDAO) {
         this.tripDAO = tripDAO;
@@ -79,6 +81,18 @@ public class TripsResource {
             trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
             tripDAO.insert(trip);
             return Response.ok(trip).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+    @POST
+    @Path("/getCoordinates")
+    @Consumes(MediaType.TEXT_HTML)
+    public Response getCoordinates(String postalcode, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            postalcodeCoordinateService.getCoordinates(postalcode);
+            return Response.ok().build();
         } else {
             return Response.status(401).build();
         }
