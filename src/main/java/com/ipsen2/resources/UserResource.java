@@ -74,6 +74,16 @@ public class UserResource {
         }
     }
 
+    @GET
+    @Path("/email/{email}")
+    public Response getUserWithEmail(@PathParam("email") String email, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            return Response.ok(userDao.findByEmail(email)).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
 
     @DELETE
     @Path("/{userId}")

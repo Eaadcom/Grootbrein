@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b74e44bb-296a-45e7-baa4-95de1cef76c7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b74e44bb-296a-45e7-baa4-95de1cef76c7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/ProjectResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/api/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/services/ManualTripService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/services/ManualTripService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/ProjectResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/ProjectResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +193,6 @@
                 <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@6d03b6d0" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5b51e83b" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -262,7 +253,7 @@
       <workItem from="1579862616152" duration="1594000" />
       <workItem from="1580145522561" duration="801000" />
       <workItem from="1580203074951" duration="722000" />
-      <workItem from="1580204358062" duration="3313000" />
+      <workItem from="1580204358062" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -404,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576585952009</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="aanpassingen admin pagina">
+      <created>1580222605815</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1580222605815</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -459,7 +457,8 @@
     <MESSAGE value="naamgeving aangepast.&#10;Maven doet ie er automatisch bij anders lukt het niet for some reason" />
     <MESSAGE value="correctie" />
     <MESSAGE value="trip aangepast." />
-    <option name="LAST_COMMIT_MESSAGE" value="trip aangepast." />
+    <MESSAGE value="aanpassingen admin pagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="aanpassingen admin pagina" />
   </component>
   <component name="WindowStateProjectService">
     <state x="461" y="166" width="800" height="618" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580150976932">
@@ -472,34 +471,38 @@
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1579003489988" />
     <state x="533" y="154" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1580151333396" />
-    <state width="1398" height="442" key="GridCell.Tab.0.bottom" timestamp="1580222412302">
+    <state x="303" y="38" key="CommitChangelistDialog2" timestamp="1580222605648">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="303" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580222605648" />
+    <state width="1398" height="72" key="GridCell.Tab.0.bottom" timestamp="1580224678839">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580227" />
     <state width="1864" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1579084809597" />
-    <state width="1398" height="442" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1580222412302" />
-    <state width="1398" height="442" key="GridCell.Tab.0.center" timestamp="1580222412301">
+    <state width="1398" height="72" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1580224678839" />
+    <state width="1398" height="72" key="GridCell.Tab.0.center" timestamp="1580224678838">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580226" />
     <state width="1864" height="238" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
-    <state width="1398" height="442" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1580222412301" />
-    <state width="1398" height="442" key="GridCell.Tab.0.left" timestamp="1580222412301">
+    <state width="1398" height="72" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1580224678838" />
+    <state width="1398" height="72" key="GridCell.Tab.0.left" timestamp="1580224678838">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580226" />
     <state width="1864" height="238" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1579084809595" />
-    <state width="1398" height="442" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1580222412301" />
-    <state width="1398" height="442" key="GridCell.Tab.0.right" timestamp="1580222412301">
+    <state width="1398" height="72" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1580224678838" />
+    <state width="1398" height="72" key="GridCell.Tab.0.right" timestamp="1580224678838">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580227" />
     <state width="1864" height="238" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
-    <state width="1398" height="442" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1580222412301" />
+    <state width="1398" height="72" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1580224678838" />
     <state width="234" height="457" key="HiddenNamespacesPopup" timestamp="1579003828238">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
@@ -508,6 +511,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="601" y="158" key="MultipleFileMergeDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1579703825057" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580222613248">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580222613248" />
     <state x="449" y="126" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1580151435771">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
