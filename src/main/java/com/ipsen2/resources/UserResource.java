@@ -50,6 +50,17 @@ public class UserResource {
         }
     }
 
+    @POST
+    @Path("/checkEmail")
+    @Consumes(MediaType.TEXT_PLAIN)
+    public Response checkIfEmailExists(String email){
+        if (userDao.findByEmail(email) == null){
+            return Response.ok(true).build();
+        } else{
+            return Response.ok(false).build();
+        }
+    }
+
     @GET
     @Path("/{userId}")
     public Response get(@PathParam("userId") String userId, @Context HttpHeaders headers){
