@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a79abec-80f0-42ff-979b-8d77643d574f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/db/TripDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/services/GoogleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/services/GoogleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/db/TripDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/resources/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ipsen2/services/GoogleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ipsen2/services/GoogleService.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +85,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -104,6 +100,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -209,6 +206,8 @@
       <workItem from="1580292310392" duration="3426000" />
       <workItem from="1580296039161" duration="1058000" />
       <workItem from="1580299817213" duration="2190000" />
+      <workItem from="1580305237785" duration="175000" />
+      <workItem from="1580305700098" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -417,6 +416,10 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1579003489988" />
+    <state x="691" y="302" key="#com.intellij.tools.ToolEditorDialog" timestamp="1580305792151">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="691" y="302" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1580305792151" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1580300692630">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -477,6 +480,10 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="601" y="158" key="MultipleFileMergeDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1579703825057" />
+    <state x="344" y="54" key="SettingsEditor" timestamp="1580305810238">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="344" y="54" key="SettingsEditor/0.0.1920.1030@0.0.1920.1030" timestamp="1580305810238" />
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1579084055227">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
