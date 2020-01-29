@@ -1030,13 +1030,13 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="255" parent="240" name="start_cords">
+    <column id="255" parent="240" name="start_coordinates">
       <Position>4</Position>
       <DataType>varchar(125)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="240" name="end_cords">
+    <column id="256" parent="240" name="end_coordinates">
       <Position>5</Position>
       <DataType>varchar(125)|0s</DataType>
       <NotNull>1</NotNull>
