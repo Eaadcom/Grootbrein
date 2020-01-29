@@ -79,6 +79,12 @@ public class TripsResource {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
             GoogleJSONModel googleJSONModel = googleService.findDistance(trip.getStartCoordinates(), trip.getEndCoordinates());
             trip.setDistance(googleJSONModel.rows.get(0).elements.get(0).distance.value);
+            if (trip.getStartCoordinates().contains(",") && trip.getEndCoordinates().contains(",")) {
+                String startCords = trip.getStartCoordinates();
+                String endCords = trip.getEndCoordinates();
+                trip.setStartCoordinates(startCords.split(",")[1] + "," + startCords.split(",")[0]);
+                trip.setEndCoordinates(endCords.split(",")[1] + "," + endCords.split(",")[0]);
+            }
             tripDAO.insert(trip);
             return Response.ok(trip).build();
         } else {
