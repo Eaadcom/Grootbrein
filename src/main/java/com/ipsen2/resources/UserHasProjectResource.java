@@ -3,13 +3,15 @@ package com.ipsen2.resources;
 import com.ipsen2.api.Mapper.TripMapper;
 import com.ipsen2.api.UserHasProject;
 import com.ipsen2.db.UserHasProjectDAO;
+import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 /**
  * Receives the requests from the paths and calls the dao that is needed.
  * @author Melissa Basgol
@@ -22,17 +24,22 @@ import java.util.List;
 public class UserHasProjectResource {
 
     UserHasProjectDAO userHasProjectDAO;
+    JWTService jwtService = new JWTService();
 
     public UserHasProjectResource(UserHasProjectDAO userhasprojDAO) {
         this.userHasProjectDAO = userhasprojDAO;
     }
 
     @GET
-    public Response getAll(){
-        if (userHasProjectDAO.getAll() != null) {
-            return Response.ok(userHasProjectDAO.getAll()).build();
+    public Response getAll(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            if (userHasProjectDAO.getAll() != null) {
+                return Response.ok(userHasProjectDAO.getAll()).build();
+            } else {
+                return Response.status(404).build();
+            }
         } else {
-            return Response.status(404).build();
+            return Response.status(401).build();
         }
     }
 
@@ -41,15 +48,23 @@ public class UserHasProjectResource {
      * @author Melissa Basgol
      */
     @POST
-    public UserHasProject addUserToProject(@Valid UserHasProject userHasProject) {
-        userHasProjectDAO.insert(userHasProject);
-        return userHasProject;
+    public Response addUserToProject(@Valid UserHasProject userHasProject, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userHasProjectDAO.insert(userHasProject);
+            return Response.ok(userHasProject).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 
     @DELETE
-    @Path("/{project_id}/{user_id}")
-    public void deleteUserFromProject(@PathParam("user_id") String user_id, @PathParam("project_id") String project_id) {
-        userHasProjectDAO.deleteById(user_id, project_id);
+    @Path("/{projectId}/{userId}")
+    public Response deleteUserFromProject(@PathParam("userId") String userId, @PathParam("projectId") String projectId, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userHasProjectDAO.deleteById(userId, projectId);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
     }
-
 }

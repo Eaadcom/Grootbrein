@@ -3,11 +3,13 @@ package com.ipsen2.resources;
 
 import com.ipsen2.api.Project;
 import com.ipsen2.db.ProjectDAO;
+import com.ipsen2.services.JWTService;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -19,18 +21,23 @@ import java.util.List;
 @Produces({MediaType.APPLICATION_JSON})
 public class ProjectResource {
     ProjectDAO projectDAO;
+    JWTService jwtService = new JWTService();
 
     public ProjectResource(ProjectDAO projectDAO) {
         this.projectDAO = projectDAO;
     }
 
     @GET
-    public Response getAll(){
-        if (projectDAO.getAll() != null) {
-            return Response.ok(projectDAO.getAll()).build();
-        }
-        else {
-            return Response.status(404).build();
+    public Response getAll(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (projectDAO.getAll() != null) {
+                return Response.ok(projectDAO.getAll()).build();
+            }
+            else {
+                return Response.status(404).build();
+            }
+        } else {
+            return Response.status(401).build();
         }
     }
 
@@ -39,24 +46,48 @@ public class ProjectResource {
      * @author Melissa Basgol
      */
     @GET
-    @Path("/{user_id}")
-    public Response getProjectsByUserId(@PathParam("user_id") String user_id){
-        if (projectDAO.getProjectsByUserId(user_id) != null) {
-            return Response.ok(projectDAO.getProjectsByUserId(user_id)).build();
+    @Path("/{userId}")
+    public Response getProjectsByUserId(@PathParam("userId") String userId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (projectDAO.getProjectsByUserId(userId) != null) {
+                return Response.ok(projectDAO.getProjectsByUserId(userId)).build();
+            }
+            else {
+                return Response.status(404).build();
+            }
+        } else {
+            return Response.status(401).build();
         }
-        else {
-            return Response.status(404).build();
+
+    }
+
+    @GET
+    @Path("/projectnames/{userId}")
+    public Response getProjectNamesByUserId(@PathParam("userId") String userId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (projectDAO.getProjectNamesByUserId(userId) != null) {
+                return Response.ok(projectDAO.getProjectNamesByUserId(userId)).build();
+            }
+            else {
+                return Response.status(404).build();
+            }
+        } else {
+            return Response.status(401).build();
         }
     }
 
     @GET
-    @Path("/projectnames/{user_id}")
-    public Response getProjectNamesByUserId(@PathParam("user_id") String user_id){
-        if (projectDAO.getProjectNamesByUserId(user_id) != null) {
-            return Response.ok(projectDAO.getProjectNamesByUserId(user_id)).build();
-        }
-        else {
-            return Response.status(404).build();
+    @Path("/projectname/{projectId}")
+    public Response getProjectNameById(@PathParam("projectId") String projectId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (projectDAO.getProjectNamesByUserId(projectId) != null) {
+                return Response.ok(projectDAO.getProjectNamesByUserId(projectId)).build();
+            }
+            else {
+                return Response.status(404).build();
+            }
+        } else {
+            return Response.status(401).build();
         }
     }
 
@@ -65,8 +96,12 @@ public class ProjectResource {
      * @author Melissa Basgol
      */
     @POST
-    public Response add(Project project) {
-        projectDAO.insert(project);
-        return Response.status(200).build();
+    public Response add(Project project, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            projectDAO.insert(project);
+            return Response.status(200).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 }

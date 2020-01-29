@@ -4,10 +4,13 @@ import com.ipsen2.api.Mapper.PersonMapper;
 import com.ipsen2.api.Person;
 import com.ipsen2.db.UserDAO;
 import com.ipsen2.db.UserHasProjectDAO;
+import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -24,8 +27,10 @@ import javax.ws.rs.core.Response;
 @RegisterMapper(PersonMapper.class)
 public class UserResource {
 
+    private static final String regexEmail = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
     public UserDAO userDao;
     public UserHasProjectDAO userHasProjectDao;
+    JWTService jwtService = new JWTService();
 
     public UserResource(UserDAO userDao, UserHasProjectDAO userHasProjectDao){
         this.userDao = userDao;
@@ -34,28 +39,55 @@ public class UserResource {
 
     //Get all users
     @GET
-    public Response getAll(){
-        if (userDao.getAll() != null) {
-            return Response.ok(userDao.getAll()).build();
+    public Response getAll(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            if (userDao.getAll() != null) {
+                return Response.ok(userDao.getAll()).build();
+            } else {
+                return Response.status(404).build();
+            }
         } else {
-            return Response.status(404).build();
+            return Response.status(401).build();
+        }
+    }
+
+    @POST
+    @Path("/checkEmail")
+    @Consumes(MediaType.TEXT_PLAIN)
+    public Response checkIfEmailExists(String email){
+        if(!email.matches(regexEmail)){
+            return  Response.ok(false).build();
+        }
+        if (userDao.findByEmail(email) == null){
+            return Response.ok(true).build();
+        } else{
+            return Response.ok(false).build();
         }
     }
 
     @GET
-    @Path("/{user_id}")
-    public Response get(@PathParam("user_id") String user_id){
-        if (userDao.findById(user_id) != null) {
-            return Response.ok(userDao.findById(user_id)).build();
+    @Path("/{userId}")
+    public Response get(@PathParam("userId") String userId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            if (userDao.findById(userId) != null) {
+                return Response.ok(userDao.findById(userId)).build();
+            } else {
+                return Response.status(404).build();
+            }
         } else {
-            return Response.status(404).build();
+            return Response.status(401).build();
         }
     }
 
     @DELETE
-    @Path("/{user_id}")
-    public void deleteById(@PathParam("user_id") String user_id) {
-        userDao.deleteById(user_id);
+    @Path("/{userId}")
+    public Response deleteById(@PathParam("userId") String user_id, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userDao.deleteById(user_id);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 
     /**
@@ -63,17 +95,22 @@ public class UserResource {
      * @author Melissa Basgol
      */
     @POST
-    public Response add(Person user) {
-        userDao.insert(user);
-        return Response.status(200).build();
+    public Response add(@Valid Person user, @Context HttpHeaders headers) {
+            Person person = new Person(user.getUserId(), user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword(), user.getRole());
+            userDao.insert(person);
+            return Response.status(200).build();
     }
 
     @PUT
     @Path("/{userId}")
-    public Person updateEmail(@PathParam("userId") Integer userId, @Valid Person person) {
-        Person updatePerson = new Person(person.getUser_id(),person.getFirst_name(),person.getLast_name(),
-                person.getEmail(),person.getPassword());
-        userDao.updateEmail(updatePerson);
-        return updatePerson;
+    public Response updateEmail(@PathParam("userId") Integer userId, @Valid Person person, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            Person updatePerson = new Person(person.getUserId(),person.getFirstName(),person.getLastName(),
+                    person.getEmail(),person.getPassword(), person.getRole());
+            userDao.updateEmail(updatePerson);
+            return Response.ok(updatePerson).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 }

@@ -3,13 +3,15 @@ package com.ipsen2.resources;
 import com.ipsen2.api.Car;
 import com.ipsen2.api.Mapper.CarMapper;
 import com.ipsen2.db.CarDAO;
+import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 /**
  * Receives the requests from the paths and calls the dao that is needed.
@@ -22,21 +24,23 @@ import java.util.List;
 @RegisterMapper(CarMapper.class)
 public class CarResource {
     CarDAO carDAO;
-
-    public CarResource() {
-    }
+    JWTService jwtService = new JWTService();
 
     public CarResource(CarDAO carDAO) {
         this.carDAO = carDAO;
     }
 
     @GET
-    public Response getAll(){
-        if (carDAO.getAll() != null) {
-            return Response.ok(carDAO.getAll()).build();
-        }
-        else {
-            return Response.status(404).build();
+    public Response getAll(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (carDAO.getAll() != null) {
+                return Response.ok(carDAO.getAll()).build();
+            }
+            else {
+                return Response.status(404).build();
+            }
+        } else {
+            return Response.status(401).build();
         }
     }
 
@@ -45,14 +49,18 @@ public class CarResource {
      * @author Melissa Basgol
      */
     @GET
-    @Path("/{user_id}")
-    public Response getCarsById(@PathParam("user_id") String user_id){
-        if (carDAO.getCarsOfUser(user_id) != null) {
-                return Response.ok(carDAO.getCarsOfUser(user_id)).build();
+    @Path("/{userId}")
+    public Response getCarsById(@PathParam("userId") String userId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            if (carDAO.getCarsOfUser(userId) != null) {
+                return Response.ok(carDAO.getCarsOfUser(userId)).build();
             }
             else {
                 return Response.status(404).build();
             }
+        } else {
+            return Response.status(401).build();
+        }
     }
 
     /**
@@ -60,8 +68,12 @@ public class CarResource {
      * @author Melissa Basgol
      */
     @POST
-    public Car add(@Valid Car car) {
-        carDAO.insert(car);
-        return car;
+    public Response add(@Valid Car car, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            carDAO.insert(car);
+            return Response.ok(car).build();
+        } else {
+            return Response.status(401).build();
+        }
     }
 }

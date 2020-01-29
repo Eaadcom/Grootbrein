@@ -11,65 +11,78 @@ import java.sql.Timestamp;
 
 public class Car {
     @JsonProperty
-    private int license_id;
+    private int licenseId;
     @JsonProperty
-    private String license_plate;
+    private String licensePlate;
     @JsonProperty
-    private String user_id;
+    private String tradeName;
     @JsonProperty
-    private Timestamp reg_date;
+    private String userId;
+    @JsonProperty
+    private Timestamp regDate;
 
     public Car() {
     }
 
     // Multiple constructors so that the client can post a car without all the properties
 
-    public Car(int license_id, String license_plate, String user_id, Timestamp reg_date) {
-        this.license_id = license_id;
-        this.license_plate = license_plate;
-        this.user_id = user_id;
-        this.reg_date = reg_date;
+
+    public Car(int licenseId, String licensePlate, String tradeName, String userId, Timestamp regDate) {
+        this.licenseId = licenseId;
+        this.licensePlate = licensePlate;
+        this.tradeName = tradeName;
+        this.userId = userId;
+        this.regDate = regDate;
     }
 
-    public Car(int license_id, String license_plate) {
-        this.license_id = license_id;
-        this.license_plate = license_plate;
+    public Car(int licenseId, String licensePlate) {
+        this.licenseId = licenseId;
+        this.licensePlate = licensePlate;
     }
 
-    public Car(String license_plate, String user_id) {
-        this.license_plate = license_plate;
-        this.user_id = user_id;
+    public Car(String licensePlate, String tradeName, String userId) {
+        this.licensePlate = licensePlate;
+        this.tradeName = tradeName;
+        this.userId = userId;
     }
 
-    public String getLicense_plate() {
-        return license_plate;
+    public int getLicenseId() {
+        return licenseId;
     }
 
-    public void setLicense_plate(String license_plate) {
-        this.license_plate = license_plate;
+    public void setLicenseId(int licenseId) {
+        this.licenseId = licenseId;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getLicensePlate() {
+        return licensePlate;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
     }
 
-    public int getLicense_id() {
-        return license_id;
+    public String getTradeName() {
+        return tradeName;
     }
 
-    public void setLicense_id(int license_id) {
-        this.license_id = license_id;
+    public void setTradeName(String tradeName) {
+        this.tradeName = tradeName;
     }
 
-    public Timestamp getReg_date() {
-        return reg_date;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setReg_date(Timestamp reg_date) {
-        this.reg_date = reg_date;
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public Timestamp getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(Timestamp regDate) {
+        this.regDate = regDate;
     }
 }

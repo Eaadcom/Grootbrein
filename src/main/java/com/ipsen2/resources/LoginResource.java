@@ -3,11 +3,18 @@ package com.ipsen2.resources;
 
 import com.ipsen2.api.Login;
 import com.ipsen2.api.Mapper.LoginMapper;
+import com.ipsen2.api.Person;
 import com.ipsen2.db.UserDAO;
+import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 
 import javax.validation.Valid;
-import javax.ws.rs.*;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -22,6 +29,7 @@ import javax.ws.rs.core.Response;
 @RegisterMapper(LoginMapper.class)
 public class LoginResource {
     UserDAO userDao;
+    JWTService jwtService = new JWTService();
 
     public LoginResource(UserDAO userDao) {
         this.userDao = userDao;
@@ -34,20 +42,32 @@ public class LoginResource {
      * @author Melissa Basgol
      */
     @POST
-    public Response getPersonLogin(@Valid Login login){
+    public Response getPersonLogin(@Valid Login login, @Context HttpHeaders headers){
         if (userDao.findByEmail(login.getEmail()) != null) {
             if (userDao.findByEmail(login.getEmail()).getPassword().equals(login.getPassword())) {
-                System.out.println(userDao.findByEmail(login.getEmail()));
-                return Response.ok(userDao.findByEmail(login.getEmail())).build();
+                //System.out.println(jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization")));
+                Person person = userDao.findByEmail(login.getEmail());
+                person.setJwt(jwtService.buildJWT(person));
+                return Response
+                        .ok(person)
+                        .build();
             }
             else {
-                return Response.status(404).build();
+                return Response.status(403).build();
             }
         }
         else {
-        return Response.status(404).build();
-
+        return Response.status(405).build();
         }
     }
 
+    @POST
+    @Path("/levalidatelejwt")
+    public Response validateJWT(@Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            return Response.ok(true).build();
+        } else {
+            return Response.ok(false).build();
+        }
+    }
 }

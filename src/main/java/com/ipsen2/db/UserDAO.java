@@ -17,11 +17,11 @@ public interface UserDAO {
     @SqlQuery("select * from user")
     List<Person> getAll();
 
-    @SqlUpdate("delete from user where user_id = :user_id")
-    int deleteById(@Bind("user_id") String user_id);
+    @SqlUpdate("delete from user where user_id = :userId")
+    int deleteById(@Bind("userId") String userId);
 
-    @SqlQuery("select * from user where user_id = :user_id")
-    Person findById(@Bind("user_id") String user_id);
+    @SqlQuery("select * from user where user_id = :userId")
+    Person findById(@Bind("userId") String userId);
 
     /**
      * Gets a user with the email of the user.
@@ -34,11 +34,11 @@ public interface UserDAO {
      * Inserts a user into the table "user"
      * @author Melissa Basgol
      */
-    @SqlUpdate("insert into user (user_id, first_name, last_name, email, password) values " +
-            "(:user_id, :first_name, :last_name, :email, :password)")
+    @SqlUpdate("insert into user (user_id, first_name, last_name, email, password, role) values " +
+            "(:userId, :firstName, :lastName, :email, :password, :role)")
     int insert(@BindBean Person user);
 
-    @SqlUpdate("update user set email = :email where user_id = :user_id")
+    @SqlUpdate("update user set email = :email where userId = :userId")
     int updateEmail(@BindBean Person user);
 
 }

@@ -34,10 +34,14 @@ public class GoogleService {
      * @version 05-11-2019
      */
     private String callAPI(String origin, String destination){
+        String[] origin_arr = origin.split(",");
+        String new_origin = origin_arr[1] + "," + origin_arr[0];
+        String[] destination_arr = destination.split(",");
+        String new_destination = destination_arr[1] + "," + destination_arr[0];
+
         Client client = ClientBuilder.newClient();
         String result = client.target("https://maps.googleapis.com/maps/api/" +
-                "distancematrix/json?origins=" + origin + "&destinations=" + destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
-
+                "distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
         return result;
     }
 

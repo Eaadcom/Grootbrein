@@ -9,31 +9,31 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Project {
     @JsonProperty
-    private int project_id;
+    private int projectId;
     @JsonProperty
-    private String project_name;
+    private String projectName;
 
     public Project() {
     }
 
-    public Project(int project_id, String project_name) {
-        this.project_id = project_id;
-        this.project_name = project_name;
+    public Project(int projectId, String projectName) {
+        this.projectId = projectId;
+        this.projectName = projectName;
     }
 
-    public int getProject_id() {
-        return project_id;
+    public int getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(int project_id) {
-        this.project_id = project_id;
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
     }
 
-    public String getProject_name() {
-        return project_name;
+    public String getProjectName() {
+        return projectName;
     }
 
-    public void setProject_name(String project_name) {
-        this.project_name = project_name;
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
     }
 }

@@ -22,8 +22,8 @@ public interface CarDAO {
      * Gets the license plates of a user
      * @author Melissa Basgol
      */
-    @SqlQuery("select * from car where user_id = :user_id")
-    List<Car> getCarsOfUser(@Bind("user_id") String user_id);
+    @SqlQuery("select * from car where user_id = :userId")
+    List<Car> getCarsOfUser(@Bind("userId") String userId);
 
 
     @SqlQuery("select * from car")
@@ -34,7 +34,9 @@ public interface CarDAO {
      * @author Melissa Basgol
      */
 
-    @SqlUpdate("insert into car(license_plate, user_id) values (:license_plate, :user_id)")
+    @SqlUpdate("insert into car(license_plate, trade_name, user_id) values (:licensePlate, :tradeName, :userId)")
     int insert(@BindBean Car car);
+
+
 
 }
