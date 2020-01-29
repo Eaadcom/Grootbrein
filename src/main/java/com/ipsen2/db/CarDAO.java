@@ -34,6 +34,9 @@ public interface CarDAO {
      * @author Melissa Basgol
      */
 
+    @SqlUpdate("delete from car where license_id = :license_id")
+    int deleteById(@Bind("license_id") String license_id);
+
     @SqlUpdate("insert into car(license_plate, trade_name, user_id) values (:licensePlate, :tradeName, :userId)")
     int insert(@BindBean Car car);
 
