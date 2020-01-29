@@ -41,4 +41,7 @@ public interface UserDAO {
     @SqlUpdate("update user set email = :email where userId = :userId")
     int updateEmail(@BindBean Person user);
 
+    @SqlUpdate("update user set password = :password where user_id = :user_id")
+    int updatePassword(@Bind("user_id") String user_id, @Bind("password") String password);
+
 }

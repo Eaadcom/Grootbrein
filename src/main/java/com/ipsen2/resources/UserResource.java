@@ -93,9 +93,11 @@ public class UserResource {
     @POST
     @Path("changePassword/{userId}")
     @Consumes(MediaType.TEXT_HTML)
-    public Response changePassword(@PathParam("userId") String user_id, String newPassword, @Context HttpHeaders headers) {
+    public Response changePassword(@PathParam("userId") String user_id, String password, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
-            userDao.findById(user_id).setEmail(newPassword);
+            Person user = userDao.findById(user_id);
+            user.setPassword(password);
+            userDao.updatePassword(user_id, password);
             return Response.ok().build();
         } else {
             return Response.status(401).build();
