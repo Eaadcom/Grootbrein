@@ -12,4 +12,5 @@ public class Results {
     public Geometry geometry;
     public String place_id;
     public List<String> types;
+    public boolean partial_match;
 }
