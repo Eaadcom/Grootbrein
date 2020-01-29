@@ -90,6 +90,19 @@ public class UserResource {
         }
     }
 
+    @POST
+    @Path("changePassword/{userId}")
+    @Consumes(MediaType.TEXT_HTML)
+    public Response changePassword(@PathParam("userId") String user_id, String newPassword, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            userDao.findById(user_id).setEmail(newPassword);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+
     /**
      * Calls the dao to add a new user
      * @author Melissa Basgol
