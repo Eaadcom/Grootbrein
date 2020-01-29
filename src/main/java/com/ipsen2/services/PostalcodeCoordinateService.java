@@ -15,8 +15,16 @@ public class PostalcodeCoordinateService {
         return jsonModel.results.get(0).geometry.location;
     }
 
-    public void getPostalcode(){
-        
+    public String getPostalcode(String coordinates){
+        GoogleJSONModel jsonModel = mapJsonToModel(callAPI(coordinates));
+        //System.out.println(jsonModel.results.get(0).address_components.get(jsonModel.results.get(0).address_components.size()-1).long_name);
+        return jsonModel.results.get(0).address_components.get(jsonModel.results.get(0).address_components.size()-1).long_name;
+    }
+
+    public GoogleJSONModel getDataByCoordinates(String coordinates){
+        GoogleJSONModel jsonModel = mapJsonToModel(callAPI(coordinates));
+        //System.out.println(jsonModel.results.get(0).address_components.get(jsonModel.results.get(0).address_components.size()-1).long_name);
+        return jsonModel;
     }
 
     //https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
@@ -26,6 +34,13 @@ public class PostalcodeCoordinateService {
         return client.target("https://maps.googleapis.com/maps/api/" +
                 "geocode/json?address=" + address + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
 
+    }
+
+    private String callAPI2(String coordinates){
+
+        Client client = ClientBuilder.newClient();
+        return client.target("https://maps.googleapis.com/maps/api/" +
+                "geocode/json?address=" + coordinates + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
     }
 
     private GoogleJSONModel mapJsonToModel(String result){

@@ -89,10 +89,20 @@ public class TripsResource {
     @POST
     @Path("/getCoordinates")
     @Consumes(MediaType.TEXT_HTML)
-    public Response getCoordinates(String postalcode, @Context HttpHeaders headers){
+    public Response getCoordinates(String lat, @Context HttpHeaders headers){
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
-            postalcodeCoordinateService.getCoordinates(postalcode);
-            return Response.ok().build();
+            return Response.ok(postalcodeCoordinateService.getCoordinates(lat)).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+    @POST
+    @Path("/getPostalcode")
+    @Consumes(MediaType.TEXT_HTML)
+    public Response getPostalcode(String coordinates, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            return Response.ok(postalcodeCoordinateService.getDataByCoordinates(coordinates)).build();
         } else {
             return Response.status(401).build();
         }

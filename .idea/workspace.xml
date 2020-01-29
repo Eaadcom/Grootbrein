@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/TripMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/api/Mapper/TripMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/TripsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ipsen2/resources/TripsResource.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,18 +166,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -232,6 +221,9 @@
       <workItem from="1580203838003" duration="4337000" />
       <workItem from="1580211296185" duration="3290000" />
       <workItem from="1580248031088" duration="1882000" />
+      <workItem from="1580292310392" duration="3426000" />
+      <workItem from="1580296039161" duration="1058000" />
+      <workItem from="1580299817213" duration="2190000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
