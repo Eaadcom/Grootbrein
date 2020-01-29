@@ -32,7 +32,39 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="car: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="project: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -118,18 +150,6 @@
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -165,23 +185,35 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24c70d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24c70d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@44c3e141" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@53c77cc" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2098a7a0" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@46b86956" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -235,13 +267,10 @@
       <workItem from="1579768926655" duration="6521000" />
       <workItem from="1579781563649" duration="8495000" />
       <workItem from="1579862616152" duration="1594000" />
-      <workItem from="1580145522561" duration="1491000" />
-      <workItem from="1580203838003" duration="4337000" />
-      <workItem from="1580211296185" duration="3290000" />
-      <workItem from="1580248031088" duration="1882000" />
-      <workItem from="1580292310392" duration="3426000" />
-      <workItem from="1580296039161" duration="1058000" />
-      <workItem from="1580299817213" duration="3839000" />
+      <workItem from="1580145522561" duration="801000" />
+      <workItem from="1580203074951" duration="722000" />
+      <workItem from="1580204358062" duration="4223000" />
+      <workItem from="1580245283158" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
@@ -383,7 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576585952009</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="aanpassingen admin pagina">
+      <created>1580222605815</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1580222605815</updated>
+    </task>
+    <task id="LOCAL-00023" summary="aanpassingen admin pagina">
+      <created>1580225343293</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1580225343293</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -438,45 +481,55 @@
     <MESSAGE value="naamgeving aangepast.&#10;Maven doet ie er automatisch bij anders lukt het niet for some reason" />
     <MESSAGE value="correctie" />
     <MESSAGE value="trip aangepast." />
-    <option name="LAST_COMMIT_MESSAGE" value="trip aangepast." />
+    <MESSAGE value="aanpassingen admin pagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="aanpassingen admin pagina" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="492" y="143" width="800" height="618" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580215728676">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="320" y="101" key="#Console" timestamp="1580247873046">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="101" key="#Console/0.23.1440.825@0.23.1440.825" timestamp="1580247873046" />
+    <state x="461" y="166" width="800" height="618" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580150976932">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="492" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1580215728676" />
     <state x="461" y="164" width="800" height="618" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1579003817002" />
-    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1579003489988">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="461" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1580150976932" />
+    <state x="533" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1580151333396">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.813@0.23.1440.813" timestamp="1579003489988" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1580300692630">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="533" y="154" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1580151333396" />
+    <state x="303" y="38" key="CommitChangelistDialog2" timestamp="1580225343096">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580300692630" />
-    <state width="1493" height="549" key="GridCell.Tab.0.bottom" timestamp="1580312974843">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="303" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580225343096" />
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom" timestamp="1580248611897">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580227" />
     <state width="1493" height="549" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580312974843" />
     <state width="1864" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1579084809597" />
-    <state width="1493" height="549" key="GridCell.Tab.0.center" timestamp="1580312974843">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="201" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1580248611897" />
+    <state width="1398" height="201" key="GridCell.Tab.0.center" timestamp="1580248611897">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580226" />
     <state width="1493" height="549" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580312974843" />
     <state width="1864" height="238" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1579084809596" />
-    <state width="1493" height="549" key="GridCell.Tab.0.left" timestamp="1580312974843">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="201" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1580248611897" />
+    <state width="1398" height="201" key="GridCell.Tab.0.left" timestamp="1580248611896">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580226" />
     <state width="1493" height="549" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580312974843" />
     <state width="1864" height="238" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1579704051611" />
     <state width="1398" height="271" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1579084809595" />
-    <state width="1493" height="549" key="GridCell.Tab.0.right" timestamp="1580312974843">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="201" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1580248611896" />
+    <state width="1398" height="201" key="GridCell.Tab.0.right" timestamp="1580248611897">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1493" height="411" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1579958580227" />
     <state width="1493" height="549" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580312974843" />
@@ -510,6 +563,14 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="601" y="158" key="MultipleFileMergeDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1579703825057" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580225350682">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580225350682" />
+    <state x="449" y="126" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1580151435771">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="449" y="126" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.825@0.23.1440.825" timestamp="1580151435771" />
     <state x="399" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1579084055227">
       <screen x="0" y="23" width="1440" height="813" />
     </state>

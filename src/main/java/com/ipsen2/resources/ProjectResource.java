@@ -62,7 +62,7 @@ public class ProjectResource {
     }
 
     @GET
-    @Path("/projectnames/{userId}")
+    @Path("/projects/{userId}")
     public Response getProjectNamesByUserId(@PathParam("userId") String userId, @Context HttpHeaders headers){
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
             if (projectDAO.getProjectNamesByUserId(userId) != null) {
@@ -99,7 +99,7 @@ public class ProjectResource {
     public Response add(Project project, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
             projectDAO.insert(project);
-            return Response.status(200).build();
+            return Response.ok().build();
         } else {
             return Response.status(401).build();
         }
