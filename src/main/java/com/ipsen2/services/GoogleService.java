@@ -34,15 +34,24 @@ public class GoogleService {
      * @version 05-11-2019
      */
     private String callAPI(String origin, String destination){
-        String[] origin_arr = origin.split(",");
-        String new_origin = origin_arr[1] + "," + origin_arr[0];
-        String[] destination_arr = destination.split(",");
-        String new_destination = destination_arr[1] + "," + destination_arr[0];
+        String new_origin;
+        String new_destination;
+        if (origin.contains(",")) {
+            String[] origin_arr = origin.split(",");
+            new_origin = origin_arr[1] + "," + origin_arr[0];
+        }else {
+            new_origin = origin;
+        }
+        if (destination.contains(",")) {
+            String[] destination_arr = destination.split(",");
+            new_destination = destination_arr[1] + "," + destination_arr[0];
+        }else {
+            new_destination = destination;
+        }
 
         Client client = ClientBuilder.newClient();
-        String result = client.target("https://maps.googleapis.com/maps/api/" +
-                "distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
-        return result;
+        System.out.println("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ");
+        return client.target("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
     }
 
     /**
