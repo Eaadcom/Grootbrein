@@ -36,13 +36,6 @@ public class PostalcodeCoordinateService {
 
     }
 
-    private String callAPI2(String coordinates){
-
-        Client client = ClientBuilder.newClient();
-        return client.target("https://maps.googleapis.com/maps/api/" +
-                "geocode/json?address=" + coordinates + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
-    }
-
     private GoogleJSONModel mapJsonToModel(String result){
         try{
             ObjectMapper objectMapper = new ObjectMapper();

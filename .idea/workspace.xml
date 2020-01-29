@@ -44,6 +44,12 @@
         <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -116,6 +122,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Melissa\IdeaProjects\Grootbrein" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.DropBookmarks">
     <configuration name="DropBookmarks" type="Application" factoryName="Application">
@@ -208,7 +226,7 @@
       <workItem from="1580248031088" duration="1882000" />
       <workItem from="1580292310392" duration="3426000" />
       <workItem from="1580296039161" duration="1058000" />
-      <workItem from="1580299817213" duration="2190000" />
+      <workItem from="1580299817213" duration="3839000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>
