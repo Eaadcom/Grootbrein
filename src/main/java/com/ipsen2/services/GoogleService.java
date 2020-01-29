@@ -49,8 +49,8 @@ public class GoogleService {
             new_destination = destination;
         }
 
-        Client client = ClientBuilder.newClient();
         System.out.println("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ");
+        Client client = ClientBuilder.newClient();
         return client.target("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + new_origin + "&destinations=" + new_destination + "&key=AIzaSyD5kY3qkbU6tYmQwoExrjTFIuKQ5tz4PTQ").request().get(String.class);
     }
 
