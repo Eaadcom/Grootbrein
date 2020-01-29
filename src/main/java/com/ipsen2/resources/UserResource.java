@@ -27,6 +27,7 @@ import javax.ws.rs.core.Response;
 @RegisterMapper(PersonMapper.class)
 public class UserResource {
 
+    private static final String regexEmail = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
     public UserDAO userDao;
     public UserHasProjectDAO userHasProjectDao;
     JWTService jwtService = new JWTService();
@@ -54,6 +55,9 @@ public class UserResource {
     @Path("/checkEmail")
     @Consumes(MediaType.TEXT_PLAIN)
     public Response checkIfEmailExists(String email){
+        if(!email.matches(regexEmail)){
+            return  Response.ok(false).build();
+        }
         if (userDao.findByEmail(email) == null){
             return Response.ok(true).build();
         } else{
