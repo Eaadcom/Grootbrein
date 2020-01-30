@@ -79,6 +79,27 @@ public class UserResource {
         }
     }
 
+    @GET
+    @Path("/project/{projectId}")
+    public Response getUsersOfProject(@PathParam("projectId") String projectId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            return Response.ok(userDao.getAllUsersOfProject(projectId)).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+    @GET
+    @Path("/email/{email}")
+    public Response getUserWithEmail(@PathParam("email") String email, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            return Response.ok(userDao.findByEmail(email)).build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
+
     @DELETE
     @Path("/{userId}")
     public Response deleteById(@PathParam("userId") String user_id, @Context HttpHeaders headers) {
@@ -89,6 +110,21 @@ public class UserResource {
             return Response.status(401).build();
         }
     }
+
+    @POST
+    @Path("changePassword/{userId}")
+    @Consumes(MediaType.TEXT_HTML)
+    public Response changePassword(@PathParam("userId") String user_id, String password, @Context HttpHeaders headers) {
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
+            Person user = userDao.findById(user_id);
+            user.setPassword(password);
+            userDao.updatePassword(user_id, password);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
 
     /**
      * Calls the dao to add a new user

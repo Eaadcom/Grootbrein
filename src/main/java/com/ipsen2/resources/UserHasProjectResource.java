@@ -2,6 +2,7 @@ package com.ipsen2.resources;
 
 import com.ipsen2.api.Mapper.TripMapper;
 import com.ipsen2.api.UserHasProject;
+import com.ipsen2.db.UserDAO;
 import com.ipsen2.db.UserHasProjectDAO;
 import com.ipsen2.services.JWTService;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
@@ -24,6 +25,7 @@ import javax.ws.rs.core.Response;
 public class UserHasProjectResource {
 
     UserHasProjectDAO userHasProjectDAO;
+    UserDAO userDAO;
     JWTService jwtService = new JWTService();
 
     public UserHasProjectResource(UserHasProjectDAO userhasprojDAO) {
@@ -47,11 +49,12 @@ public class UserHasProjectResource {
      * Calls the dao to add userhasproject to the table "user_has_project"
      * @author Melissa Basgol
      */
+
     @POST
     public Response addUserToProject(@Valid UserHasProject userHasProject, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
-            userHasProjectDAO.insert(userHasProject);
-            return Response.ok(userHasProject).build();
+                userHasProjectDAO.insert(userHasProject);
+                return Response.ok(userHasProject).build();
         } else {
             return Response.status(401).build();
         }
@@ -59,7 +62,7 @@ public class UserHasProjectResource {
 
     @DELETE
     @Path("/{projectId}/{userId}")
-    public Response deleteUserFromProject(@PathParam("userId") String userId, @PathParam("projectId") String projectId, @Context HttpHeaders headers) {
+    public Response deleteUserFromProject(@PathParam("userId") String userId, @PathParam("projectId") int projectId, @Context HttpHeaders headers) {
         if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))) {
             userHasProjectDAO.deleteById(userId, projectId);
             return Response.ok().build();

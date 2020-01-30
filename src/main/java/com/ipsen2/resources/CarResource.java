@@ -63,6 +63,17 @@ public class CarResource {
         }
     }
 
+    @DELETE
+    @Path("/{carId}")
+    public Response deleteCarById(@PathParam("carId") String carId, @Context HttpHeaders headers){
+        if (jwtService.verifyJWT(headers.getRequestHeaders().getFirst("Authorization"))){
+            carDAO.deleteById(carId);
+            return Response.ok().build();
+        } else {
+            return Response.status(401).build();
+        }
+    }
+
     /**
      * Calls the dao to add a car to the table "car" in the database
      * @author Melissa Basgol

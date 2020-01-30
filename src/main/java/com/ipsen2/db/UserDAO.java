@@ -17,6 +17,12 @@ public interface UserDAO {
     @SqlQuery("select * from user")
     List<Person> getAll();
 
+    @SqlQuery("SELECT *\n" +
+            "    FROM   user u\n" +
+            "    JOIN   user_has_project up ON up.user_id = u.user_id\n" +
+            "    WHERE  up.project_id = :projectId ")
+    List<Person> getAllUsersOfProject(@Bind("projectId") String projectId);
+
     @SqlUpdate("delete from user where user_id = :userId")
     int deleteById(@Bind("userId") String userId);
 
@@ -40,5 +46,8 @@ public interface UserDAO {
 
     @SqlUpdate("update user set email = :email where userId = :userId")
     int updateEmail(@BindBean Person user);
+
+    @SqlUpdate("update user set password = :password where user_id = :user_id")
+    int updatePassword(@Bind("user_id") String user_id, @Bind("password") String password);
 
 }

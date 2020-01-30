@@ -12,12 +12,12 @@ public class UserHasProject {
     @JsonProperty
     private String userId;
     @JsonProperty
-    private String projectId;
+    private int projectId;
 
     public UserHasProject() {
     }
 
-    public UserHasProject(String userId, String projectId) {
+    public UserHasProject(String userId, int projectId) {
         this.userId = userId;
         this.projectId = projectId;
     }
@@ -30,11 +30,11 @@ public class UserHasProject {
         this.userId = userId;
     }
 
-    public String getProjectId() {
+    public int getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(String projectId) {
+    public void setProjectId(int projectId) {
         this.projectId = projectId;
     }
 }

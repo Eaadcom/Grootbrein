@@ -13,4 +13,5 @@ public class Results {
     public String place_id;
     public List<String> types;
     public boolean partial_match;
+    public Plus_code plus_code;
 }
