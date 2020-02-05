@@ -92,6 +92,15 @@ public class TripsResource {
         }
     }
 
+    /**
+     * Endpoint to use the google API, consumes a string of coordinates
+     * and returns a json string containing data about the location
+     *
+     * @author Edward Deen
+     * @param lat
+     * @param headers
+     * @return
+     */
     @POST
     @Path("/getCoordinates")
     @Consumes(MediaType.TEXT_HTML)
@@ -103,6 +112,15 @@ public class TripsResource {
         }
     }
 
+    /**
+     * Endpoint to use the google API, consumes a string of coordinates
+     * and returns a json string containing data about the location
+     *
+     * @author Edward Deen
+     * @param coordinates
+     * @param headers
+     * @return
+     */
     @POST
     @Path("/getPostalcode")
     @Consumes(MediaType.TEXT_HTML)

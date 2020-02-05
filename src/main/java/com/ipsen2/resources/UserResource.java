@@ -51,6 +51,14 @@ public class UserResource {
         }
     }
 
+    /**
+     * Endpoint that checks if a certain email
+     * exists within our database
+     *
+     * @author Edward Deen
+     * @param email
+     * @return
+     */
     @POST
     @Path("/checkEmail")
     @Consumes(MediaType.TEXT_PLAIN)
@@ -111,6 +119,15 @@ public class UserResource {
         }
     }
 
+    /**
+     * Endpoint to change a user's password
+     *
+     * @author Edward Deen
+     * @param user_id
+     * @param password
+     * @param headers
+     * @return
+     */
     @POST
     @Path("changePassword/{userId}")
     @Consumes(MediaType.TEXT_HTML)

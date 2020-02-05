@@ -33,18 +33,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="jdbc:mysql://jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="digitalefactuur: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="jdbc:mysql://86.83.103.74:3306/digitalefactuur" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -170,17 +159,7 @@
       <serviceView>
         <option name="contentProportion" value="0.21807359" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24c70d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24c70d9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@44c3e141" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -243,6 +222,9 @@
       <workItem from="1580245283158" duration="1637000" />
       <workItem from="1580322798715" duration="1732000" />
       <workItem from="1580330741974" duration="3733000" />
+      <workItem from="1580465478561" duration="4482000" />
+      <workItem from="1580807161170" duration="2142000" />
+      <workItem from="1580935029822" duration="2118000" />
     </task>
     <task id="LOCAL-00001" summary="proberen">
       <created>1572461670995</created>

@@ -39,7 +39,7 @@ public class LoginResource {
      * Checks if the posted login email is in the database
      * and then checks if the password is correct
      * if it is correct it returns the user
-     * @author Melissa Basgol
+     * @author Melissa Basgol, Edward Deen
      */
     @POST
     public Response getPersonLogin(@Valid Login login, @Context HttpHeaders headers){
@@ -61,6 +61,12 @@ public class LoginResource {
         }
     }
 
+    /**
+     * Endpoint to check if the JWT token provided is still valid.
+     *
+     * @author Edward Deen
+     * @param headers
+     */
     @POST
     @Path("/levalidatelejwt")
     public Response validateJWT(@Context HttpHeaders headers){

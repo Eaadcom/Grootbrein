@@ -13,11 +13,23 @@ import java.time.temporal.ChronoUnit;
 import java.util.Base64;
 import java.util.Date;
 
+/**
+ * This class facilitates the security of our application
+ * through the use of JWT tokens
+ *
+ * @author Edward Deen
+ */
 public class JWTService {
-
     SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
     byte[] secret = Base64.getDecoder().decode("QfOTMgpwGq5e2e7su2tLjURn1JQS5VFxWUzXOuodbGA");
 
+    /**
+     * This class builds a JWT token with the provided payload as a claim
+     *
+     * @author Edward Deen
+     * @param payload
+     * @return
+     */
     public String buildJWT(Object payload){
 
         Instant now = Instant.now();
@@ -33,6 +45,13 @@ public class JWTService {
         return jwt;
     }
 
+    /**
+     * This class verifies if a given JWT token is valid
+     *
+     * @author Edward Deen
+     * @param jwt
+     * @return
+     */
     public boolean verifyJWT(String jwt){
         boolean verification = false;
 
