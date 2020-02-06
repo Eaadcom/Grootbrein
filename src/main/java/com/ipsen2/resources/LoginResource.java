@@ -64,7 +64,7 @@ public class LoginResource {
     /**
      * Endpoint to check if the JWT token provided is still valid.
      *
-     * @author Edward Deen
+     * @author Edward Deen, Tom van den Berg
      * @param headers
      */
     @POST
